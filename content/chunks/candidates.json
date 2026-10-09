@@ -7,9 +7,7 @@
     "definitionEn": "Become or begin to feel a state.",
     "explanationZh": "逐渐进入某种状态。",
     "register": "neutral",
-    "functionTags": [
-      "narration"
-    ],
+    "functionTags": ["narration"],
     "createdAt": "2026-10-09T00:00:00Z",
     "updatedAt": "2026-10-09T00:00:00Z"
   },
@@ -21,9 +19,7 @@
     "definitionEn": "Focus your mind on someone or something.",
     "explanationZh": "注意某人或某事。",
     "register": "neutral",
-    "functionTags": [
-      "narration"
-    ],
+    "functionTags": ["narration"],
     "createdAt": "2026-10-09T00:00:00Z",
     "updatedAt": "2026-10-09T00:00:00Z"
   },
@@ -35,9 +31,7 @@
     "definitionEn": "Move your body to face the other direction.",
     "explanationZh": "转身改变朝向。",
     "register": "neutral",
-    "functionTags": [
-      "narration"
-    ],
+    "functionTags": ["narration"],
     "createdAt": "2026-10-09T00:00:00Z",
     "updatedAt": "2026-10-09T00:00:00Z"
   },
@@ -49,9 +43,7 @@
     "definitionEn": "Introduce the final result of a situation.",
     "explanationZh": "说明最终结果。",
     "register": "neutral",
-    "functionTags": [
-      "narration"
-    ],
+    "functionTags": ["narration"],
     "createdAt": "2026-10-09T00:00:00Z",
     "updatedAt": "2026-10-09T00:00:00Z"
   },
@@ -63,9 +55,235 @@
     "definitionEn": "Say that something is private; this can sound blunt.",
     "explanationZh": "表示隐私边界；语气可能生硬。",
     "register": "informal",
-    "functionTags": [
-      "narration"
-    ],
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000006",
+    "canonical": "on Sundays",
+    "senseKey": "weekly_habit",
+    "category": "collocation",
+    "definitionEn": "Use the plural weekday for a repeated weekly habit.",
+    "explanationZh": "表示每周日的习惯。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000007",
+    "canonical": "get up",
+    "senseKey": "leave_bed",
+    "category": "phrasal_verb",
+    "definitionEn": "Leave your bed after sleeping.",
+    "explanationZh": "起床；不同于仅醒来。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000008",
+    "canonical": "stay in bed",
+    "senseKey": "remain_in_bed",
+    "category": "collocation",
+    "definitionEn": "Remain in bed instead of getting up.",
+    "explanationZh": "继续待在床上。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000009",
+    "canonical": "just then",
+    "senseKey": "specific_moment",
+    "category": "discourse_marker",
+    "definitionEn": "Point to the precise moment something else happened.",
+    "explanationZh": "就在那时。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000010",
+    "canonical": "look out of",
+    "senseKey": "view_through_opening",
+    "category": "phrasal_verb",
+    "definitionEn": "Direct your eyes through an opening toward the outside.",
+    "explanationZh": "透过窗等开口向外看。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000011",
+    "canonical": "send someone something",
+    "senseKey": "transfer_message_object",
+    "category": "sentence_pattern",
+    "definitionEn": "Put a recipient before the thing you send.",
+    "explanationZh": "双宾语结构：把某物发给某人。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000012",
+    "canonical": "lend someone something",
+    "senseKey": "temporary_loan",
+    "category": "sentence_pattern",
+    "definitionEn": "Let a person use something temporarily, expecting it back.",
+    "explanationZh": "把某物借给某人并期望归还。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000013",
+    "canonical": "make a decision",
+    "senseKey": "choose_course",
+    "category": "collocation",
+    "definitionEn": "Choose what to do after considering options.",
+    "explanationZh": "作出决定。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000014",
+    "canonical": "spend time doing",
+    "senseKey": "use_time_activity",
+    "category": "sentence_pattern",
+    "definitionEn": "Use an amount of time on an activity; the activity takes an -ing form.",
+    "explanationZh": "花时间做某事。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000015",
+    "canonical": "the whole day",
+    "senseKey": "entire_day",
+    "category": "collocation",
+    "definitionEn": "Refer to all of a day, emphasizing its duration.",
+    "explanationZh": "强调整整一天。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000016",
+    "canonical": "have been to",
+    "senseKey": "experience_visit",
+    "category": "sentence_pattern",
+    "definitionEn": "Describe experience of visiting a place and returning.",
+    "explanationZh": "表示曾去过并已返回的经历。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000017",
+    "canonical": "a great number of",
+    "senseKey": "many_countable",
+    "category": "collocation",
+    "definitionEn": "Describe many countable items or people.",
+    "explanationZh": "用于大量可数的人或事物。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000018",
+    "canonical": "in the centre of",
+    "senseKey": "central_location",
+    "category": "collocation",
+    "definitionEn": "Describe a position in the middle of an area.",
+    "explanationZh": "位于某区域的中心。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000019",
+    "canonical": "work for",
+    "senseKey": "employer",
+    "category": "phrasal_verb",
+    "definitionEn": "Name the person or organization that employs someone.",
+    "explanationZh": "为某人或某机构工作。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000020",
+    "canonical": "carry a message",
+    "senseKey": "deliver_information",
+    "category": "collocation",
+    "definitionEn": "Take information from one person or place to another.",
+    "explanationZh": "传递信息。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000021",
+    "canonical": "cover a distance",
+    "senseKey": "travel_length",
+    "category": "collocation",
+    "definitionEn": "Travel across a specified length.",
+    "explanationZh": "走过某段距离。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000022",
+    "canonical": "a request for",
+    "senseKey": "ask_for_item",
+    "category": "collocation",
+    "definitionEn": "Express a formal or clear ask for something.",
+    "explanationZh": "对某物的请求。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000023",
+    "canonical": "in this way",
+    "senseKey": "method_result",
+    "category": "discourse_marker",
+    "definitionEn": "Link a described method with its result.",
+    "explanationZh": "用这种方式；连接方法与结果。",
+    "register": "neutral",
+    "functionTags": ["narration"],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000024",
+    "canonical": "so far",
+    "senseKey": "up_to_now",
+    "category": "discourse_marker",
+    "definitionEn": "Refer to a period that extends up to the present.",
+    "explanationZh": "截至目前。",
+    "register": "neutral",
+    "functionTags": ["narration"],
     "createdAt": "2026-10-09T00:00:00Z",
     "updatedAt": "2026-10-09T00:00:00Z"
   }

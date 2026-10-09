@@ -11,13 +11,63 @@
       "Express irritation politely",
       "Transfer attention and reaction chunks"
     ],
-    "tags": [
-      "past narrative",
-      "conversation"
+    "tags": ["past narrative", "conversation"],
+    "sourceIds": ["NCE2-L001-mp3-us", "NCE2-L001-lrc-us"]
+  },
+  {
+    "id": "NCE2-L002",
+    "series": "NCE",
+    "book": 2,
+    "number": 2,
+    "title": "Breakfast or Lunch",
+    "summary": "Compare a routine with an unusual morning. Explain a surprise using clear time expressions.",
+    "learningObjectives": [
+      "Describe routines and exceptions",
+      "Contrast expectation with reality"
     ],
-    "sourceIds": [
-      "NCE2-L001-mp3-us",
-      "NCE2-L001-lrc-us"
-    ]
+    "tags": ["active output"],
+    "sourceIds": ["NCE2-L002-mp3-us", "NCE2-L002-lrc-us"]
+  },
+  {
+    "id": "NCE2-L003",
+    "series": "NCE",
+    "book": 2,
+    "number": 3,
+    "title": "Please Send Me a Card",
+    "summary": "Plan a small task, notice what delayed it, and describe the decision you finally made.",
+    "learningObjectives": [
+      "Describe a decision",
+      "Use give/send/lend patterns"
+    ],
+    "tags": ["active output"],
+    "sourceIds": ["NCE2-L003-mp3-us", "NCE2-L003-lrc-us"]
+  },
+  {
+    "id": "NCE2-L004",
+    "series": "NCE",
+    "book": 2,
+    "number": 4,
+    "title": "An Exciting Trip",
+    "summary": "Connect past experience with a situation that continues now. Share news about someone away from home.",
+    "learningObjectives": [
+      "Distinguish experience and past events",
+      "Describe travel and current activity"
+    ],
+    "tags": ["active output"],
+    "sourceIds": ["NCE2-L004-mp3-us", "NCE2-L004-lrc-us"]
+  },
+  {
+    "id": "NCE2-L005",
+    "series": "NCE",
+    "book": 2,
+    "number": 5,
+    "title": "No Wrong Numbers",
+    "summary": "Explain how a simple communication system works. Compare two ways of sending a message.",
+    "learningObjectives": [
+      "Describe a communication process",
+      "Connect cause and method"
+    ],
+    "tags": ["active output"],
+    "sourceIds": ["NCE2-L005-mp3-us", "NCE2-L005-lrc-us"]
   }
 ]
