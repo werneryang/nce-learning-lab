@@ -1,0 +1,72 @@
+[
+  {
+    "id": "CH000001",
+    "canonical": "get + adjective",
+    "senseKey": "change_state",
+    "category": "sentence_pattern",
+    "definitionEn": "Become or begin to feel a state.",
+    "explanationZh": "逐渐进入某种状态。",
+    "register": "neutral",
+    "functionTags": [
+      "narration"
+    ],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000002",
+    "canonical": "pay attention to",
+    "senseKey": "focus",
+    "category": "collocation",
+    "definitionEn": "Focus your mind on someone or something.",
+    "explanationZh": "注意某人或某事。",
+    "register": "neutral",
+    "functionTags": [
+      "narration"
+    ],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000003",
+    "canonical": "turn around",
+    "senseKey": "rotate_body",
+    "category": "phrasal_verb",
+    "definitionEn": "Move your body to face the other direction.",
+    "explanationZh": "转身改变朝向。",
+    "register": "neutral",
+    "functionTags": [
+      "narration"
+    ],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000004",
+    "canonical": "in the end",
+    "senseKey": "final_outcome",
+    "category": "discourse_marker",
+    "definitionEn": "Introduce the final result of a situation.",
+    "explanationZh": "说明最终结果。",
+    "register": "neutral",
+    "functionTags": [
+      "narration"
+    ],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  },
+  {
+    "id": "CH000005",
+    "canonical": "none of your business",
+    "senseKey": "privacy_boundary",
+    "category": "idiom",
+    "definitionEn": "Say that something is private; this can sound blunt.",
+    "explanationZh": "表示隐私边界；语气可能生硬。",
+    "register": "informal",
+    "functionTags": [
+      "narration"
+    ],
+    "createdAt": "2026-10-09T00:00:00Z",
+    "updatedAt": "2026-10-09T00:00:00Z"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "NCE2-L001-writing",
+    "lessonId": "NCE2-L001",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000002",
+      "CH000003",
+      "CH000004",
+      "CH000005"
+    ],
+    "mode": "writing",
+    "prompt": "Tell a friend about an interruption at a public place. Set the scene, explain what happened, and describe your response. Try two selected chunks.",
+    "rubric": "Preserve your intended meaning; check past tense, clear sequence, and natural chunk use.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L001-speaking",
+    "lessonId": "NCE2-L001",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000002",
+      "CH000003",
+      "CH000004",
+      "CH000005"
+    ],
+    "mode": "speaking",
+    "prompt": "Tell a 60-second story about an interruption. What did you notice? How did you respond? Use two selected chunks without reading.",
+    "authoredBy": "project"
+  }
+]

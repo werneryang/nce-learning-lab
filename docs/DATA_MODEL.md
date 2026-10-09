@@ -1,0 +1,11 @@
+# Data and local storage
+
+`src/shared/schema.ts` is the executable Zod schema for all public and private entities. The container is `schemaVersion: 1`; IndexedDB database version 1 has `state` and `media` stores. Unknown future backup versions fail closed. No prior production schema exists, so v1 is the initial migration. Later migrations must validate before replacing state.
+
+Public JSON under `content/` contains lesson metadata, original candidate explanations/examples, multi-lesson candidate links and original tasks. It does not contain textbook paragraphs. Candidate links indicate suggested learning associations; user acceptance creates private knowledge objects. Chunk uniqueness is normalized expression plus sense key; mastery uniqueness is chunk plus skill.
+
+Private state contains imported source metadata and SHA-256 fingerprints, confirmed transcript lines, PracticeSessions, versioned TutorTurns (including submitted text snapshots and differences), Attempts, accepted Chunks and Examples, Mistakes, Mastery, preferences. Imported MP3s and optional recordings are separate IndexedDB Blobs, addressed by lesson/attempt IDs. They never enter JSON automatically.
+
+Review/recheck writes one Attempt per session/draft version. Hint and draft saving do not change mastery. Finish uses an explicit writing self-rating once; speaking has separate Attempts and ratings. Again resets repetitions and is due in 10 minutes; good advances 1/3/7/14/30 local calendar days; hard halves, easy multiplies by 1.5. All stored dates are ISO UTC and displayed locally. This is a heuristic, not a proficiency score or fitted memory model.
+
+Backups are UTF-8 JSON with schemaVersion, exportedAt, mediaIncluded=false, data and SHA-256 checksum over the serialized data. Checksum detects accidental modification, not hostile forgery. Restore validates shape, relationships and uniqueness before replacement; it does not merge ID conflicts. Private imported text is included: keep backups private. Audio must be re-imported on a different browser. Local browser quota errors are shown; a storage estimate and persistence request are available. Browser eviction, private mode and abrupt termination may defeat persistence; manual Save and independent backups are recommended.

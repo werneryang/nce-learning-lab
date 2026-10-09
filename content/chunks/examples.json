@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EX000001",
+    "chunkId": "CH000001",
+    "text": "The room got quiet when the presentation began.",
+    "provenance": "project_original"
+  },
+  {
+    "id": "EX000002",
+    "chunkId": "CH000002",
+    "text": "Please pay attention to the road signs.",
+    "provenance": "project_original"
+  },
+  {
+    "id": "EX000003",
+    "chunkId": "CH000003",
+    "text": "I turned around to wave at my neighbor.",
+    "provenance": "project_original"
+  },
+  {
+    "id": "EX000004",
+    "chunkId": "CH000004",
+    "text": "In the end, we chose the quieter cafe.",
+    "provenance": "project_original"
+  },
+  {
+    "id": "EX000005",
+    "chunkId": "CH000005",
+    "text": "A polite alternative is: I would rather keep that private.",
+    "provenance": "project_original"
+  }
+]

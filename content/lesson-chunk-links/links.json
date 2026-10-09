@@ -1,0 +1,27 @@
+[
+  {
+    "lessonId": "NCE2-L001",
+    "chunkId": "CH000001",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L001",
+    "chunkId": "CH000002",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L001",
+    "chunkId": "CH000003",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L001",
+    "chunkId": "CH000004",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L001",
+    "chunkId": "CH000005",
+    "importance": 2
+  }
+]
