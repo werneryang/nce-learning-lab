@@ -9,15 +9,19 @@ import {
   replaceStateAndClearMedia,
 } from "../storage/db";
 import { manifest } from "../shared/content";
+import { CloudSyncPanel } from "./CloudSync";
+import type { CloudSync } from "../sync/useCloudSync";
 export function Settings({
   state,
   update,
   flush,
+  sync,
   onStorageRecover,
 }: {
   state: State;
   update: (fn: (s: State) => State) => void;
   flush: () => Promise<boolean>;
+  sync: CloudSync;
   onStorageRecover: () => void;
 }) {
   const [message, setMessage] = useState("");
@@ -67,8 +71,12 @@ export function Settings({
       <h2>Settings & backup</h2>
       <p className="muted">
         IndexedDB stores your learning data and imported media in this browser.
-        Clearing browser data can remove it. Mac and iPhone do not synchronize.
+        Clearing browser data can remove it.{" "}
+        {sync.signedIn
+          ? "Cloud sync keeps learning records (not audio) in step across your signed-in devices."
+          : "Without cloud sync, Mac and iPhone do not synchronize."}
       </p>
+      <CloudSyncPanel sync={sync} />
       <p className="small">
         Storage:{" "}
         {usage.usage === undefined
@@ -168,9 +176,10 @@ export function Settings({
         </p>
         <p>
           Repository MP3/LRC resources load automatically from this site. PDFs
-          are not deployed. Drafts and learning history stay in this browser.
-          Subtitle text is rendered as plain text, never instructions or
-          executable HTML.
+          are not deployed. Drafts and learning history stay in this browser
+          unless you sign in to cloud sync, which stores them in a private
+          Supabase table only your account can read. Subtitle text is rendered
+          as plain text, never instructions or executable HTML.
         </p>
         <p>
           Source repository:{" "}
@@ -188,14 +197,17 @@ export function Settings({
         <p>
           Only code, catalog metadata and original educational notes are public.
           Public server requests can still contain ordinary hosting access
-          metadata; learning content is kept on your device.
+          metadata; learning content is kept on your device unless you turn on
+          cloud sync.
         </p>
       </details>
       <div className="danger-zone">
         <h3>Delete private data</h3>
         <p>
           Removes all drafts, imported text, audio, recordings and learning
-          history in this browser. Export a backup first if needed.
+          history in this browser. Export a backup first if needed. If you are
+          signed in to cloud sync, the cloud copy is kept and will download
+          again.
         </p>
         <button onClick={() => setConfirmDelete(true)}>
           Delete all local data

@@ -19,6 +19,8 @@ import { Practice } from "./features/Practice";
 import { Library } from "./features/Library";
 import { Speaking } from "./features/Speaking";
 import { Settings } from "./features/Settings";
+import { ConflictChoice, syncLabels } from "./features/CloudSync";
+import { useCloudSync } from "./sync/useCloudSync";
 import { dueQueue, schedule } from "./features/schedule";
 import { removeMistake } from "./features/records";
 const nav = [
@@ -41,6 +43,7 @@ export default function App() {
     storageError,
     setStorageError,
   } = useLearning();
+  const sync = useCloudSync({ ready, state, ref, update, flush });
   const [page, setPage] = useState(
     () => location.hash.slice(1).split("/")[0] || "today",
   );
@@ -193,6 +196,14 @@ export default function App() {
             />
             {status}
           </span>
+          {sync.signedIn && (
+            <span className="local-status" data-sync-status={sync.status}>
+              <span
+                className={`status-dot ${["error", "conflict"].includes(sync.status) ? "failed" : ""}`}
+              />
+              {syncLabels[sync.status]}
+            </span>
+          )}
         </header>
         <main id="main" tabIndex={-1}>
           {storageError && (
@@ -203,6 +214,7 @@ export default function App() {
               </button>
             </div>
           )}
+          {page !== "settings" && <ConflictChoice sync={sync} />}
           {page === "today" && (
             <>
               <div className="page-heading">
@@ -792,6 +804,7 @@ export default function App() {
                 state={state}
                 update={update}
                 flush={flush}
+                sync={sync}
                 onStorageRecover={() => setStorageError("")}
               />
             </>

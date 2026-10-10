@@ -13,3 +13,5 @@ Backups are UTF-8 JSON with schemaVersion, exportedAt, mediaIncluded=false, data
 Individual writing-session deletion is explicit and removes its draft, tutor turns, attempts and linked mistakes together. Other sessions, imported lesson resources and aggregate skill schedules remain. A single mistake can also be deleted without leaving its ID in an Attempt. Deleting all local data clears every private record and media item.
 
 Source accessMode additionally supports `user_repository_hosted` (rightsStatus remains unverified). The immutable hosted manifest is public metadata, separate from schemaVersion 1 private state. Repository transcripts are cached under stable source/hash IDs; a current local transcript is never overwritten on navigation or refresh. Repository audio has no local `audioName` override; stored local replacements retain their existing source metadata and priority.
+
+Optional cloud sync (`docs/CLOUD_SYNC.md`) stores sync bookkeeping (account ID, last synced cloud revision, state hash, time) under the `sync` key of the IndexedDB `state` store, and mirrors the validated schemaVersion 1 state to a per-account Supabase row. Media is never synced.

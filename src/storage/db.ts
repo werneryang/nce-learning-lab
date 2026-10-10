@@ -99,3 +99,17 @@ export function replaceStateAndClearMedia(state: State) {
   writeQueue = write;
   return write;
 }
+export type SyncMeta = {
+  userId: string;
+  baseRevision: number;
+  syncedHash: string;
+  syncedAt: string;
+};
+export async function loadSyncMeta(): Promise<SyncMeta | undefined> {
+  const database = await db();
+  return database.get("state", "sync");
+}
+export async function saveSyncMeta(meta: SyncMeta) {
+  const database = await db();
+  await database.put("state", meta, "sync");
+}
