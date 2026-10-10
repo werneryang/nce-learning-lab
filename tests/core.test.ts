@@ -418,3 +418,46 @@ it("restore atomically replaces records and clears mismatched old audio", async 
   expect(await loadState()).toEqual(recovered);
   expect(await loadMedia("old")).toBeUndefined();
 });
+
+it("individual session deletion clears dependent private records while preserving other data", async () => {
+  const { removeSession, removeMistake } =
+    await import("../src/features/records");
+  const s = acceptChunk(emptyState(), candidates[0], "NCE2-L001");
+  s.sessions = [session(), { ...session("keep"), id: "s2" }];
+  s.attempts = [
+    {
+      id: "a",
+      exerciseId: "e",
+      practiceSessionId: "s1",
+      createdAt: now(),
+      skill: "writing",
+      mistakeIds: ["m"],
+    },
+    {
+      id: "b",
+      exerciseId: "e",
+      practiceSessionId: "s2",
+      createdAt: now(),
+      skill: "writing",
+    },
+  ];
+  s.mistakes = [
+    {
+      id: "m",
+      attemptId: "a",
+      category: "other",
+      explanation: "private",
+      createdAt: now(),
+      resolved: false,
+    },
+  ];
+  s.mastery = [schedule(candidates[0].id, "writing", "good")];
+  const withoutMistake = removeMistake(s, "m");
+  expect(withoutMistake.attempts[0].mistakeIds).toEqual([]);
+  const result = removeSession(s, "s1");
+  expect(result.sessions.map((x) => x.id)).toEqual(["s2"]);
+  expect(result.attempts.map((x) => x.id)).toEqual(["b"]);
+  expect(result.mistakes).toHaveLength(0);
+  expect(result.mastery).toEqual(s.mastery);
+  expect(StateSchema.safeParse(result).success).toBe(true);
+});

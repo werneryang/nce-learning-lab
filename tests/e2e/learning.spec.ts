@@ -396,13 +396,11 @@ test("Invalid audio is rejected and memory recall keeps native playback locked",
   page,
 }) => {
   await openLesson(page);
-  await page
-    .getByLabel("Import MP3", { exact: true })
-    .setInputFiles({
-      name: "broken.mp3",
-      mimeType: "audio/mpeg",
-      buffer: Buffer.from("not an audio file"),
-    });
+  await page.getByLabel("Import MP3", { exact: true }).setInputFiles({
+    name: "broken.mp3",
+    mimeType: "audio/mpeg",
+    buffer: Buffer.from("not an audio file"),
+  });
   await expect(page.getByRole("alert")).toContainText("cannot decode");
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
@@ -425,4 +423,27 @@ test("Invalid audio is rejected and memory recall keeps native playback locked",
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
   ).toBeEnabled();
+});
+
+test("Private writing sessions can be deleted individually after an explicit confirmation", async ({
+  page,
+}) => {
+  await openLesson(page);
+  await startRecall(page);
+  await page.getByLabel("Your draft").fill("A private draft to delete.");
+  await page.getByRole("button", { name: "Review", exact: true }).click();
+  await page.getByText("Saved sessions · 1", { exact: true }).click();
+  await page
+    .getByRole("button", { name: "Delete session", exact: true })
+    .click();
+  await expect(page.getByLabel("Your draft")).toHaveValue(
+    "A private draft to delete.",
+  );
+  await page
+    .getByRole("button", { name: "Confirm delete session", exact: true })
+    .click();
+  await expect(page.getByLabel("Your draft")).toHaveCount(0);
+  await expect(
+    page.getByText("Private writing session deleted."),
+  ).toBeVisible();
 });

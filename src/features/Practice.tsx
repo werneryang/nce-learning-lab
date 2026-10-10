@@ -15,6 +15,7 @@ import { LocalTutor, manualPrompt } from "./tutor";
 import { schedule } from "./schedule";
 import { digest } from "../storage/db";
 import { exercises } from "../shared/content";
+import { removeSession } from "./records";
 const modeLabels: Record<Mode, string> = {
   listening_dictation: "Listening dictation",
   memory_recall: "Memory recall",
@@ -52,6 +53,7 @@ export function Practice({
   const [copyPrompt, setCopyPrompt] = useState("");
   const [rating, setRating] = useState<Rating>("good");
   const [manualFeedback, setManualFeedback] = useState("");
+  const [deleteSessionId, setDeleteSessionId] = useState("");
   const [targetIds, setTargetIds] = useState<string[]>([]);
   const abort = useRef<AbortController | undefined>(undefined);
   const editor = useRef<HTMLTextAreaElement>(null);
@@ -803,19 +805,62 @@ export function Practice({
               Saved sessions ·{" "}
               {state.sessions.filter((s) => s.lessonId === lessonId).length}
             </summary>
+            <p className="small">
+              Deleting a session removes its draft, tutor history, attempts and
+              linked mistakes. Aggregate skill schedules remain until you delete
+              all local data.
+            </p>
             {state.sessions
               .filter((s) => s.lessonId === lessonId)
               .map((s) => (
-                <button
-                  key={s.id}
-                  onClick={() => {
-                    void save();
-                    setActiveId(s.id);
-                    setShowAnswer(false);
-                  }}
-                >
-                  {modeLabels[s.mode]} · v{s.draftVersion} · {s.status}
-                </button>
+                <div className="button-row" key={s.id}>
+                  <button
+                    onClick={() => {
+                      void save();
+                      setActiveId(s.id);
+                      setShowAnswer(false);
+                    }}
+                  >
+                    {modeLabels[s.mode]} · v{s.draftVersion} · {s.status}
+                  </button>
+                  <button
+                    disabled={pending}
+                    onClick={() => setDeleteSessionId(s.id)}
+                  >
+                    Delete session
+                  </button>
+                  {deleteSessionId === s.id && (
+                    <div className="notice">
+                      <p>
+                        Delete this private writing session and its feedback?
+                        This cannot be undone without a backup.
+                      </p>
+                      <button
+                        onClick={() => {
+                          update((current) => removeSession(current, s.id));
+                          if (activeId === s.id)
+                            setActiveId(
+                              state.sessions
+                                .filter(
+                                  (x) =>
+                                    x.lessonId === lessonId && x.id !== s.id,
+                                )
+                                .at(-1)?.id || "",
+                            );
+                          setDeleteSessionId("");
+                          setMessage(
+                            "Private writing session deleted. Aggregate skill schedules retained.",
+                          );
+                        }}
+                      >
+                        Confirm delete session
+                      </button>
+                      <button onClick={() => setDeleteSessionId("")}>
+                        Cancel deletion
+                      </button>
+                    </div>
+                  )}
+                </div>
               ))}
           </details>
         </>

@@ -24,3 +24,5 @@ Coverage maps:
 | T18 | Keyboard focus, long draft, narrow layout; WebKit iPhone simulation; native/physical testing remains unverified |
 
 Failure handling tests include encoding, malformed timestamps, comparison size bound, damaged backup checksums, future schema versions, duplicate mastery, unknown source references, cancellation and malformed remote feedback. No live AI backend is tested or represented as connected. The network adapter's HTTP tests use explicit mocks solely for its optional contract.
+
+An additional privacy test verifies individual session deletion requires an explicit confirmation and clears dependent private records. It runs in all three browser projects; a unit test also checks dependency cleanup and preservation of other sessions/aggregate schedules.

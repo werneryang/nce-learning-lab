@@ -20,6 +20,7 @@ import { Library } from "./features/Library";
 import { Speaking } from "./features/Speaking";
 import { Settings } from "./features/Settings";
 import { dueQueue, schedule } from "./features/schedule";
+import { removeMistake } from "./features/records";
 const nav = [
   ["today", "Today", Sun],
   ["lessons", "Lessons", BookOpen],
@@ -619,12 +620,7 @@ export default function App() {
                           {m.resolved ? "Reopen" : "Mark resolved"}
                         </button>
                         <button
-                          onClick={() =>
-                            update((s) => ({
-                              ...s,
-                              mistakes: s.mistakes.filter((x) => x.id !== m.id),
-                            }))
-                          }
+                          onClick={() => update((s) => removeMistake(s, m.id))}
                         >
                           Delete
                         </button>
