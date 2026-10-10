@@ -9,6 +9,33 @@ import {
   replaceStateAndClearMedia,
 } from "../storage/db";
 import { manifest } from "../shared/content";
+import { addSummary, emptySummary, mergeStates } from "./merge";
+import type { MergeSummary } from "./merge";
+import {
+  backupFileName,
+  cleanDeviceName,
+  loadDeviceName,
+  saveDeviceName,
+} from "./device";
+type MergePlan = {
+  files: { name: string; sessions: number }[];
+  backups: State[];
+  summary: MergeSummary;
+};
+function describe(summary: MergeSummary) {
+  const parts = [
+    [summary.sessionsAdded, "new practice session"],
+    [summary.sessionsUpdated, "updated practice session"],
+    [summary.chunksAdded, "new chunk"],
+    [summary.mistakesAdded, "new mistake"],
+    [summary.attemptsAdded, "new attempt"],
+  ] as const;
+  const text = parts
+    .filter(([n]) => n > 0)
+    .map(([n, label]) => `${n} ${label}${n === 1 ? "" : "s"}`)
+    .join(", ");
+  return text || "nothing new — this device already has these records";
+}
 export function Settings({
   state,
   update,
@@ -23,6 +50,8 @@ export function Settings({
   const [message, setMessage] = useState("");
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [restore, setRestore] = useState<State>();
+  const [deviceName, setDeviceName] = useState(loadDeviceName);
+  const [merge, setMerge] = useState<MergePlan>();
   const [usage, setUsage] = useState<{ usage?: number; quota?: number }>({});
   useEffect(() => {
     void storageInfo()
@@ -40,7 +69,7 @@ export function Settings({
       );
       const a = document.createElement("a");
       a.href = url;
-      a.download = `nce-learning-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = backupFileName(deviceName);
       a.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
       setMessage(
@@ -48,6 +77,59 @@ export function Settings({
       );
     } catch (e) {
       setMessage(String(e));
+    }
+  }
+  async function readForMerge(files: File[]) {
+    try {
+      setRestore(undefined);
+      const backups: State[] = [];
+      let merged = state;
+      let summary = emptySummary();
+      for (const file of files) {
+        if (file.size > 10_000_000)
+          throw new Error(`${file.name} exceeds 10 MB.`);
+        const backup = await readBackup(await file.text()).catch((e) => {
+          throw new Error(
+            `${file.name}: ${e instanceof Error ? e.message : e}`,
+          );
+        });
+        backups.push(backup);
+        const result = mergeStates(merged, backup);
+        merged = result.state;
+        summary = addSummary(summary, result.summary);
+      }
+      setMerge({
+        files: files.map((f, i) => ({
+          name: f.name,
+          sessions: backups[i].sessions.length,
+        })),
+        backups,
+        summary,
+      });
+      setMessage("");
+    } catch (e) {
+      setMerge(undefined);
+      setMessage(e instanceof Error ? e.message : String(e));
+    }
+  }
+  async function applyMerge(plan: MergePlan) {
+    try {
+      // Merge into the latest state, in case it changed since the preview.
+      let merged = state;
+      let summary = emptySummary();
+      for (const backup of plan.backups) {
+        const result = mergeStates(merged, backup);
+        merged = result.state;
+        summary = addSummary(summary, result.summary);
+      }
+      update(() => merged);
+      if (!(await flush())) throw new Error("Merged, but saving failed.");
+      setMerge(undefined);
+      setMessage(
+        `Merged ${plan.files.length} backup${plan.files.length === 1 ? "" : "s"}: ${describe(summary)}.`,
+      );
+    } catch (e) {
+      setMessage(e instanceof Error ? e.message : String(e));
     }
   }
   async function read(file: File) {
@@ -67,7 +149,8 @@ export function Settings({
       <h2>Settings & backup</h2>
       <p className="muted">
         IndexedDB stores your learning data and imported media in this browser.
-        Clearing browser data can remove it. Mac and iPhone do not synchronize.
+        Clearing browser data can remove it. Mac and iPhone do not synchronize
+        on their own: export on one, then merge that file on the other.
       </p>
       <p className="small">
         Storage:{" "}
@@ -77,18 +160,57 @@ export function Settings({
         {usage.quota !== undefined && `of ${(usage.quota / 1e6).toFixed(0)} MB`}
         . Private browsing and eviction can shorten retention.
       </p>
+      <label className="device-name">
+        This device&apos;s name{" "}
+        <input
+          aria-label="Device name"
+          value={deviceName}
+          maxLength={40}
+          onChange={(e) => setDeviceName(e.target.value)}
+          onBlur={() => {
+            const clean = cleanDeviceName(deviceName);
+            setDeviceName(clean);
+            saveDeviceName(clean);
+          }}
+        />
+      </label>
+      <p className="small">
+        Exports are named like <code>{backupFileName(deviceName)}</code>, so
+        each device&apos;s files are easy to tell apart in iCloud Drive.
+      </p>
       <div className="button-row">
-        <button className="primary" onClick={() => void backup()}>
+        <button
+          className="primary"
+          onClick={() => {
+            saveDeviceName(deviceName);
+            void backup();
+          }}
+        >
           Export learning JSON
         </button>
         <label className="file-button">
-          Import backup
+          Merge backups
           <input
-            aria-label="Import backup"
+            aria-label="Merge backups"
+            type="file"
+            multiple
+            accept=".json,application/json"
+            onChange={(e) => {
+              const files = [...(e.target.files || [])];
+              if (files.length) void readForMerge(files);
+              e.target.value = "";
+            }}
+          />
+        </label>
+        <label className="file-button">
+          Replace with backup
+          <input
+            aria-label="Replace with backup"
             type="file"
             accept=".json,application/json"
             onChange={(e) => {
               const f = e.target.files?.[0];
+              setMerge(undefined);
               if (f) void read(f);
               e.target.value = "";
             }}
@@ -113,9 +235,35 @@ export function Settings({
       <p className="small">
         JSON contains drafts, confirmed transcript text, sources, chunks,
         mistakes, attempts, tutor history and preferences. MP3 and speaking
-        recordings are excluded. Restore replaces records after validation; it
-        does not silently merge conflicting IDs.
+        recordings are excluded. <strong>Merge backups</strong> adds records
+        from other devices&apos; exports (select several at once) and keeps the
+        newer edit when both have the same record; this device&apos;s
+        preferences and local audio stay. Deleted records come back if another
+        backup still has them. <strong>Replace with backup</strong> swaps all
+        records for one backup.
       </p>
+      {merge && (
+        <div className="notice">
+          <p>
+            Checked {merge.files.length} backup
+            {merge.files.length === 1 ? "" : "s"}:
+          </p>
+          <ul>
+            {merge.files.map((f) => (
+              <li key={f.name}>
+                {f.name} · {f.sessions} sessions
+              </li>
+            ))}
+          </ul>
+          <p>Merging adds {describe(merge.summary)}.</p>
+          <div className="button-row">
+            <button className="primary" onClick={() => void applyMerge(merge)}>
+              Merge into this device
+            </button>
+            <button onClick={() => setMerge(undefined)}>Cancel merge</button>
+          </div>
+        </div>
+      )}
       {restore && (
         <div className="notice">
           <p>
