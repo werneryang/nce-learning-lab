@@ -534,9 +534,14 @@ export function Player({
         controls={!!url && (!memoryLocked || allowReplay)}
         ref={audio}
         src={url || undefined}
+        data-media-state={mediaState}
+        data-known-duration={duration}
+        data-memory-locked={memoryLocked && !allowReplay}
         preload="metadata"
         onLoadedMetadata={readAudioDuration}
         onDurationChange={readAudioDuration}
+        onLoadedData={readAudioDuration}
+        onCanPlay={readAudioDuration}
         onTimeUpdate={tick}
         onPlay={() => setMediaState("playing")}
         onPause={() => setMediaState("paused")}

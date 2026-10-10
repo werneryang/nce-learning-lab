@@ -28,7 +28,7 @@ E2E generates project-original MP3 at runtime. Install FFmpeg with `libmp3lame` 
 1. Choose Book 2, 3 or 4, open a lesson and press Play. No Import step is required. Local files remain an optional override under Optional local files & sources.
 2. Choose a practice mode and range, then Start practice. If no body lines are confirmed, the practice panel opens a line checklist. Inspect the suggested choices, exclude introductions/questions, then Confirm & start practice. Loading subtitles never confirms lines automatically.
 3. Use Review body & choose lines to choose a sentence or your own paragraph group; full lesson uses all confirmed body lines. Existing confirmations remain available to earlier drafts. Accept chunks you want to learn.
-4. Dictation and memory recall hide subtitles when writing starts. Guided rewriting also works without a transcript. Type uninterrupted and save locally.
+4. Dictation and memory recall hide subtitles when writing starts. Guided rewriting also works without a transcript. Type uninterrupted and save locally. Wait for Saved locally before refreshing or closing the tab.
 5. Click Hint for graduated local guidance. Click Review for reference differences and supported rules. Different wording does not imply incorrect English.
 6. Revise in your own words, Recheck, save selected issues, then Finish with your own skill rating.
 7. Export learning JSON in Settings. Keep backups private. Repository audio remains available after restoring; local replacement audio must be selected again.

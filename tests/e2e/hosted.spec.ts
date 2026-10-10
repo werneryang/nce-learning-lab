@@ -1,4 +1,6 @@
 import { test, expect } from "@playwright/test";
+// Real MP3 metadata on shared CI runners has a bounded 15s readiness window.
+// Decode/play assertions remain required; reloads wait for the durable-save status.
 test.afterEach(async ({ page }, info) => {
   if (info.status === info.expectedStatus) return;
   const audio = await page.locator("audio").evaluateAll((elements) =>
@@ -11,6 +13,7 @@ test.afterEach(async ({ page }, info) => {
         errorCode: el.error?.code,
         currentTime: el.currentTime,
         source: el.currentSrc,
+        playerState: { ...el.dataset },
       };
     }),
   );
@@ -46,19 +49,27 @@ test("Late duration changes recover real audio and invalid metadata does not cor
   await page.goto("#lesson/NCE2-L001");
   await expect(page.getByTestId("transcript-row")).toHaveCount(18);
   await expect
-    .poll(() =>
-      page
-        .locator("audio")
-        .evaluate((el) => (el as HTMLAudioElement).readyState),
+    .poll(
+      () =>
+        page
+          .locator("audio")
+          .evaluate((el) => (el as HTMLAudioElement).readyState),
+      { timeout: 15000 },
     )
     .toBeGreaterThanOrEqual(1);
   const play = page.getByRole("button", { name: "Play", exact: true });
   await expect(play).toBeDisabled();
   await page.locator("audio").evaluate((el) => {
     (window as unknown as { useRealDuration: boolean }).useRealDuration = true;
+    Object.defineProperty(el, "readyState", { configurable: true, value: 0 });
     el.dispatchEvent(new Event("durationchange"));
   });
-  await expect(play).toBeEnabled();
+  await expect(play).toBeDisabled();
+  await page.locator("audio").evaluate((el) => {
+    Reflect.deleteProperty(el, "readyState");
+    el.dispatchEvent(new Event("canplay"));
+  });
+  await expect(play).toBeEnabled({ timeout: 15000 });
   await play.click();
   await expect
     .poll(() =>
@@ -72,7 +83,7 @@ test("Late duration changes recover real audio and invalid metadata does not cor
     (window as unknown as { useRealDuration: boolean }).useRealDuration = false;
     el.dispatchEvent(new Event("loadedmetadata"));
   });
-  await expect(play).toBeEnabled();
+  await expect(play).toBeEnabled({ timeout: 15000 });
   const practice = page.getByRole("region", { name: "Writing practice" });
   await practice
     .getByLabel("Range", { exact: true })
@@ -107,7 +118,7 @@ test("Fresh full-lesson practice confirms loaded body here and completes the wri
   await expect(page.getByTestId("transcript-row")).toHaveCount(18);
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   await expect(practice.getByText(/0 confirmed body lines/)).toBeVisible();
   await practice
     .getByLabel("Range", { exact: true })
@@ -147,6 +158,7 @@ test("Fresh full-lesson practice confirms loaded body here and completes the wri
   await practice
     .getByRole("button", { name: "Save draft", exact: true })
     .click();
+  await expect(page.locator(".local-status")).toHaveText("Saved locally");
   await page.reload();
   await expect(draft).toHaveValue(
     "Last week I went to a theatre. I remember the conversation.",
@@ -243,7 +255,7 @@ test("A failed repository audio request can be retried without file import", asy
   await page.getByRole("button", { name: "Retry audio", exact: true }).click();
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   await page.getByRole("button", { name: "Play", exact: true }).click();
   await expect
     .poll(() =>
@@ -265,7 +277,7 @@ test("Repository lessons play and synchronize without selecting any files", asyn
   await expect(page.getByTestId("transcript-row")).toHaveCount(18);
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   expect(await page.locator("audio").getAttribute("src")).toContain(
     "/media/book2/audio-us/",
   );
@@ -297,6 +309,7 @@ test("Repository lessons play and synchronize without selecting any files", asyn
     .fill("I am writing this sentence without any automatic suggestions.");
   await page.getByRole("button", { name: "Save draft", exact: true }).click();
   expect(tutorCalls).toBe(0);
+  await expect(page.locator(".local-status")).toHaveText("Saved locally");
   await page.reload();
   await expect(page.getByLabel("Your draft")).toHaveValue(
     "I am writing this sentence without any automatic suggestions.",
@@ -304,7 +317,7 @@ test("Repository lessons play and synchronize without selecting any files", asyn
   await expect(page.getByTestId("subtitles-hidden")).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   expect(await page.locator("audio").getAttribute("src")).toContain(
     "/media/book2/audio-us/",
   );
@@ -332,7 +345,7 @@ test("All three books are selectable and a failed subtitle request can be retrie
   ).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   await page.unroute("**/media/**");
   await page
     .getByRole("button", { name: "Retry subtitles", exact: true })
@@ -348,7 +361,7 @@ test("All three books are selectable and a failed subtitle request can be retrie
   await expect(page.getByTestId("transcript-row").first()).toBeVisible();
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
-  ).toBeEnabled();
+  ).toBeEnabled({ timeout: 15000 });
   const src = await page.locator("audio").getAttribute("src");
   const response = await request.get(src!, {
     headers: { Range: "bytes=0-1023" },
