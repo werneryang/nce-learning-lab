@@ -358,9 +358,27 @@ export function Player({
     setLoopId(segment.id);
     seek(bounds[0]);
   }
-  function toggleLessonLoop() {
+  async function toggleLessonLoop() {
     setLoopId("");
-    setLoopLesson((on) => !on);
+    if (loopLesson) {
+      setLoopLesson(false); // Playback continues; it just stops repeating.
+      return;
+    }
+    setLoopLesson(true);
+    const el = audio.current;
+    if (!el || audioDisabled) return;
+    // Start the whole lesson from the beginning, as the button promises.
+    el.loop = true;
+    el.currentTime = 0;
+    if (!el.paused) return;
+    try {
+      await el.play();
+    } catch (e) {
+      setError(
+        `Playback could not start. Tap Play again or re-import the MP3. ${String(e)}`,
+      );
+      setMediaState("failed");
+    }
   }
   function reviewSegment(id: string, role: Segment["role"], confirmed = false) {
     patch((im) => ({
@@ -673,7 +691,7 @@ export function Player({
         <button
           disabled={audioDisabled}
           aria-pressed={loopLesson}
-          onClick={toggleLessonLoop}
+          onClick={() => void toggleLessonLoop()}
         >
           <Repeat size={16} />
           {loopLesson ? "Stop lesson loop" : "Loop lesson"}

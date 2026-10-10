@@ -114,23 +114,6 @@ test("T02: actual MP3 decode, play, sync, seek, speed and loop", async ({
   expect(pos).toBeGreaterThanOrEqual(1);
   expect(pos).toBeLessThan(4.2);
   await page.getByRole("button", { name: "Stop loop", exact: true }).click();
-  const audioLoops = () =>
-    page
-      .locator("audio")
-      .first()
-      .evaluate((el) => (el as HTMLAudioElement).loop);
-  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
-  expect(await audioLoops()).toBe(true);
-  await page.getByRole("button", { name: "Loop line", exact: true }).click();
-  expect(await audioLoops()).toBe(false);
-  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
-  await expect(
-    page.getByRole("button", { name: "Loop line", exact: true }),
-  ).toBeVisible();
-  await page
-    .getByRole("button", { name: "Stop lesson loop", exact: true })
-    .click();
-  expect(await audioLoops()).toBe(false);
   await page.getByRole("button", { name: "Pause", exact: true }).click();
   await page
     .locator(".transcript-row")
@@ -143,6 +126,78 @@ test("T02: actual MP3 decode, play, sync, seek, speed and loop", async ({
       .first()
       .evaluate((el) => (el as HTMLAudioElement).currentTime),
   ).toBeGreaterThanOrEqual(3.9);
+});
+test("Loop lesson restarts from 0:00, plays, wraps past the end and resets on lesson change", async ({
+  page,
+}) => {
+  await openLesson(page);
+  await page.getByLabel("Import MP3", { exact: true }).setInputFiles(audioPath);
+  await expect(
+    page.getByRole("button", { name: "Play", exact: true }),
+  ).toBeEnabled();
+  await importText(page);
+  const media = () =>
+    page
+      .locator("audio")
+      .first()
+      .evaluate((el) => {
+        const a = el as HTMLAudioElement;
+        return { time: a.currentTime, paused: a.paused, loop: a.loop };
+      });
+  const seekTo = (t: number) =>
+    page
+      .locator("audio")
+      .first()
+      .evaluate((el, at) => {
+        (el as HTMLAudioElement).currentTime = at;
+      }, t);
+  // Paused mid-lesson: turning the loop on starts playback from the beginning.
+  await seekTo(6);
+  expect((await media()).paused).toBe(true);
+  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Pause", exact: true }),
+  ).toBeVisible();
+  const started = await media();
+  expect(started).toMatchObject({ paused: false, loop: true });
+  expect(started.time).toBeLessThan(2);
+  // Playback wraps past the end of the audio and keeps going.
+  await seekTo(9.2);
+  await expect
+    .poll(async () => (await media()).time, { timeout: 5000 })
+    .toBeLessThan(2);
+  expect((await media()).paused).toBe(false);
+  // Line loop and lesson loop are mutually exclusive.
+  await page.getByRole("button", { name: "Loop line", exact: true }).click();
+  expect((await media()).loop).toBe(false);
+  await expect(
+    page.getByRole("button", { name: "Loop lesson", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Stop loop", exact: true }).click();
+  // Turning it off keeps playing but no longer repeats.
+  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Stop lesson loop", exact: true })
+    .click();
+  const stopped = await media();
+  expect(stopped).toMatchObject({ paused: false, loop: false });
+  await seekTo(9.2);
+  await expect(page.locator("audio").first()).toHaveAttribute(
+    "data-media-state",
+    "ended",
+    { timeout: 5000 },
+  );
+  // Switching lessons clears the lesson loop.
+  await page.getByRole("button", { name: "Play", exact: true }).click();
+  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Stop lesson loop", exact: true }),
+  ).toBeVisible();
+  await page.goto("#lesson/NCE2-L002");
+  await expect(
+    page.getByRole("button", { name: "Loop lesson", exact: true }),
+  ).toBeVisible();
+  expect((await media()).loop).toBe(false);
 });
 test("T04/T05/T06/T11/T14: quiet writing → hints → review → revision → mastery → backup", async ({
   page,
