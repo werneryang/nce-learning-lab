@@ -1,6 +1,41 @@
 import { test, expect } from "@playwright/test";
 // Real MP3 metadata on shared CI runners has a bounded 15s readiness window.
 // Decode/play assertions remain required; reloads wait for the durable-save status.
+test("Decoded audio becomes playable even when readiness notifications are missing", async ({
+  page,
+}) => {
+  await page.addInitScript(() => {
+    for (const type of [
+      "loadedmetadata",
+      "durationchange",
+      "loadeddata",
+      "canplay",
+    ])
+      document.addEventListener(
+        type,
+        (event) => event.stopImmediatePropagation(),
+        true,
+      );
+  });
+  await page.goto("#lesson/NCE2-L002");
+  await expect(page.getByTestId("transcript-row")).toHaveCount(19);
+  const play = page.getByRole("button", { name: "Play", exact: true });
+  await expect(play).toBeEnabled({ timeout: 15000 });
+  await expect(page.locator("audio")).toHaveAttribute(
+    "data-known-duration",
+    /[1-9]/,
+  );
+  await play.click();
+  await expect
+    .poll(() =>
+      page
+        .locator("audio")
+        .evaluate((el) => (el as HTMLAudioElement).currentTime),
+    )
+    .toBeGreaterThan(0.2);
+  await page.getByRole("button", { name: "Pause", exact: true }).click();
+});
+
 test.afterEach(async ({ page }, info) => {
   if (info.status === info.expectedStatus) return;
   const audio = await page.locator("audio").evaluateAll((elements) =>

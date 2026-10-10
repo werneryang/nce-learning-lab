@@ -181,6 +181,8 @@ export function Player({
     // Never replace a previously verified duration with a transient 0/NaN/Infinity.
     if (
       !element ||
+      !url ||
+      element.currentSrc !== new URL(url, location.href).href ||
       element.readyState < 1 ||
       !Number.isFinite(d) ||
       !d ||
@@ -193,6 +195,14 @@ export function Player({
     );
     if (data?.audioDuration !== d) patch((im) => ({ ...im, audioDuration: d }));
   }
+  useEffect(() => {
+    if (!url || duration > 0 || mediaState === "failed") return;
+    // Reconcile real media state when an engine omits or delivers readiness events early.
+    // This checks local DOM metadata only; it never plays audio or requests tutor help.
+    readAudioDuration();
+    const timer = setInterval(readAudioDuration, 200);
+    return () => clearInterval(timer);
+  }, [url, duration, mediaState, data?.audioDuration]);
   async function importLrc(file: File) {
     setImporting(true);
     setError("");
