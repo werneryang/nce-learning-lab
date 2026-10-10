@@ -46,6 +46,7 @@ export function Player({
   const [error, setError] = useState("");
   const [importing, setImporting] = useState(false);
   const [loopId, setLoopId] = useState("");
+  const [loopLesson, setLoopLesson] = useState(false);
   const [sourceReview, setSourceReview] = useState(false);
   const [allowReplay, setAllowReplay] = useState(false);
   const [reload, setReload] = useState(0);
@@ -117,6 +118,7 @@ export function Player({
     setTime(0);
     setDuration(0);
     setLoopId("");
+    setLoopLesson(false);
     setUrl("");
     setMediaState("empty");
     setError("");
@@ -352,8 +354,13 @@ export function Player({
       );
       return;
     }
+    setLoopLesson(false);
     setLoopId(segment.id);
     seek(bounds[0]);
+  }
+  function toggleLessonLoop() {
+    setLoopId("");
+    setLoopLesson((on) => !on);
   }
   function reviewSegment(id: string, role: Segment["role"], confirmed = false) {
     patch((im) => ({
@@ -544,6 +551,7 @@ export function Player({
         controls={!!url && (!memoryLocked || allowReplay)}
         ref={audio}
         src={url || undefined}
+        loop={loopLesson}
         data-media-state={mediaState}
         data-known-duration={duration}
         data-memory-locked={memoryLocked && !allowReplay}
@@ -661,6 +669,14 @@ export function Player({
         >
           <Repeat size={16} />
           {loopId ? "Stop loop" : "Loop line"}
+        </button>
+        <button
+          disabled={audioDisabled}
+          aria-pressed={loopLesson}
+          onClick={toggleLessonLoop}
+        >
+          <Repeat size={16} />
+          {loopLesson ? "Stop lesson loop" : "Loop lesson"}
         </button>
       </div>
       <label className="check small">
