@@ -15,6 +15,7 @@ import { uid, now } from "../shared/schema";
 import { parseLrc, activeSegment, loopBounds } from "./lrc";
 import { saveMedia, loadMedia, deleteMedia, digest } from "../storage/db";
 import { sources } from "../shared/content";
+import { hostedLesson, loadHostedTranscript, mediaUrl } from "./hosted";
 type Props = {
   lessonId: string;
   data?: LocalImport;
@@ -49,9 +50,60 @@ export function Player({
   const [allowReplay, setAllowReplay] = useState(false);
   const [reload, setReload] = useState(0);
   const [accent, setAccent] = useState<"us" | "uk" | "unknown">("us");
+  const repository = hostedLesson(lessonId);
+  const [transcriptError, setTranscriptError] = useState("");
+  const [transcriptReload, setTranscriptReload] = useState(0);
+  const [loadingTranscript, setLoadingTranscript] = useState(false);
   const segments = data?.segments || [];
+  useEffect(() => {
+    if (!repository || data?.segments.length) return;
+    const controller = new AbortController();
+    setLoadingTranscript(true);
+    setTranscriptError("");
+    loadHostedTranscript(repository, controller.signal)
+      .then((loaded) => {
+        if (controller.signal.aborted) return;
+        update((s) => {
+          const current = s.imports.find((im) => im.lessonId === lessonId);
+          if (current?.segments.length) return s; // A local replacement or reviewed transcript wins.
+          return {
+            ...s,
+            imports: [
+              ...s.imports.filter((im) => im.lessonId !== lessonId),
+              {
+                ...loaded,
+                ...current,
+                segments: loaded.segments,
+                metadata: loaded.metadata,
+                warnings: loaded.warnings,
+                sources: [
+                  ...(current?.sources || []).filter(
+                    (source) => source.kind !== "timed_transcript",
+                  ),
+                  ...loaded.sources,
+                ],
+              },
+            ],
+          };
+        });
+      })
+      .catch((e) => {
+        if (!controller.signal.aborted)
+          setTranscriptError(
+            `Subtitles could not load. Check your connection. ${String(e)}`,
+          );
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) setLoadingTranscript(false);
+      });
+    return () => controller.abort();
+  }, [lessonId, repository, data?.segments.length, transcriptReload, update]);
   const active = activeSegment(segments, time * 1000);
-  const audioDisabled = !url || (memoryLocked && !allowReplay);
+  const audioDisabled =
+    !url ||
+    !duration ||
+    mediaState === "failed" ||
+    (memoryLocked && !allowReplay);
   useEffect(() => {
     setAllowReplay(false);
   }, [memoryLocked, lessonId]);
@@ -69,6 +121,15 @@ export function Player({
     setMediaState("empty");
     setError("");
     setSourceReview(false);
+    if (repository && !data?.audioName) {
+      setUrl(mediaUrl(repository.audio.path));
+      setMediaState("loading");
+      const element = audio.current;
+      return () => {
+        alive = false;
+        element?.pause();
+      };
+    }
     loadMedia(`${lessonId}:audio`)
       .then((blob) => {
         if (!alive) return;
@@ -76,10 +137,14 @@ export function Player({
           current = URL.createObjectURL(blob);
           setUrl(current);
           setMediaState("ready");
-        } else if (data?.audioName)
+        } else if (repository) {
+          setUrl(mediaUrl(repository.audio.path));
+          setMediaState("loading");
           setError(
-            "Audio is not in this browser. Re-import your MP3 to play it.",
+            "Your local replacement is unavailable. Using repository audio; check that it matches your subtitles.",
           );
+        } else if (data?.audioName)
+          setError("Your local audio is unavailable. Choose the file again.");
       })
       .catch((e) => {
         if (alive) setError(String(e));
@@ -88,7 +153,7 @@ export function Player({
       alive = false;
       if (current) URL.revokeObjectURL(current);
     };
-  }, [lessonId, data?.audioName, reload]);
+  }, [lessonId, data?.audioName, reload, repository]);
   useEffect(() => {
     if (memoryLocked && !allowReplay) audio.current?.pause();
   }, [memoryLocked, allowReplay]);
@@ -117,6 +182,7 @@ export function Player({
       const input = await file.text();
       const parsed = parseLrc(input, lessonId, sourceId);
       const hash = await digest(input);
+      setTranscriptError("");
       patch((im) => ({
         ...im,
         ...parsed,
@@ -288,23 +354,26 @@ export function Player({
           <Headphones size={16} /> LISTEN & NOTICE
         </span>
         <span className="badge">
-          {data?.audioAccent === "us"
-            ? "US · user selected"
-            : data?.audioAccent === "uk"
-              ? "UK · user selected"
-              : "Accent not verified"}
+          {!data?.audioName && repository
+            ? "US · repository source"
+            : data?.audioAccent === "us"
+              ? "US · user selected"
+              : data?.audioAccent === "uk"
+                ? "UK · user selected"
+                : "Accent not verified"}
         </span>
       </div>
       <h2>Your listening space</h2>
       <p className="muted">
-        Import your own authorized MP3 and LRC. They stay in this browser.
+        Repository audio and subtitles load here automatically. Press Play to
+        listen.
       </p>
       <details
         className="source-manager"
-        open={!data?.audioName && !segments.length}
+        open={!repository && !data?.audioName && !segments.length}
       >
         <summary>
-          <Upload size={16} /> Import & sources
+          <Upload size={16} /> Optional local files & sources
         </summary>
         <div className="import-grid">
           <label className="file-button">
@@ -357,12 +426,17 @@ export function Player({
             <a href={s.originalUrl} target="_blank" rel="noreferrer">
               {s.relativePath?.split("/").at(-1)}
             </a>{" "}
-            · reference only · rights unverified
+            ·{" "}
+            {s.accessMode === "user_repository_hosted"
+              ? "repository resource"
+              : "reference only"}{" "}
+            · rights unverified
           </p>
         ))}
         <p className="small">
-          Audio: {data?.audioName || "not imported"} · Timed lines:{" "}
-          {segments.length}
+          Audio:{" "}
+          {data?.audioName || (repository ? "repository audio" : "unavailable")}{" "}
+          · Timed lines: {segments.length}
         </p>
         <div className="button-row">
           <button
@@ -380,7 +454,7 @@ export function Player({
                 .catch((e) => setError(String(e)));
             }}
           >
-            Remove audio
+            Use repository audio
           </button>
           <button
             disabled={!segments.length}
@@ -397,11 +471,35 @@ export function Player({
               onSelect([]);
             }}
           >
-            Remove transcript
+            Reload repository subtitles
           </button>
         </div>
       </details>
       {importing && <p role="status">Checking and saving your file…</p>}
+      {loadingTranscript && !segments.length && (
+        <p role="status">Loading repository subtitles…</p>
+      )}
+      {transcriptError && (
+        <p className="notice error" role="alert">
+          {transcriptError}{" "}
+          <button onClick={() => setTranscriptReload((x) => x + 1)}>
+            Retry subtitles
+          </button>
+        </p>
+      )}
+      {error && repository && (
+        <button
+          onClick={() => {
+            if (repository && !data?.audioName) {
+              setError("");
+              setMediaState("loading");
+              audio.current?.load();
+            } else setReload((x) => x + 1);
+          }}
+        >
+          Retry audio
+        </button>
+      )}
       {error && (
         <p className="notice error" role="alert">
           {error}
@@ -417,7 +515,7 @@ export function Player({
         controls={!!url && (!memoryLocked || allowReplay)}
         ref={audio}
         src={url || undefined}
-        preload="auto"
+        preload="metadata"
         onLoadedMetadata={() => {
           const d = audio.current?.duration || 0;
           setDuration(d);
@@ -443,7 +541,9 @@ export function Player({
         onError={() => {
           if (url) {
             setMediaState("failed");
-            setError("Audio decoding failed. Re-import a playable MP3.");
+            setError(
+              "Audio could not load or decode. Check your connection and retry.",
+            );
           }
         }}
       />
@@ -549,8 +649,8 @@ export function Player({
       </label>
       {!segments.length ? (
         <div className="empty-state">
-          No transcript yet. Import an LRC to read, select a range, and
-          practice.
+          Subtitles are not available yet. Retry loading them or choose an
+          optional local LRC.
         </div>
       ) : settings.subtitleVisible ? (
         <div className="transcript" aria-label="Transcript">

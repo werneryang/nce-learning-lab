@@ -12,7 +12,9 @@
     "test:e2e": "playwright test",
     "verify:sources": "node scripts/verify-source-manifest.mjs",
     "scan": "node scripts/scan-public.mjs",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "predev": "node scripts/prepare-media.mjs",
+    "prebuild": "node scripts/prepare-media.mjs"
   },
   "dependencies": {
     "idb": "^8.0.0",

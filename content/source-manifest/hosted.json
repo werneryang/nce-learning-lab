@@ -1,0 +1,3290 @@
+{
+  "schemaVersion": 1,
+  "sourceRepo": "werneryang/nce-learning-lab",
+  "sourceRef": "b461e8d1250da958643e3a336a09d58d7a0b8406",
+  "rightsStatus": "unverified",
+  "deploymentBasis": "User explicitly requested deployment of the existing repository MP3/LRC files; this does not establish a publisher license.",
+  "entries": [
+    {
+      "lessonId": "NCE2-L001",
+      "book": 2,
+      "number": 1,
+      "title": "A Private Conversation",
+      "audio": {
+        "path": "book2/audio-us/01－A Private Conversation.mp3",
+        "sizeBytes": 1485365,
+        "sha256": "fb0902661214356e6f7cafc390333cff2afbd1e88cb72f9cb7e50cb2d8deacb8"
+      },
+      "transcript": {
+        "path": "book2/audio-us/01－A Private Conversation.lrc",
+        "sizeBytes": 923,
+        "sha256": "49cee60b2fc13bf58afeece005626a32c94a187cfba2cbceb90db3b3d5235a08"
+      }
+    },
+    {
+      "lessonId": "NCE2-L002",
+      "book": 2,
+      "number": 2,
+      "title": "Breakfast or Lunch",
+      "audio": {
+        "path": "book2/audio-us/02－Breakfast or Lunch.mp3",
+        "sizeBytes": 1530083,
+        "sha256": "920522372c2c40906251c76b0d66df56b506156a98707fdfcbcaf677746be6ea"
+      },
+      "transcript": {
+        "path": "book2/audio-us/02－Breakfast or Lunch.lrc",
+        "sizeBytes": 919,
+        "sha256": "4a8888bf4cc68102e12072e9e4cd7e67ada68f4086c27e007216b779761f8b33"
+      }
+    },
+    {
+      "lessonId": "NCE2-L003",
+      "book": 2,
+      "number": 3,
+      "title": "Please Send Me a Card",
+      "audio": {
+        "path": "book2/audio-us/03－Please Send Me a Card.mp3",
+        "sizeBytes": 1447330,
+        "sha256": "406799968279017f40017e0de7e4b3c8e3692954b80bd79180512630b2f54136"
+      },
+      "transcript": {
+        "path": "book2/audio-us/03－Please Send Me a Card.lrc",
+        "sizeBytes": 847,
+        "sha256": "1f1ead0cde31d51f2f982c7435450269f5994ce424a16bb5f99e5ae2f7018198"
+      }
+    },
+    {
+      "lessonId": "NCE2-L004",
+      "book": 2,
+      "number": 4,
+      "title": "An Exciting Trip",
+      "audio": {
+        "path": "book2/audio-us/04－An Exciting Trip.mp3",
+        "sizeBytes": 1288082,
+        "sha256": "a44a9e032685c3f12eb24d23d17d675086c0768a98446f7da6ecb6d36b712aa5"
+      },
+      "transcript": {
+        "path": "book2/audio-us/04－An Exciting Trip.lrc",
+        "sizeBytes": 820,
+        "sha256": "561741b3b5cbd7dc4189f5778bdd685e999ef73783e5fcb74dfe042c11fd925e"
+      }
+    },
+    {
+      "lessonId": "NCE2-L005",
+      "book": 2,
+      "number": 5,
+      "title": "No Wrong Numbers",
+      "audio": {
+        "path": "book2/audio-us/05－No Wrong Numbers.mp3",
+        "sizeBytes": 1424337,
+        "sha256": "c3e1ebfa0249ad88b097302c79be04a7fa36c345cbc85a7a90e74a89ed5f907e"
+      },
+      "transcript": {
+        "path": "book2/audio-us/05－No Wrong Numbers.lrc",
+        "sizeBytes": 858,
+        "sha256": "26b0b571d7f6158888130d13f1e3023adde25bd51f7a67fd6b612dbb7a728794"
+      }
+    },
+    {
+      "lessonId": "NCE2-L006",
+      "book": 2,
+      "number": 6,
+      "title": "Percy Buttons",
+      "audio": {
+        "path": "book2/audio-us/06－Percy Buttons.mp3",
+        "sizeBytes": 1271361,
+        "sha256": "b228d3e9639ba66ab2fe0209852a55898ba65f73ef89728da6b37461e169c0ef"
+      },
+      "transcript": {
+        "path": "book2/audio-us/06－Percy Buttons.lrc",
+        "sizeBytes": 820,
+        "sha256": "e042b7f0d7d624b6e5f3b350c95d3ec6addb24a0a8fbf07bbb64415910a5b662"
+      }
+    },
+    {
+      "lessonId": "NCE2-L007",
+      "book": 2,
+      "number": 7,
+      "title": "Too Late",
+      "audio": {
+        "path": "book2/audio-us/07－Too Late.mp3",
+        "sizeBytes": 1362889,
+        "sha256": "3ca0c4e722e970892daed6cb72b663552d73c4205bcb600f71b87c99b90b077b"
+      },
+      "transcript": {
+        "path": "book2/audio-us/07－Too Late.lrc",
+        "sizeBytes": 955,
+        "sha256": "6a79064550745a50ed0f4e38d91d2b37df4d75124cf91679817fa07457021f95"
+      }
+    },
+    {
+      "lessonId": "NCE2-L008",
+      "book": 2,
+      "number": 8,
+      "title": "The Best and the Worst",
+      "audio": {
+        "path": "book2/audio-us/08－The Best and the Worst.mp3",
+        "sizeBytes": 1414312,
+        "sha256": "f20da1a1787a6c9d9dcdd8d969bc5a509aa2398ed72adf5f2b747d0bc30df480"
+      },
+      "transcript": {
+        "path": "book2/audio-us/08－The Best and the Worst.lrc",
+        "sizeBytes": 954,
+        "sha256": "daeacab1800028af86983f2c498319fddbc6edb9d3947a778e69611fd219bc7f"
+      }
+    },
+    {
+      "lessonId": "NCE2-L009",
+      "book": 2,
+      "number": 9,
+      "title": "A Cold Welcome",
+      "audio": {
+        "path": "book2/audio-us/09－A Cold Welcome.mp3",
+        "sizeBytes": 1362477,
+        "sha256": "a712ac6fe84be8b5d63d3c806d0f8d7720a5582def6908b4840ab44950d488e6"
+      },
+      "transcript": {
+        "path": "book2/audio-us/09－A Cold Welcome.lrc",
+        "sizeBytes": 935,
+        "sha256": "514429d0d9e091bc9810053e393b585107c3a05bca46ad8945893af467e3f421"
+      }
+    },
+    {
+      "lessonId": "NCE2-L010",
+      "book": 2,
+      "number": 10,
+      "title": "Not for Jazz",
+      "audio": {
+        "path": "book2/audio-us/10－Not for Jazz.mp3",
+        "sizeBytes": 1237506,
+        "sha256": "da66ab2f3b1c6734c94e46b86769ea2dc693ad3f707ad67b58ac6cd77693ccc4"
+      },
+      "transcript": {
+        "path": "book2/audio-us/10－Not for Jazz.lrc",
+        "sizeBytes": 811,
+        "sha256": "9b6c4a0c720a5077fcdbc7971af1def0b716c7694f32023ee9d4e1349d687c88"
+      }
+    },
+    {
+      "lessonId": "NCE2-L011",
+      "book": 2,
+      "number": 11,
+      "title": "One Good Turn Deserves Another",
+      "audio": {
+        "path": "book2/audio-us/11－One Good Turn Deserves Another.mp3",
+        "sizeBytes": 1292277,
+        "sha256": "137f2d2ae14be1114694413a8f906b686e29ca2da60b44e0e90af0083451b1a7"
+      },
+      "transcript": {
+        "path": "book2/audio-us/11－One Good Turn Deserves Another.lrc",
+        "sizeBytes": 844,
+        "sha256": "2b904c1a0043a7831c2aa93a2efc085bbf5c6b335205146fd08e64a7e17a8664"
+      }
+    },
+    {
+      "lessonId": "NCE2-L012",
+      "book": 2,
+      "number": 12,
+      "title": "Goodbye and Good Luck",
+      "audio": {
+        "path": "book2/audio-us/12－Goodbye and Good Luck.mp3",
+        "sizeBytes": 1303971,
+        "sha256": "1b2241454e73ca8665d014a6ca2eb585155172bf0a964ab10305adeadcf7b127"
+      },
+      "transcript": {
+        "path": "book2/audio-us/12－Goodbye and Good Luck.lrc",
+        "sizeBytes": 823,
+        "sha256": "24143357c4881d7fd63de294582fd8ac356790128f47348e9cd51258ae480eea"
+      }
+    },
+    {
+      "lessonId": "NCE2-L013",
+      "book": 2,
+      "number": 13,
+      "title": "The Greenwood Boys",
+      "audio": {
+        "path": "book2/audio-us/13－The Greenwood Boys.mp3",
+        "sizeBytes": 1288921,
+        "sha256": "3e931942511c2172cb1f05a01f151c3b7f8b6427c182a94590c5b3e6cbcdcf89"
+      },
+      "transcript": {
+        "path": "book2/audio-us/13－The Greenwood Boys.lrc",
+        "sizeBytes": 855,
+        "sha256": "b16690ec818be474e0975db7673fc99cf1eb178ae383fa478e23af6b1d57c7c9"
+      }
+    },
+    {
+      "lessonId": "NCE2-L014",
+      "book": 2,
+      "number": 14,
+      "title": "Do You Speak English",
+      "audio": {
+        "path": "book2/audio-us/14－Do You Speak English.mp3",
+        "sizeBytes": 1416402,
+        "sha256": "515f2ec0a1f6f5727477dd4e6e81db77471063d9437421a3236e90ab83849042"
+      },
+      "transcript": {
+        "path": "book2/audio-us/14－Do You Speak English.lrc",
+        "sizeBytes": 897,
+        "sha256": "76e2cb15ce5feb68427b92e019c6929a95b7bf2a3a9110cb94d5a4428a8a275d"
+      }
+    },
+    {
+      "lessonId": "NCE2-L015",
+      "book": 2,
+      "number": 15,
+      "title": "Good News",
+      "audio": {
+        "path": "book2/audio-us/15－Good News.mp3",
+        "sizeBytes": 1324439,
+        "sha256": "a7504364e42e02f131175295c087c49692a7bbcc84c52554dafbee6d45010f2a"
+      },
+      "transcript": {
+        "path": "book2/audio-us/15－Good News.lrc",
+        "sizeBytes": 793,
+        "sha256": "dfa512a568100da0f4da0edebdb29ebc682e22855276dc416d96f20a7dfbe517"
+      }
+    },
+    {
+      "lessonId": "NCE2-L016",
+      "book": 2,
+      "number": 16,
+      "title": "A Polite Request",
+      "audio": {
+        "path": "book2/audio-us/16－A Polite Request.mp3",
+        "sizeBytes": 1385050,
+        "sha256": "039062c1226813d4b3bcd0d7396d0b1453c2f0306c6827e63444f06ec49b6330"
+      },
+      "transcript": {
+        "path": "book2/audio-us/16－A Polite Request.lrc",
+        "sizeBytes": 808,
+        "sha256": "0d7d5742033f9f1bb2ec60da6b230614f29c82790a0ae950288094fe8f1cae2a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L017",
+      "book": 2,
+      "number": 17,
+      "title": "Always Young",
+      "audio": {
+        "path": "book2/audio-us/17－Always Young.mp3",
+        "sizeBytes": 1439798,
+        "sha256": "80d2ffd530979187578805b23527c8555deb52cfd7b57fb5a38723e7e4777f5e"
+      },
+      "transcript": {
+        "path": "book2/audio-us/17－Always Young.lrc",
+        "sizeBytes": 839,
+        "sha256": "9893ab42974258946d96940105fe06be8e452a6e129108a4e0820e2116613262"
+      }
+    },
+    {
+      "lessonId": "NCE2-L018",
+      "book": 2,
+      "number": 18,
+      "title": "He Often does This",
+      "audio": {
+        "path": "book2/audio-us/18－He Often does This.mp3",
+        "sizeBytes": 1334896,
+        "sha256": "8a9b88a86ef46ff2e37b045072edd27c5730ac52200dfe407e2dcffce2fe6c51"
+      },
+      "transcript": {
+        "path": "book2/audio-us/18－He Often does This.lrc",
+        "sizeBytes": 794,
+        "sha256": "41c18ffd7138b5091df4bc8e7ffcafd934dae60482cd815932476592f0b09402"
+      }
+    },
+    {
+      "lessonId": "NCE2-L019",
+      "book": 2,
+      "number": 19,
+      "title": "Sold Out",
+      "audio": {
+        "path": "book2/audio-us/19－Sold Out.mp3",
+        "sizeBytes": 1608650,
+        "sha256": "d3c600f6a703b0074f878300efcd8308ed44010fd576c7ef22e9d655c80d2f04"
+      },
+      "transcript": {
+        "path": "book2/audio-us/19－Sold Out.lrc",
+        "sizeBytes": 950,
+        "sha256": "4b4f1761bddc4778538c3eced66186af64c9ad147266ab1b0ed559576e2ae3a1"
+      }
+    },
+    {
+      "lessonId": "NCE2-L020",
+      "book": 2,
+      "number": 20,
+      "title": "One Man in a Boat",
+      "audio": {
+        "path": "book2/audio-us/20－One Man in a Boat.mp3",
+        "sizeBytes": 1546801,
+        "sha256": "f841178270c64a3d654f3440f6c757ad9b8ea44ebe6446b5dc3f352e1cd6fa61"
+      },
+      "transcript": {
+        "path": "book2/audio-us/20－One Man in a Boat.lrc",
+        "sizeBytes": 934,
+        "sha256": "09db59fe85cd9bb68374bb14625d6856ca78d3c520167a33f467f70c7d67313a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L021",
+      "book": 2,
+      "number": 21,
+      "title": "Mad or Not",
+      "audio": {
+        "path": "book2/audio-us/21－Mad or Not.mp3",
+        "sizeBytes": 1457769,
+        "sha256": "27d82545ca4594466c9650d2bba96b2c64bb8272557c5241863786bbeab36c4a"
+      },
+      "transcript": {
+        "path": "book2/audio-us/21－Mad or Not.lrc",
+        "sizeBytes": 852,
+        "sha256": "599fd5042ef82429883c301353b71bd2b3ee70b574a2537fbf2442c6b8b306bb"
+      }
+    },
+    {
+      "lessonId": "NCE2-L022",
+      "book": 2,
+      "number": 22,
+      "title": "A Glass Envelope",
+      "audio": {
+        "path": "book2/audio-us/22－A Glass Envelope.mp3",
+        "sizeBytes": 1368749,
+        "sha256": "a67db83448f1739f60d3f2714dd9f6f4fd5d339080031bdc0de07ed025591dff"
+      },
+      "transcript": {
+        "path": "book2/audio-us/22－A Glass Envelope.lrc",
+        "sizeBytes": 812,
+        "sha256": "1ff2bc68657c41d447c93b416809f68e446b1c447e43ad8fb96569467a13e5b3"
+      }
+    },
+    {
+      "lessonId": "NCE2-L023",
+      "book": 2,
+      "number": 23,
+      "title": "A New House",
+      "audio": {
+        "path": "book2/audio-us/23－A New House.mp3",
+        "sizeBytes": 1399255,
+        "sha256": "12450d940dd6c311c090148e8075d72f71b56ea30739f10caa75f3575cf1830c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/23－A New House.lrc",
+        "sizeBytes": 851,
+        "sha256": "82e27efa6a8f39a1154955345d1b7676d1faf7be64793d7d4e0eded20035a68d"
+      }
+    },
+    {
+      "lessonId": "NCE2-L024",
+      "book": 2,
+      "number": 24,
+      "title": "It Could be Worse",
+      "audio": {
+        "path": "book2/audio-us/24－It Could be Worse.mp3",
+        "sizeBytes": 1474912,
+        "sha256": "9b508bec8db3b6895428a49098a6cf9a265638bc2856c02f1eaeb8163bacc061"
+      },
+      "transcript": {
+        "path": "book2/audio-us/24－It Could be Worse.lrc",
+        "sizeBytes": 866,
+        "sha256": "c29cc7238b906cc1c446bc959e409d912b7a28d36212ec136ead8c790abf1f9e"
+      }
+    },
+    {
+      "lessonId": "NCE2-L025",
+      "book": 2,
+      "number": 25,
+      "title": "Do the English Speak English",
+      "audio": {
+        "path": "book2/audio-us/25－Do the English Speak English.mp3",
+        "sizeBytes": 1927574,
+        "sha256": "cbce3ca006b26b0acb0fb0482ef53d57b3a31b8580f4345d8faef11b7c74e9a8"
+      },
+      "transcript": {
+        "path": "book2/audio-us/25－Do the English Speak English.lrc",
+        "sizeBytes": 1183,
+        "sha256": "2500c8420f64044d46ad73394de7df86f96f19ce6edc49bf542452b949b18778"
+      }
+    },
+    {
+      "lessonId": "NCE2-L026",
+      "book": 2,
+      "number": 26,
+      "title": "The Best Art Critics",
+      "audio": {
+        "path": "book2/audio-us/26－The Best Art Critics.mp3",
+        "sizeBytes": 1827672,
+        "sha256": "6b3aab5585c1dc313393d311580c9cd5fef88355f159c1ab95439f689bc4ca6a"
+      },
+      "transcript": {
+        "path": "book2/audio-us/26－The Best Art Critics.lrc",
+        "sizeBytes": 1176,
+        "sha256": "1eac29d4d88b33a25c2f400b437afa2b9def58729fbb4c4a6abff290e7f50807"
+      }
+    },
+    {
+      "lessonId": "NCE2-L027",
+      "book": 2,
+      "number": 27,
+      "title": "A Wet Night",
+      "audio": {
+        "path": "book2/audio-us/27－A Wet Night.mp3",
+        "sizeBytes": 1730279,
+        "sha256": "e79070f28e789b719835913d689467194aca648531837d7cb6aa63a35e386484"
+      },
+      "transcript": {
+        "path": "book2/audio-us/27－A Wet Night.lrc",
+        "sizeBytes": 1093,
+        "sha256": "d229483bfae6983f62856ed30ceef9a013be434ed5246add376133520383314f"
+      }
+    },
+    {
+      "lessonId": "NCE2-L028",
+      "book": 2,
+      "number": 28,
+      "title": "No Parking",
+      "audio": {
+        "path": "book2/audio-us/28－No Parking.mp3",
+        "sizeBytes": 1696841,
+        "sha256": "5cdff69e5de162449873ea9af1114ab625d89934c22d5ade1447be4d7209b5cb"
+      },
+      "transcript": {
+        "path": "book2/audio-us/28－No Parking.lrc",
+        "sizeBytes": 1041,
+        "sha256": "de8c52019e87c22a665980bc6a9721813e664a5e43edc3b5b1ef07944ca8ae13"
+      }
+    },
+    {
+      "lessonId": "NCE2-L029",
+      "book": 2,
+      "number": 29,
+      "title": "Taxi",
+      "audio": {
+        "path": "book2/audio-us/29－Taxi.mp3",
+        "sizeBytes": 1824313,
+        "sha256": "2992b4a8ee455f2bfadfee7c90726c2e4b5f73935f9d5333fd3c704cd70a7e42"
+      },
+      "transcript": {
+        "path": "book2/audio-us/29－Taxi.lrc",
+        "sizeBytes": 1139,
+        "sha256": "dbe5c4a4d6a81434697785d528db8f8398050580b7a776daa53c53322d251d67"
+      }
+    },
+    {
+      "lessonId": "NCE2-L030",
+      "book": 2,
+      "number": 30,
+      "title": "Football or Polo",
+      "audio": {
+        "path": "book2/audio-us/30－Football or Polo.mp3",
+        "sizeBytes": 1589433,
+        "sha256": "1083f1732fa70d961a6102991d6ab00d4a3d7afec7b67aa7c3b850119f118000"
+      },
+      "transcript": {
+        "path": "book2/audio-us/30－Football or Polo.lrc",
+        "sizeBytes": 1040,
+        "sha256": "1c98b82326f9310474311321c0c991883f08b3415d77316e6805f382a93742c7"
+      }
+    },
+    {
+      "lessonId": "NCE2-L031",
+      "book": 2,
+      "number": 31,
+      "title": "Success Story",
+      "audio": {
+        "path": "book2/audio-us/31－Success Story.mp3",
+        "sizeBytes": 1718996,
+        "sha256": "a724041a2d184f53059e6c8eced767f1e267ef6da52907578e0848cb591c8a75"
+      },
+      "transcript": {
+        "path": "book2/audio-us/31－Success Story.lrc",
+        "sizeBytes": 1145,
+        "sha256": "63efb5b9f6fc5935e0b6982cd0ec7af5a8b6c63fc3e238c57625600c4d6cfc57"
+      }
+    },
+    {
+      "lessonId": "NCE2-L032",
+      "book": 2,
+      "number": 32,
+      "title": "Shopping Made Easy",
+      "audio": {
+        "path": "book2/audio-us/32－Shopping Made Easy.mp3",
+        "sizeBytes": 1726942,
+        "sha256": "08d43d2de5b19840248d8d58948cf10c3f97cf4830a827c1967850113d8f884f"
+      },
+      "transcript": {
+        "path": "book2/audio-us/32－Shopping Made Easy.lrc",
+        "sizeBytes": 1225,
+        "sha256": "bec4fb7b8a9fb3be0326cf9b23575f1d9aa03620b02f2fb58b5ccaf4aab1e4db"
+      }
+    },
+    {
+      "lessonId": "NCE2-L033",
+      "book": 2,
+      "number": 33,
+      "title": "Out of the Darkness",
+      "audio": {
+        "path": "book2/audio-us/33－Out of the Darkness.mp3",
+        "sizeBytes": 1611586,
+        "sha256": "add8ceb99c798e6d2ff5aae370e33ae6b0d986a5298faf90dc55ac9591aa708f"
+      },
+      "transcript": {
+        "path": "book2/audio-us/33－Out of the Darkness.lrc",
+        "sizeBytes": 1120,
+        "sha256": "d7e179c8dfe6c78cab358517d8ceee5358e471a4ed1b58d2da44af2422e80b63"
+      }
+    },
+    {
+      "lessonId": "NCE2-L034",
+      "book": 2,
+      "number": 34,
+      "title": "Quick Work",
+      "audio": {
+        "path": "book2/audio-us/34－Quick Work.mp3",
+        "sizeBytes": 1675107,
+        "sha256": "16c024d53aeabdde0c160536605f50b5a5337e6065f40fdb81117f513a3e42db"
+      },
+      "transcript": {
+        "path": "book2/audio-us/34－Quick Work.lrc",
+        "sizeBytes": 1133,
+        "sha256": "e7d0b6a20f01ea56d95ed73285b6ed47bbfea9321355c60c4b2eb630facc33be"
+      }
+    },
+    {
+      "lessonId": "NCE2-L035",
+      "book": 2,
+      "number": 35,
+      "title": "Stop Thief",
+      "audio": {
+        "path": "book2/audio-us/35－Stop Thief.mp3",
+        "sizeBytes": 1965590,
+        "sha256": "af2c2b31b18eb4f32ceee9faecfbcb1463f3648f96f33ffa6ef20dd42988f14b"
+      },
+      "transcript": {
+        "path": "book2/audio-us/35－Stop Thief.lrc",
+        "sizeBytes": 1186,
+        "sha256": "fd4993f696aba45d6ce2dfbb0456e4678fb774e6bda62544a421b248604122ba"
+      }
+    },
+    {
+      "lessonId": "NCE2-L036",
+      "book": 2,
+      "number": 36,
+      "title": "Across the Channel",
+      "audio": {
+        "path": "book2/audio-us/36－Across the Channel.mp3",
+        "sizeBytes": 1604898,
+        "sha256": "b5f0d172863d5a85329aec372aa574af8371850e3d8a59398705a9991b4b8c91"
+      },
+      "transcript": {
+        "path": "book2/audio-us/36－Across the Channel.lrc",
+        "sizeBytes": 1199,
+        "sha256": "b1f7cdaaf01202873bea1e92156c5ab7270e9a5ac01498a4e4213da413cf2671"
+      }
+    },
+    {
+      "lessonId": "NCE2-L037",
+      "book": 2,
+      "number": 37,
+      "title": "The Olympic Games",
+      "audio": {
+        "path": "book2/audio-us/37－The Olympic Games.mp3",
+        "sizeBytes": 1680130,
+        "sha256": "0206dac1c1a725415cce1742027066c1c44855fdfde53f7e718558724a5cd82c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/37－The Olympic Games.lrc",
+        "sizeBytes": 1269,
+        "sha256": "cdaad058e9ab9dc8e9324c4b116e81e4a3a830c6a02b62fc6cb474b340441754"
+      }
+    },
+    {
+      "lessonId": "NCE2-L038",
+      "book": 2,
+      "number": 38,
+      "title": "Everything Except the Weather",
+      "audio": {
+        "path": "book2/audio-us/38－Everything Except the Weather.mp3",
+        "sizeBytes": 1707727,
+        "sha256": "c5992828c096efd8a2e56ecadf4d5d35d5ecbe72b3777328e44ca40474db32e4"
+      },
+      "transcript": {
+        "path": "book2/audio-us/38－Everything Except the Weather.lrc",
+        "sizeBytes": 1189,
+        "sha256": "7a1d53bc9e9aa90a00518d20666cfc1f7b125d196ee7ce2d9c2ac7054c00009a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L039",
+      "book": 2,
+      "number": 39,
+      "title": "Am I All Right",
+      "audio": {
+        "path": "book2/audio-us/39－Am I All Right.mp3",
+        "sizeBytes": 1748255,
+        "sha256": "d6dea4268ab2847ee46cf1b6973317f466bee25416529911ba87b0a19d2da7dc"
+      },
+      "transcript": {
+        "path": "book2/audio-us/39－Am I All Right.lrc",
+        "sizeBytes": 1231,
+        "sha256": "da3ec5558ca3630814e3e24428bb67973fec7f335839553939f708af78565e32"
+      }
+    },
+    {
+      "lessonId": "NCE2-L040",
+      "book": 2,
+      "number": 40,
+      "title": "Food and Talk",
+      "audio": {
+        "path": "book2/audio-us/40－Food and Talk.mp3",
+        "sizeBytes": 1732789,
+        "sha256": "19d441489302e65ee9e93fdff02bf6d16e7afbb53bb74e34792af742859dcd85"
+      },
+      "transcript": {
+        "path": "book2/audio-us/40－Food and Talk.lrc",
+        "sizeBytes": 1110,
+        "sha256": "d15090691accd12d4fe645568715b16cb3e18bd9a3fd62dd75ec1da2a45e9456"
+      }
+    },
+    {
+      "lessonId": "NCE2-L041",
+      "book": 2,
+      "number": 41,
+      "title": "Do You Call That a Hat",
+      "audio": {
+        "path": "book2/audio-us/41－Do You Call That a Hat.mp3",
+        "sizeBytes": 1735306,
+        "sha256": "dd3fbd02164f5b3aaa196835c9998f3bd15841567ac63c735af90e50aec862a9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/41－Do You Call That a Hat.lrc",
+        "sizeBytes": 1118,
+        "sha256": "36e35546ac4d646427a8f36394f5cb794d30fa007e17ad045f8aa7f94ec8d80a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L042",
+      "book": 2,
+      "number": 42,
+      "title": "Not Very Musical",
+      "audio": {
+        "path": "book2/audio-us/42－Not Very Musical.mp3",
+        "sizeBytes": 1605314,
+        "sha256": "42687713897a57b85e1232fbf51a0966dffc8e9f337088aa8da75c13eaa1bea2"
+      },
+      "transcript": {
+        "path": "book2/audio-us/42－Not Very Musical.lrc",
+        "sizeBytes": 1086,
+        "sha256": "32ed99a7d8ee6adb3231b95e04af48aeca2dca00b6585639702583a1c9307ff8"
+      }
+    },
+    {
+      "lessonId": "NCE2-L043",
+      "book": 2,
+      "number": 43,
+      "title": "Over the South Pole",
+      "audio": {
+        "path": "book2/audio-us/43－Over the South Pole.mp3",
+        "sizeBytes": 1747423,
+        "sha256": "5dea5b93619d7a49392aab1790d87b22e12907f26a3a094e4d2fce8cd78e0a3d"
+      },
+      "transcript": {
+        "path": "book2/audio-us/43－Over the South Pole.lrc",
+        "sizeBytes": 1129,
+        "sha256": "cb443e029c09ed3c1461088444e9ffc54a8b822c2388644a0dd01adf1a2da906"
+      }
+    },
+    {
+      "lessonId": "NCE2-L044",
+      "book": 2,
+      "number": 44,
+      "title": "Through the Forest",
+      "audio": {
+        "path": "book2/audio-us/44－Through the Forest.mp3",
+        "sizeBytes": 1628304,
+        "sha256": "33d13931f441281546573d636d4e24b200475d05098414833f08c514aa2209d1"
+      },
+      "transcript": {
+        "path": "book2/audio-us/44－Through the Forest.lrc",
+        "sizeBytes": 1121,
+        "sha256": "200eb4e29fe5a0cc604476caa91dd7e21af4f1e2d6b128e4f393b614494b4411"
+      }
+    },
+    {
+      "lessonId": "NCE2-L045",
+      "book": 2,
+      "number": 45,
+      "title": "A Clear Conscience",
+      "audio": {
+        "path": "book2/audio-us/45－A Clear Conscience.mp3",
+        "sizeBytes": 1731122,
+        "sha256": "963ccb72299d3f4dc1c2274e5e2cb56d23dcc09efd3f51d3bfe9ff62b863ce4b"
+      },
+      "transcript": {
+        "path": "book2/audio-us/45－A Clear Conscience.lrc",
+        "sizeBytes": 1080,
+        "sha256": "479df1d1d5208bd5db4462b114dfa90066554c4bd64ba60f71829d16af0ad828"
+      }
+    },
+    {
+      "lessonId": "NCE2-L046",
+      "book": 2,
+      "number": 46,
+      "title": "Expensive and Uncomfortable",
+      "audio": {
+        "path": "book2/audio-us/46－Expensive and Uncomfortable.mp3",
+        "sizeBytes": 1830187,
+        "sha256": "ccba0d4effbc4534e2aaa868bbc9015c0bbd354c3ef563b26fa8817e9bb6b3b9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/46－Expensive and Uncomfortable.lrc",
+        "sizeBytes": 1101,
+        "sha256": "5b24b6db34cea7699a098742bfbf172a1b48af11a94983461618045fb805859a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L047",
+      "book": 2,
+      "number": 47,
+      "title": "A Thirsty Ghost",
+      "audio": {
+        "path": "book2/audio-us/47－A Thirsty Ghost.mp3",
+        "sizeBytes": 1648363,
+        "sha256": "11b5dddcbae180087aebc1cf37b003cef86f8fb883c8430319813fcfe6362b80"
+      },
+      "transcript": {
+        "path": "book2/audio-us/47－A Thirsty Ghost.lrc",
+        "sizeBytes": 1085,
+        "sha256": "6290d54f203ca328743c7c7d62d80f8ee9d542115ea69a7a79bda28e9cb029ba"
+      }
+    },
+    {
+      "lessonId": "NCE2-L048",
+      "book": 2,
+      "number": 48,
+      "title": "Did You Want to Tell Me Something",
+      "audio": {
+        "path": "book2/audio-us/48－Did You Want to Tell Me Something.mp3",
+        "sizeBytes": 1654233,
+        "sha256": "1c63dcdeb73e7e027cb8f791bbc2d0cedb064cc0383accb4ff25a775e6d2c001"
+      },
+      "transcript": {
+        "path": "book2/audio-us/48－Did You Want to Tell Me Something.lrc",
+        "sizeBytes": 1054,
+        "sha256": "11fee90731832d39d8ef1ba0f0c0509abb8bedcdbf9f4ae2629d7be0c0881fae"
+      }
+    },
+    {
+      "lessonId": "NCE2-L049",
+      "book": 2,
+      "number": 49,
+      "title": "The End of a Dream",
+      "audio": {
+        "path": "book2/audio-us/49－The End of a Dream.mp3",
+        "sizeBytes": 1876572,
+        "sha256": "ea191d6e4fecfb5821711a457722d948c01a9e29755a44bfab39fb8c2e40fe53"
+      },
+      "transcript": {
+        "path": "book2/audio-us/49－The End of a Dream.lrc",
+        "sizeBytes": 1221,
+        "sha256": "79434be3c357be8d9876a16a16c95d311d47b1ae1e830917c06b0c06a6960c64"
+      }
+    },
+    {
+      "lessonId": "NCE2-L050",
+      "book": 2,
+      "number": 50,
+      "title": "Taken for a Ride",
+      "audio": {
+        "path": "book2/audio-us/50－Taken for a Ride.mp3",
+        "sizeBytes": 1897468,
+        "sha256": "a199cbfc7e5894e2a7d7b07232963fa43372a77585ba575baf34d858fc51ecad"
+      },
+      "transcript": {
+        "path": "book2/audio-us/50－Taken for a Ride.lrc",
+        "sizeBytes": 1278,
+        "sha256": "e457d5fb754ad56e9fcf388789881c861ffecfd70caef5ffb75c696417fd8904"
+      }
+    },
+    {
+      "lessonId": "NCE2-L051",
+      "book": 2,
+      "number": 51,
+      "title": "Reward for Virtue",
+      "audio": {
+        "path": "book2/audio-us/51－Reward for Virtue.mp3",
+        "sizeBytes": 1856091,
+        "sha256": "0c8531e4f899a3a45439034749198d72a3826feab54c495b0bd82700f2883507"
+      },
+      "transcript": {
+        "path": "book2/audio-us/51－Reward for Virtue.lrc",
+        "sizeBytes": 1199,
+        "sha256": "8ef7940f368aa768b215a7244dfda4fbe9820925a53b51cd6d83743fb9644695"
+      }
+    },
+    {
+      "lessonId": "NCE2-L052",
+      "book": 2,
+      "number": 52,
+      "title": "A Pretty Carpet",
+      "audio": {
+        "path": "book2/audio-us/52－A Pretty Carpet.mp3",
+        "sizeBytes": 1782110,
+        "sha256": "8993b27075ea4b6cf25728d4b72f7fd484d7a838312d530f0bab7507d9960698"
+      },
+      "transcript": {
+        "path": "book2/audio-us/52－A Pretty Carpet.lrc",
+        "sizeBytes": 1125,
+        "sha256": "9a3f8516d0946f5cf656267030710f853f4ea8f6962cc03f58e323e7ec59f6dd"
+      }
+    },
+    {
+      "lessonId": "NCE2-L053",
+      "book": 2,
+      "number": 53,
+      "title": "Hot Snake",
+      "audio": {
+        "path": "book2/audio-us/53－Hot Snake.mp3",
+        "sizeBytes": 1907492,
+        "sha256": "23605735f5611d07e086ed9110ce6c2179cd273e600b1bace4384ff3e0d99e36"
+      },
+      "transcript": {
+        "path": "book2/audio-us/53－Hot Snake.lrc",
+        "sizeBytes": 1206,
+        "sha256": "bd2b5c4fced20e7159de297b2a66f498b34949af7508a5832ab7406a3d58b981"
+      }
+    },
+    {
+      "lessonId": "NCE2-L054",
+      "book": 2,
+      "number": 54,
+      "title": "Sticky Fingers",
+      "audio": {
+        "path": "book2/audio-us/54－Sticky Fingers.mp3",
+        "sizeBytes": 1949710,
+        "sha256": "9edbff6d913d0b809d6f02bedbf35cc1f01f43d7ce7ad2fa40bd83a869c0f98c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/54－Sticky Fingers.lrc",
+        "sizeBytes": 1228,
+        "sha256": "993950f94259d3d9abb9d5317174d321eefc36651e96b4374d21754f6d99947c"
+      }
+    },
+    {
+      "lessonId": "NCE2-L055",
+      "book": 2,
+      "number": 55,
+      "title": "Not a Gold Mine",
+      "audio": {
+        "path": "book2/audio-us/55－Not a Gold Mine.mp3",
+        "sizeBytes": 1944278,
+        "sha256": "e04b70e8de10ce383fdbbbae3bff49c374f541c4204ddcaf216448f9f477edb5"
+      },
+      "transcript": {
+        "path": "book2/audio-us/55－Not a Gold Mine.lrc",
+        "sizeBytes": 1223,
+        "sha256": "b3828110686fa851494f0ce944efbeacc1ec198d0f2c2d34b4fb9b5d4654184a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L056",
+      "book": 2,
+      "number": 56,
+      "title": "Faster Than Sound",
+      "audio": {
+        "path": "book2/audio-us/56－Faster Than Sound.mp3",
+        "sizeBytes": 1851912,
+        "sha256": "1a5840d312652618a21fd654d10f39751e7163d78543e82997ad5b333c380a3f"
+      },
+      "transcript": {
+        "path": "book2/audio-us/56－Faster Than Sound.lrc",
+        "sizeBytes": 1159,
+        "sha256": "033d779dbdac4a1cb0473e10d77b5b5469d77799ada8a9b87c6ae7bbd600d677"
+      }
+    },
+    {
+      "lessonId": "NCE2-L057",
+      "book": 2,
+      "number": 57,
+      "title": "Can I Help You, Madam",
+      "audio": {
+        "path": "book2/audio-us/57－Can I Help You, Madam.mp3",
+        "sizeBytes": 1865709,
+        "sha256": "f426d88c34b9498a582efb266dfc6ad03f850d0bc8b4b0957165dc743167994d"
+      },
+      "transcript": {
+        "path": "book2/audio-us/57－Can I Help You, Madam.lrc",
+        "sizeBytes": 1295,
+        "sha256": "ee2c6eab6487f1f83aeec4d76893fe2b881e12c794a16c18ed47248fe27b1a63"
+      }
+    },
+    {
+      "lessonId": "NCE2-L058",
+      "book": 2,
+      "number": 58,
+      "title": "A Blessing in Disguise",
+      "audio": {
+        "path": "book2/audio-us/58－A Blessing in Disguise.mp3",
+        "sizeBytes": 1839796,
+        "sha256": "238114bbb4d9f8db6ee18094d8b590adbf436014533ca67214e0d8b2f21a08f4"
+      },
+      "transcript": {
+        "path": "book2/audio-us/58－A Blessing in Disguise.lrc",
+        "sizeBytes": 1209,
+        "sha256": "8c5f314e00dd5336316b99a0602904d18a224c16c84e7205842a9c9203a0119b"
+      }
+    },
+    {
+      "lessonId": "NCE2-L059",
+      "book": 2,
+      "number": 59,
+      "title": "In or Out",
+      "audio": {
+        "path": "book2/audio-us/59－In or Out.mp3",
+        "sizeBytes": 1835604,
+        "sha256": "b107e90d043c517ab2ddeb4ac5a9af25ce00e1d33bed6a3a32980efd83058df9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/59－In or Out.lrc",
+        "sizeBytes": 1139,
+        "sha256": "8832f2487bb9a05b0f9e3adf51ef54790b5b6293c40567813c4a8daceb2de80d"
+      }
+    },
+    {
+      "lessonId": "NCE2-L060",
+      "book": 2,
+      "number": 60,
+      "title": "The Future",
+      "audio": {
+        "path": "book2/audio-us/60－The Future.mp3",
+        "sizeBytes": 1769566,
+        "sha256": "4f78dfb0e091dbca2b33a9d8ee0e6880e1a83927b1a06b713576c1840d3f618e"
+      },
+      "transcript": {
+        "path": "book2/audio-us/60－The Future.lrc",
+        "sizeBytes": 1156,
+        "sha256": "44f2321269b9097ca4d683e309b16976923fdd487080b9362d552e9d1b8226a8"
+      }
+    },
+    {
+      "lessonId": "NCE2-L061",
+      "book": 2,
+      "number": 61,
+      "title": "Trouble with the Hubble",
+      "audio": {
+        "path": "book2/audio-us/61－Trouble with the Hubble.mp3",
+        "sizeBytes": 1871979,
+        "sha256": "611f0b9f0c436aa702807cfc66abf89527735ca969219b75de14b63da7abb2e9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/61－Trouble with the Hubble.lrc",
+        "sizeBytes": 1254,
+        "sha256": "3a0a14f5d9c448c183a54b678bd59c0777b07cebfc1d516cf9d538c52ea02c5e"
+      }
+    },
+    {
+      "lessonId": "NCE2-L062",
+      "book": 2,
+      "number": 62,
+      "title": "After the Fire",
+      "audio": {
+        "path": "book2/audio-us/62－After the Fire.mp3",
+        "sizeBytes": 1893286,
+        "sha256": "f197c6b354ecf15dc2b0e56edd50ffc55a9ab2a71c0e764c0af925c29a7f1ee6"
+      },
+      "transcript": {
+        "path": "book2/audio-us/62－After the Fire.lrc",
+        "sizeBytes": 1268,
+        "sha256": "d7dd6797400a9506a03f62c1de47a4f84dfd82f0f1ebf7225cef2289a8e1e6de"
+      }
+    },
+    {
+      "lessonId": "NCE2-L063",
+      "book": 2,
+      "number": 63,
+      "title": "She Was Not Amused",
+      "audio": {
+        "path": "book2/audio-us/63－She Was Not Amused.mp3",
+        "sizeBytes": 1812206,
+        "sha256": "6eebad13b4b7dca9c0406433b8333abe421299395b0ed6887acc4e2ff59a8dc2"
+      },
+      "transcript": {
+        "path": "book2/audio-us/63－She Was Not Amused.lrc",
+        "sizeBytes": 1190,
+        "sha256": "0704381b4153af0c4f04a04557d02307665763597a409f6dd0e2a46444e4ef55"
+      }
+    },
+    {
+      "lessonId": "NCE2-L064",
+      "book": 2,
+      "number": 64,
+      "title": "The Channel Tunnel",
+      "audio": {
+        "path": "book2/audio-us/64－The Channel Tunnel.mp3",
+        "sizeBytes": 1885767,
+        "sha256": "1d264b77ae778f8020f8a74866bef19d46291393a4be8127d34281ffd778c35f"
+      },
+      "transcript": {
+        "path": "book2/audio-us/64－The Channel Tunnel.lrc",
+        "sizeBytes": 1242,
+        "sha256": "e61446c2f21c0e4c2a84663a380c67f91bba64678ae03951942ee8847e9ccd06"
+      }
+    },
+    {
+      "lessonId": "NCE2-L065",
+      "book": 2,
+      "number": 65,
+      "title": "Jumbo Versus the Police",
+      "audio": {
+        "path": "book2/audio-us/65－Jumbo Versus the Police.mp3",
+        "sizeBytes": 1864456,
+        "sha256": "d7f288391903bae648d27a3aa29c45b2c4d72f624930f737b9b7a0a241db4319"
+      },
+      "transcript": {
+        "path": "book2/audio-us/65－Jumbo Versus the Police.lrc",
+        "sizeBytes": 1223,
+        "sha256": "49b97233633dd4b1734d202e32a418fbfb44adc662ff5d96b904fd7482a3ee52"
+      }
+    },
+    {
+      "lessonId": "NCE2-L066",
+      "book": 2,
+      "number": 66,
+      "title": "Sweet as Honey",
+      "audio": {
+        "path": "book2/audio-us/66－Sweet as Honey.mp3",
+        "sizeBytes": 1951800,
+        "sha256": "d094caa0a235c59035844e99cbf51e6d900e306886695f85522eb6ea60bab951"
+      },
+      "transcript": {
+        "path": "book2/audio-us/66－Sweet as Honey.lrc",
+        "sizeBytes": 1262,
+        "sha256": "ad33ed09d8941c33dad212b25e6d30d2aa43cd5bc8a4582e49727b90dff0a3a2"
+      }
+    },
+    {
+      "lessonId": "NCE2-L067",
+      "book": 2,
+      "number": 67,
+      "title": "Volcanoes",
+      "audio": {
+        "path": "book2/audio-us/67－Volcanoes.mp3",
+        "sizeBytes": 2139877,
+        "sha256": "c64c2eace6c7f4c866e6a1e619a08d6ae5e65427e202eb9fe8816baac937e315"
+      },
+      "transcript": {
+        "path": "book2/audio-us/67－Volcanoes.lrc",
+        "sizeBytes": 1213,
+        "sha256": "815f10200182e509353a033aebfd61179a417913c277cd1513b9c558b9469177"
+      }
+    },
+    {
+      "lessonId": "NCE2-L068",
+      "book": 2,
+      "number": 68,
+      "title": "Persistent",
+      "audio": {
+        "path": "book2/audio-us/68－Persistent.mp3",
+        "sizeBytes": 1916688,
+        "sha256": "58bd9543b16008c4208cc181261d5dabbf7e0a8b0aed5593222dfff17ac9b2a8"
+      },
+      "transcript": {
+        "path": "book2/audio-us/68－Persistent.lrc",
+        "sizeBytes": 1204,
+        "sha256": "df7f436e7901323b281fcb31d0503e9b053addcfc96157b4f788fa3e2c44b2a5"
+      }
+    },
+    {
+      "lessonId": "NCE2-L069",
+      "book": 2,
+      "number": 69,
+      "title": "But not Murder",
+      "audio": {
+        "path": "book2/audio-us/69－But not Murder.mp3",
+        "sizeBytes": 1897049,
+        "sha256": "22f69a3f7b4f73ca20948f987b045c48983779b78222b5298558d73c15771562"
+      },
+      "transcript": {
+        "path": "book2/audio-us/69－But not Murder.lrc",
+        "sizeBytes": 1212,
+        "sha256": "ad1568378ef3747689e096c89b7ded8b58e68316eae5ac84a7173e2c29b7916a"
+      }
+    },
+    {
+      "lessonId": "NCE2-L070",
+      "book": 2,
+      "number": 70,
+      "title": "Red for Danger",
+      "audio": {
+        "path": "book2/audio-us/70－Red for Danger.mp3",
+        "sizeBytes": 1813874,
+        "sha256": "0935a1ae18c01233027fd90ebf714c36efb24d28b66d6cab4208981d91a4ba2c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/70－Red for Danger.lrc",
+        "sizeBytes": 1202,
+        "sha256": "24d7cda8a2b9432c5678199ed5ae5f125a73f0894e142f4a10e17580569847b6"
+      }
+    },
+    {
+      "lessonId": "NCE2-L071",
+      "book": 2,
+      "number": 71,
+      "title": "A Famous Clock",
+      "audio": {
+        "path": "book2/audio-us/71－A Famous Clock.mp3",
+        "sizeBytes": 1833100,
+        "sha256": "a566335f174117fad429443e78e2a2a31fb3d11024ccd5aceea47bc75a36a59c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/71－A Famous Clock.lrc",
+        "sizeBytes": 1155,
+        "sha256": "974de1d3ea884f42f20def6865ebae48b1347c3d2bc869b8fd37f065abcf47f6"
+      }
+    },
+    {
+      "lessonId": "NCE2-L072",
+      "book": 2,
+      "number": 72,
+      "title": "A Car Called Bluebird",
+      "audio": {
+        "path": "book2/audio-us/72－A Car Called Bluebird.mp3",
+        "sizeBytes": 2098511,
+        "sha256": "3080abc4a99f4147c78fb70078d9efe7c27cbca3f7ed7a0db7d963b07c626945"
+      },
+      "transcript": {
+        "path": "book2/audio-us/72－A Car Called Bluebird.lrc",
+        "sizeBytes": 1254,
+        "sha256": "11deb1b591f2b4a91628de5ac05acefd0439e45e5e33c3b92c8e1af3b2668f33"
+      }
+    },
+    {
+      "lessonId": "NCE2-L073",
+      "book": 2,
+      "number": 73,
+      "title": "The Record-Holder",
+      "audio": {
+        "path": "book2/audio-us/73－The Record-Holder.mp3",
+        "sizeBytes": 2011571,
+        "sha256": "fe86c134a67aab56468e75580f7ee13e655340a62dc30e89b61281d090633947"
+      },
+      "transcript": {
+        "path": "book2/audio-us/73－The Record-Holder.lrc",
+        "sizeBytes": 1299,
+        "sha256": "11448bf81757ef9f890761ec912834e1d6584bca8f02dcd7b1a42c52e9c2933c"
+      }
+    },
+    {
+      "lessonId": "NCE2-L074",
+      "book": 2,
+      "number": 74,
+      "title": "Out of the Limelight",
+      "audio": {
+        "path": "book2/audio-us/74－Out of the Limelight.mp3",
+        "sizeBytes": 2409890,
+        "sha256": "b31a8762bee83291dd86e2d09127dc5369ecc335b7d7278d61373bb123bac6d9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/74－Out of the Limelight.lrc",
+        "sizeBytes": 1468,
+        "sha256": "03d727a4fea96cf2339d9ebc295d28fd0c9a137c73d6b06689c5374ca61e3533"
+      }
+    },
+    {
+      "lessonId": "NCE2-L075",
+      "book": 2,
+      "number": 75,
+      "title": "SOS",
+      "audio": {
+        "path": "book2/audio-us/75－SOS.mp3",
+        "sizeBytes": 2070490,
+        "sha256": "ae6f3e8fb51b302a9887a772cbb16cd1a066fcc17af0c04158bc2b7562f35fe5"
+      },
+      "transcript": {
+        "path": "book2/audio-us/75－SOS.lrc",
+        "sizeBytes": 1295,
+        "sha256": "f8c47b580a336e96d59444bf0af2a8b1b9a8b9b016d4bad2f4a0184a4756c27c"
+      }
+    },
+    {
+      "lessonId": "NCE2-L076",
+      "book": 2,
+      "number": 76,
+      "title": "April Fools' Day",
+      "audio": {
+        "path": "book2/audio-us/76－April Fools' Day.mp3",
+        "sizeBytes": 2236014,
+        "sha256": "e08170fcb43f404442941ec56c221e347b16bef526e65a54984d98c580da5cbb"
+      },
+      "transcript": {
+        "path": "book2/audio-us/76－April Fools' Day.lrc",
+        "sizeBytes": 1468,
+        "sha256": "7ec42dd6380467f8489e64a50d54f8cb0cf7f2fe4e16fc146a955f1d4c114ad9"
+      }
+    },
+    {
+      "lessonId": "NCE2-L077",
+      "book": 2,
+      "number": 77,
+      "title": "A Successful Operation",
+      "audio": {
+        "path": "book2/audio-us/77－A Successful Operation.mp3",
+        "sizeBytes": 1952226,
+        "sha256": "27725001aa8de7f9c00bc1e267c4113b0e18ed587cd27830cf15ea9516494c05"
+      },
+      "transcript": {
+        "path": "book2/audio-us/77－A Successful Operation.lrc",
+        "sizeBytes": 1299,
+        "sha256": "b2cde9b16c5bd5814d4370cb00f6ed1c381c73a227d23f3dbc470129df5c6183"
+      }
+    },
+    {
+      "lessonId": "NCE2-L078",
+      "book": 2,
+      "number": 78,
+      "title": "The Last One",
+      "audio": {
+        "path": "book2/audio-us/78－The Last One.mp3",
+        "sizeBytes": 2146568,
+        "sha256": "dbae1678c7ec7cb1a7786eb2e5f35686ecfa86b90196b4abe063fb39d7d31baa"
+      },
+      "transcript": {
+        "path": "book2/audio-us/78－The Last One.lrc",
+        "sizeBytes": 1340,
+        "sha256": "e906b6705ec26eed479cc43e93311330164562d02ad714353e1d22341822cc76"
+      }
+    },
+    {
+      "lessonId": "NCE2-L079",
+      "book": 2,
+      "number": 79,
+      "title": "By Air",
+      "audio": {
+        "path": "book2/audio-us/79－By Air.mp3",
+        "sizeBytes": 1908324,
+        "sha256": "a81ba50ff56ae99bf33637c5c64ebda24c9911cb09c8b5ea3578fa3cb6fe9ff0"
+      },
+      "transcript": {
+        "path": "book2/audio-us/79－By Air.lrc",
+        "sizeBytes": 1282,
+        "sha256": "1299e85b17e36cb5b5e46c9561c60ee1ea180c6ab0ce5020940b628c8cb5d373"
+      }
+    },
+    {
+      "lessonId": "NCE2-L080",
+      "book": 2,
+      "number": 80,
+      "title": "The Crystal Palace",
+      "audio": {
+        "path": "book2/audio-us/80－The Crystal Palace.mp3",
+        "sizeBytes": 2141976,
+        "sha256": "3f9df04255893787ea8bc0a89c1fbb32c5d9a70682e8f313248291f88e863c82"
+      },
+      "transcript": {
+        "path": "book2/audio-us/80－The Crystal Palace.lrc",
+        "sizeBytes": 1411,
+        "sha256": "e87d280b874e9ed892b770310302f442be22f09e2814e2bf7aa8928ff3e26d9c"
+      }
+    },
+    {
+      "lessonId": "NCE2-L081",
+      "book": 2,
+      "number": 81,
+      "title": "Escape",
+      "audio": {
+        "path": "book2/audio-us/81－Escape.mp3",
+        "sizeBytes": 2026189,
+        "sha256": "81c6e626641369f57695d6b14c33a8f93191c51973e5f01a1f7ce7b6cef475d0"
+      },
+      "transcript": {
+        "path": "book2/audio-us/81－Escape.lrc",
+        "sizeBytes": 1341,
+        "sha256": "e221de7a4da0daec895d376cc0c776d403324ed6060949a5582fe0969bc2864e"
+      }
+    },
+    {
+      "lessonId": "NCE2-L082",
+      "book": 2,
+      "number": 82,
+      "title": "Monster or Fish",
+      "audio": {
+        "path": "book2/audio-us/82－Monster or Fish.mp3",
+        "sizeBytes": 2080952,
+        "sha256": "36860642c2600a9913f929b9c4dfdfd7e03b2ac4b0eb8f05596b548f70d88651"
+      },
+      "transcript": {
+        "path": "book2/audio-us/82－Monster or Fish.lrc",
+        "sizeBytes": 1293,
+        "sha256": "bdf96a80d57952acc1f9a28898231d41949e05cfc63de7de0fb72ea8d2c447d5"
+      }
+    },
+    {
+      "lessonId": "NCE2-L083",
+      "book": 2,
+      "number": 83,
+      "title": "After the Elections",
+      "audio": {
+        "path": "book2/audio-us/83－After the Elections.mp3",
+        "sizeBytes": 2219717,
+        "sha256": "2e1e85bc094a0e889a5751652110756574786528fe539d90e46000027b9560e4"
+      },
+      "transcript": {
+        "path": "book2/audio-us/83－After the Elections.lrc",
+        "sizeBytes": 1407,
+        "sha256": "afccbcf92425708f87104407189bc11bcfe74dcf9cc54f94b923ca22c0602bc7"
+      }
+    },
+    {
+      "lessonId": "NCE2-L084",
+      "book": 2,
+      "number": 84,
+      "title": "On Strike",
+      "audio": {
+        "path": "book2/audio-us/84－On Strike.mp3",
+        "sizeBytes": 1976455,
+        "sha256": "a96b3573e2ec955cf62f6a1214da61dbf2513d0e7cf687dc85bc2be7fed375e1"
+      },
+      "transcript": {
+        "path": "book2/audio-us/84－On Strike.lrc",
+        "sizeBytes": 1319,
+        "sha256": "d32c723e41b1d6db7feb03677a9396c5510c76094cfc2b3d4916e6956d249fb1"
+      }
+    },
+    {
+      "lessonId": "NCE2-L085",
+      "book": 2,
+      "number": 85,
+      "title": "Never Too Old To Learn",
+      "audio": {
+        "path": "book2/audio-us/85－Never Too Old To Learn.mp3",
+        "sizeBytes": 1897056,
+        "sha256": "8fc95fce16c9cb41a0cfb906cedd2bfcad7d3861b25773ab9724e3ee8dda4033"
+      },
+      "transcript": {
+        "path": "book2/audio-us/85－Never Too Old To Learn.lrc",
+        "sizeBytes": 1217,
+        "sha256": "affb505df2d4239939ab1257769d7e48e2c47a4df6019e2fb9258fe4deeca500"
+      }
+    },
+    {
+      "lessonId": "NCE2-L086",
+      "book": 2,
+      "number": 86,
+      "title": "Out of Control",
+      "audio": {
+        "path": "book2/audio-us/86－Out of Control.mp3",
+        "sizeBytes": 2095578,
+        "sha256": "cf397a5f6cd4556ac186a48b4091d4527068f063801d18b84f3ad5423ce23552"
+      },
+      "transcript": {
+        "path": "book2/audio-us/86－Out of Control.lrc",
+        "sizeBytes": 1347,
+        "sha256": "99765d5679b8feb1a66ff23e8aa1f3d9ff800317e40bf887c9f37fdd4b8a4ae1"
+      }
+    },
+    {
+      "lessonId": "NCE2-L087",
+      "book": 2,
+      "number": 87,
+      "title": "A Perfect Alibi",
+      "audio": {
+        "path": "book2/audio-us/87－A Perfect Alibi.mp3",
+        "sizeBytes": 2048768,
+        "sha256": "2b1fa444b165d88c466e513264d723a20bc897ff560a387b4eeb2ffe6a4e786c"
+      },
+      "transcript": {
+        "path": "book2/audio-us/87－A Perfect Alibi.lrc",
+        "sizeBytes": 1297,
+        "sha256": "d6922283e61489b20d0efc5056fb6e79df4abe0ce876b63bab85ff63b8ba925f"
+      }
+    },
+    {
+      "lessonId": "NCE2-L088",
+      "book": 2,
+      "number": 88,
+      "title": "Trapped in a Mine",
+      "audio": {
+        "path": "book2/audio-us/88－Trapped in a Mine.mp3",
+        "sizeBytes": 1962252,
+        "sha256": "0319c8478a67235091174fd497dadb1616ab25e0a1ec11d4f3a86f39f3cad6f3"
+      },
+      "transcript": {
+        "path": "book2/audio-us/88－Trapped in a Mine.lrc",
+        "sizeBytes": 1357,
+        "sha256": "c98cc44cb138807ccc416a4025c0d66509e8e23edc1bfcfa9a01c86a73829d9c"
+      }
+    },
+    {
+      "lessonId": "NCE2-L089",
+      "book": 2,
+      "number": 89,
+      "title": "A Slip of the Tongue",
+      "audio": {
+        "path": "book2/audio-us/89－A Slip of the Tongue.mp3",
+        "sizeBytes": 1966435,
+        "sha256": "0d9d99bd8d074e3d588db5361c4cea1a4fe7a42a7c2edef3ef0b9807fba622bc"
+      },
+      "transcript": {
+        "path": "book2/audio-us/89－A Slip of the Tongue.lrc",
+        "sizeBytes": 1287,
+        "sha256": "e4e64b475bd218450642eb363a37bd9935329edb085a5cca76b034eabff73f73"
+      }
+    },
+    {
+      "lessonId": "NCE2-L090",
+      "book": 2,
+      "number": 90,
+      "title": "What's for Supper",
+      "audio": {
+        "path": "book2/audio-us/90－What's for Supper.mp3",
+        "sizeBytes": 2115226,
+        "sha256": "252d23d8c197f477fded480e572fa896470c73e907a3af1a99d8c53d8c8f2922"
+      },
+      "transcript": {
+        "path": "book2/audio-us/90－What's for Supper.lrc",
+        "sizeBytes": 1376,
+        "sha256": "bf89535f4036d9b80eec00061a1eada065fc154d1f5ce742e85511222b9cd7d0"
+      }
+    },
+    {
+      "lessonId": "NCE2-L091",
+      "book": 2,
+      "number": 91,
+      "title": "Three Men in a Basket",
+      "audio": {
+        "path": "book2/audio-us/91－Three Men in a Basket.mp3",
+        "sizeBytes": 1931745,
+        "sha256": "1bc91883483c13f8ce7d28841bba11ddf3d34668ef29b91cf1cc9ca32aa1d597"
+      },
+      "transcript": {
+        "path": "book2/audio-us/91－Three Men in a Basket.lrc",
+        "sizeBytes": 1344,
+        "sha256": "14c63108bc324963237458e663ed85174298eaf43d3ab8fb3201ab6e44bf8260"
+      }
+    },
+    {
+      "lessonId": "NCE2-L092",
+      "book": 2,
+      "number": 92,
+      "title": "Asking for Trouble",
+      "audio": {
+        "path": "book2/audio-us/92－Asking for Trouble.mp3",
+        "sizeBytes": 2100180,
+        "sha256": "03fe85aa112a4a826360c84f7380fb8bb4e22324fb18464b930d8c5bb3d5c608"
+      },
+      "transcript": {
+        "path": "book2/audio-us/92－Asking for Trouble.lrc",
+        "sizeBytes": 1396,
+        "sha256": "e35199458294d078115078c178f6e5d0550806d8ba7b64fb0539ba8695c2041b"
+      }
+    },
+    {
+      "lessonId": "NCE2-L093",
+      "book": 2,
+      "number": 93,
+      "title": "A Noble Gift",
+      "audio": {
+        "path": "book2/audio-us/93－A Noble Gift.mp3",
+        "sizeBytes": 2034554,
+        "sha256": "5b4fbbc54caabe2805dced2ce754dd971ad131f9f3baba7a0009ce7d526a710e"
+      },
+      "transcript": {
+        "path": "book2/audio-us/93－A Noble Gift.lrc",
+        "sizeBytes": 1321,
+        "sha256": "1b9acefc12edafda0e6be7dc6c45f1395266c463cd1aafefbd8ffa11ac8b29aa"
+      }
+    },
+    {
+      "lessonId": "NCE2-L094",
+      "book": 2,
+      "number": 94,
+      "title": "Future Champions",
+      "audio": {
+        "path": "book2/audio-us/94－Future Champions.mp3",
+        "sizeBytes": 1982313,
+        "sha256": "e5d5f4c90d88d0f9d10e7e0795d3d37b6902ebaa75fcc4439fdb8f97b5efd93a"
+      },
+      "transcript": {
+        "path": "book2/audio-us/94－Future Champions.lrc",
+        "sizeBytes": 1337,
+        "sha256": "0ad2273449fdac9807e7109a58f51a68beff4d2673a3200ceb443ce355ba82ce"
+      }
+    },
+    {
+      "lessonId": "NCE2-L095",
+      "book": 2,
+      "number": 95,
+      "title": "A Fantasy",
+      "audio": {
+        "path": "book2/audio-us/95－A Fantasy.mp3",
+        "sizeBytes": 2163283,
+        "sha256": "df0e38cffcd702e15e067971872d1356417ebb270b17e960261bc0b213ee932f"
+      },
+      "transcript": {
+        "path": "book2/audio-us/95－A Fantasy.lrc",
+        "sizeBytes": 1474,
+        "sha256": "04d04c69e3951d9d5b305acc148bbff580b4e84b489e3a776b3a398c192a4a35"
+      }
+    },
+    {
+      "lessonId": "NCE2-L096",
+      "book": 2,
+      "number": 96,
+      "title": "The Dead Return",
+      "audio": {
+        "path": "book2/audio-us/96－The Dead Return.mp3",
+        "sizeBytes": 2080533,
+        "sha256": "1f5400b3a893f4f240e4b4c72d9f341f14add7faaddc237d18bc46284f6112c9"
+      },
+      "transcript": {
+        "path": "book2/audio-us/96－The Dead Return.lrc",
+        "sizeBytes": 1328,
+        "sha256": "6f3cb88ca8ccd06260f01f4253394179dd0b204236b9c2066c1378180a1aa6c0"
+      }
+    },
+    {
+      "lessonId": "NCE3-L001",
+      "book": 3,
+      "number": 1,
+      "title": "A Puma at Large",
+      "audio": {
+        "path": "book3/audio-us/01－A Puma at Large.mp3",
+        "sizeBytes": 2307577,
+        "sha256": "6bd27d7d892fca3569a40a135b75393d6a3eb161717ecebd81597ed3aeec1edb"
+      },
+      "transcript": {
+        "path": "book3/audio-us/01－A Puma at Large.lrc",
+        "sizeBytes": 1983,
+        "sha256": "f05d9cd8f104a5f08d90ce58ffc9cf4d34390683fa30e41a80c85b0ac7cefe43"
+      }
+    },
+    {
+      "lessonId": "NCE3-L002",
+      "book": 3,
+      "number": 2,
+      "title": "Thirteen Equals One",
+      "audio": {
+        "path": "book3/audio-us/02－Thirteen Equals One.mp3",
+        "sizeBytes": 2186790,
+        "sha256": "d418dd3bb15807846973c9570a256e000818551a2a358b913fc382cef1b4f163"
+      },
+      "transcript": {
+        "path": "book3/audio-us/02－Thirteen Equals One.lrc",
+        "sizeBytes": 1859,
+        "sha256": "19fee6b16911c436f990f12ebe97b2868319c9eaf5c49f5c1b76477fc0428cbb"
+      }
+    },
+    {
+      "lessonId": "NCE3-L003",
+      "book": 3,
+      "number": 3,
+      "title": "An Unknown Goddess",
+      "audio": {
+        "path": "book3/audio-us/03－An Unknown Goddess.mp3",
+        "sizeBytes": 2413323,
+        "sha256": "9bff46e7f849da3387b92a7e8a5e20b4e726feba5b6cd0417d70268b66578ce7"
+      },
+      "transcript": {
+        "path": "book3/audio-us/03－An Unknown Goddess.lrc",
+        "sizeBytes": 1929,
+        "sha256": "a50b12ec8f75df4b9dc29b944c6c2d1f5565e24b5f981700d482ebabf1fa0190"
+      }
+    },
+    {
+      "lessonId": "NCE3-L004",
+      "book": 3,
+      "number": 4,
+      "title": "The Double Life of Alfred Bloggs",
+      "audio": {
+        "path": "book3/audio-us/04－The Double Life of Alfred Bloggs.mp3",
+        "sizeBytes": 2341448,
+        "sha256": "5df9dd255bc947fd8982f3d3f511d4560acd15d966b124001544bcdb13fa3b6e"
+      },
+      "transcript": {
+        "path": "book3/audio-us/04－The Double Life of Alfred Bloggs.lrc",
+        "sizeBytes": 1765,
+        "sha256": "aba595e72e059fcbe6efe6b6bbc2921df1f17ca20fad8b192758e7303ed8df33"
+      }
+    },
+    {
+      "lessonId": "NCE3-L005",
+      "book": 3,
+      "number": 5,
+      "title": "The Facts",
+      "audio": {
+        "path": "book3/audio-us/05－The Facts.mp3",
+        "sizeBytes": 2324707,
+        "sha256": "485ec0621954a78b988157689e5a64d3a31c3d20b1b65451a23cc3b098ef4474"
+      },
+      "transcript": {
+        "path": "book3/audio-us/05－The Facts.lrc",
+        "sizeBytes": 1850,
+        "sha256": "a176b4b9a0f04e27027ffd397f1f6e43bd55da9775ca3139386616773d7ee14b"
+      }
+    },
+    {
+      "lessonId": "NCE3-L006",
+      "book": 3,
+      "number": 6,
+      "title": "Smash-and-Grab",
+      "audio": {
+        "path": "book3/audio-us/06－Smash-and-Grab.mp3",
+        "sizeBytes": 2338504,
+        "sha256": "84ca3cc3052c8b1d49256d77286e7262c974393e3907630beb2174ddfeab013b"
+      },
+      "transcript": {
+        "path": "book3/audio-us/06－Smash-and-Grab.lrc",
+        "sizeBytes": 1833,
+        "sha256": "b4041c5162346ca5c3318da1a9a4f995e8c7a9bf948480132462a525c67b02e4"
+      }
+    },
+    {
+      "lessonId": "NCE3-L007",
+      "book": 3,
+      "number": 7,
+      "title": "Mutilated Ladies",
+      "audio": {
+        "path": "book3/audio-us/07－Mutilated Ladies.mp3",
+        "sizeBytes": 2305906,
+        "sha256": "b155e499d439a605dce0cc4d5168660f6073e9f250b4c1d31679c83920173276"
+      },
+      "transcript": {
+        "path": "book3/audio-us/07－Mutilated Ladies.lrc",
+        "sizeBytes": 1814,
+        "sha256": "be0c95e00fbfa26139908837522e86cbfc02713e1f3d1cd30c36f55a6cc85306"
+      }
+    },
+    {
+      "lessonId": "NCE3-L008",
+      "book": 3,
+      "number": 8,
+      "title": "A Famous Monastery",
+      "audio": {
+        "path": "book3/audio-us/08－A Famous Monastery.mp3",
+        "sizeBytes": 2415831,
+        "sha256": "65140717a522927b4a9b75b547ad0ef0c3ffc86194718ef5932ca5d623180895"
+      },
+      "transcript": {
+        "path": "book3/audio-us/08－A Famous Monastery.lrc",
+        "sizeBytes": 1958,
+        "sha256": "14becce8988701c5bcd505dc6f1707fe7ee07a4d2e4c0b4122ec6ca69428a89e"
+      }
+    },
+    {
+      "lessonId": "NCE3-L009",
+      "book": 3,
+      "number": 9,
+      "title": "Flying Cats",
+      "audio": {
+        "path": "book3/audio-us/09－Flying Cats.mp3",
+        "sizeBytes": 2566707,
+        "sha256": "704ce267b92d89243e4b7919685a81e72007a93f2b8b5591f95c79c344f751b6"
+      },
+      "transcript": {
+        "path": "book3/audio-us/09－Flying Cats.lrc",
+        "sizeBytes": 1907,
+        "sha256": "402838efc08b5df573c867d42c062b0e9b339a857a10489be7cfe8113c14edcd"
+      }
+    },
+    {
+      "lessonId": "NCE3-L010",
+      "book": 3,
+      "number": 10,
+      "title": "The Loss of the Titanic",
+      "audio": {
+        "path": "book3/audio-us/10－The Loss of the Titanic.mp3",
+        "sizeBytes": 2630250,
+        "sha256": "4259094dcca3847d2c04c99ef8214aea3a1c2b537d384b38a381b5a089f4e26e"
+      },
+      "transcript": {
+        "path": "book3/audio-us/10－The Loss of the Titanic.lrc",
+        "sizeBytes": 1945,
+        "sha256": "2920b2ca5b3908b4392b01125bccfc6d5ca645110f2afec74531b74c83ad4dc2"
+      }
+    },
+    {
+      "lessonId": "NCE3-L011",
+      "book": 3,
+      "number": 11,
+      "title": "Not Guilty",
+      "audio": {
+        "path": "book3/audio-us/11－Not Guilty.mp3",
+        "sizeBytes": 2531599,
+        "sha256": "c050c4a3cf78d1b2509b45fffc8981b67cc8e8863d6e0ac17b99720ca3a00358"
+      },
+      "transcript": {
+        "path": "book3/audio-us/11－Not Guilty.lrc",
+        "sizeBytes": 2051,
+        "sha256": "3442f7b4f693cc471db12925c81d273547a4862b56e816c25fcebc02e8bbfe4a"
+      }
+    },
+    {
+      "lessonId": "NCE3-L012",
+      "book": 3,
+      "number": 12,
+      "title": "Life on a Desert Island",
+      "audio": {
+        "path": "book3/audio-us/12－Life on a Desert Island.mp3",
+        "sizeBytes": 2319288,
+        "sha256": "b3004f510122aee594ec65750260e05e17c00599d147c98767bc52e13bc23de5"
+      },
+      "transcript": {
+        "path": "book3/audio-us/12－Life on a Desert Island.lrc",
+        "sizeBytes": 1849,
+        "sha256": "974e73283880229036347c4c825b7f1225734a1680b2de00d16606f91cb10eeb"
+      }
+    },
+    {
+      "lessonId": "NCE3-L013",
+      "book": 3,
+      "number": 13,
+      "title": "It's Only Me",
+      "audio": {
+        "path": "book3/audio-us/13－It's Only Me.mp3",
+        "sizeBytes": 2211026,
+        "sha256": "52c1950e45afc214571d2a5d2e1cc3726d2cd707450de97a655dbba933fa8e8b"
+      },
+      "transcript": {
+        "path": "book3/audio-us/13－It's Only Me.lrc",
+        "sizeBytes": 1786,
+        "sha256": "ff1db8c567239f6de3d53ba53ee9b17294d44c83a640599739df2b7f9feeef88"
+      }
+    },
+    {
+      "lessonId": "NCE3-L014",
+      "book": 3,
+      "number": 14,
+      "title": "A Noble Gangster",
+      "audio": {
+        "path": "book3/audio-us/14－A Noble Gangster.mp3",
+        "sizeBytes": 2350628,
+        "sha256": "c899b38eab637829e87e1ce8d639e2db33fa0a821058c2c2b3e4761780774ef0"
+      },
+      "transcript": {
+        "path": "book3/audio-us/14－A Noble Gangster.lrc",
+        "sizeBytes": 1765,
+        "sha256": "438e2e90e10b08aad2f4695c004b84bdbe2e8c0493b5249a38d00bf587d9794f"
+      }
+    },
+    {
+      "lessonId": "NCE3-L015",
+      "book": 3,
+      "number": 15,
+      "title": "Fifty Pence Worth of Trouble",
+      "audio": {
+        "path": "book3/audio-us/15－Fifty Pence Worth of Trouble.mp3",
+        "sizeBytes": 2454294,
+        "sha256": "990ffe13efd7810c9943d29a3c31df16b207c632be55d3346f45f89cf1c89c35"
+      },
+      "transcript": {
+        "path": "book3/audio-us/15－Fifty Pence Worth of Trouble.lrc",
+        "sizeBytes": 1896,
+        "sha256": "e3676190d8f1bc5f5313fb16f75ddfed7217f407fa79323e6ff8471e911f5882"
+      }
+    },
+    {
+      "lessonId": "NCE3-L016",
+      "book": 3,
+      "number": 16,
+      "title": "Mary Had a Little Lamb",
+      "audio": {
+        "path": "book3/audio-us/16－Mary Had a Little Lamb.mp3",
+        "sizeBytes": 2428375,
+        "sha256": "6be6b15ae0fa7a8e12069f21c8d35e2138204f7a8b3e96d696aae0c30ee09eaa"
+      },
+      "transcript": {
+        "path": "book3/audio-us/16－Mary Had a Little Lamb.lrc",
+        "sizeBytes": 1840,
+        "sha256": "a25f568edf84a9cabd2388eb73033b00fc1aa32fba85858c5d3c8f9028c6a0b4"
+      }
+    },
+    {
+      "lessonId": "NCE3-L017",
+      "book": 3,
+      "number": 17,
+      "title": "The Longest Suspension Bridge in the World",
+      "audio": {
+        "path": "book3/audio-us/17－The Longest Suspension Bridge in the World.mp3",
+        "sizeBytes": 2705502,
+        "sha256": "66af0cee543e5b57ab4a576305c67b0feb39871d52d0b6f9a86d58e59d14ec55"
+      },
+      "transcript": {
+        "path": "book3/audio-us/17－The Longest Suspension Bridge in the World.lrc",
+        "sizeBytes": 1931,
+        "sha256": "ca4719df93a2170cedba90564cd0a64966c640847f10404c603844b0ebdc102e"
+      }
+    },
+    {
+      "lessonId": "NCE3-L018",
+      "book": 3,
+      "number": 18,
+      "title": "Electric Currents in Modern Art",
+      "audio": {
+        "path": "book3/audio-us/18－Electric Currents in Modern Art.mp3",
+        "sizeBytes": 2471434,
+        "sha256": "92ab38b23324b73c93f00727f88baad661ae19dcc66b2db537a51e01c0a25cfd"
+      },
+      "transcript": {
+        "path": "book3/audio-us/18－Electric Currents in Modern Art.lrc",
+        "sizeBytes": 1997,
+        "sha256": "18f226690c9313d6e5c3deaf3a45abec8dfd1d74c2b4bd54e1c016e79a3e9efa"
+      }
+    },
+    {
+      "lessonId": "NCE3-L019",
+      "book": 3,
+      "number": 19,
+      "title": "A Very Dear Cat",
+      "audio": {
+        "path": "book3/audio-us/19－A Very Dear Cat.mp3",
+        "sizeBytes": 2530768,
+        "sha256": "8c1bdca29cdd76110931d4ba0abfcb6332c5c6edaa8935b0f6e72d3ba313f9b5"
+      },
+      "transcript": {
+        "path": "book3/audio-us/19－A Very Dear Cat.lrc",
+        "sizeBytes": 1928,
+        "sha256": "b8ebd9b89b7f0c0d0e26764cd8df74f14c48f139c85c2bdd0f4c3025d41c5589"
+      }
+    },
+    {
+      "lessonId": "NCE3-L020",
+      "book": 3,
+      "number": 20,
+      "title": "Pioneer Pilots",
+      "audio": {
+        "path": "book3/audio-us/20－Pioneer Pilots.mp3",
+        "sizeBytes": 2494822,
+        "sha256": "5ed86c0e9e6af152b0720f4d5cb47132e12c488698b208a5f42dee0ebb8278e5"
+      },
+      "transcript": {
+        "path": "book3/audio-us/20－Pioneer Pilots.lrc",
+        "sizeBytes": 1871,
+        "sha256": "26decc55eaeba70b29770260b3fe2575be5e62a12777029d3166d6328a4e6f78"
+      }
+    },
+    {
+      "lessonId": "NCE3-L021",
+      "book": 3,
+      "number": 21,
+      "title": "Daniel Mendoza",
+      "audio": {
+        "path": "book3/audio-us/21－Daniel Mendoza.mp3",
+        "sizeBytes": 3176514,
+        "sha256": "3ec68bbe68a9ce59c2f1bf390aa101b98cb670278c407ae25bd985771d454c32"
+      },
+      "transcript": {
+        "path": "book3/audio-us/21－Daniel Mendoza.lrc",
+        "sizeBytes": 2493,
+        "sha256": "60c9c71f8e3cb002125f1f13226170213fa0bd2b69277517ee8d1d912a8afb7a"
+      }
+    },
+    {
+      "lessonId": "NCE3-L022",
+      "book": 3,
+      "number": 22,
+      "title": "By Heart",
+      "audio": {
+        "path": "book3/audio-us/22－By Heart.mp3",
+        "sizeBytes": 3022281,
+        "sha256": "c207cda68dfc694e62c6bad6601a0ff7a38ea5584f0368bbc6bf34ca24b9fc25"
+      },
+      "transcript": {
+        "path": "book3/audio-us/22－By Heart.lrc",
+        "sizeBytes": 2388,
+        "sha256": "7ab26fd3bdda77a58200bf7b22b5d7eb1e5a7c58dd777b653799c22f281650fe"
+      }
+    },
+    {
+      "lessonId": "NCE3-L023",
+      "book": 3,
+      "number": 23,
+      "title": "One Man's Meat is Another Man's Poison",
+      "audio": {
+        "path": "book3/audio-us/23－One Man's Meat is Another Man's Poison.mp3",
+        "sizeBytes": 3080825,
+        "sha256": "93f44817b8e32c0fcea4130edb6979a82875b6bb646130be930d747cada58751"
+      },
+      "transcript": {
+        "path": "book3/audio-us/23－One Man's Meat is Another Man's Poison.lrc",
+        "sizeBytes": 2487,
+        "sha256": "bcaa54e7e1d0a43f7424625195150e0153f05caf454c2ef0f1ee32c71511ee03"
+      }
+    },
+    {
+      "lessonId": "NCE3-L024",
+      "book": 3,
+      "number": 24,
+      "title": "A Skeleton in the Cupboard",
+      "audio": {
+        "path": "book3/audio-us/24－A Skeleton in the Cupboard.mp3",
+        "sizeBytes": 2892731,
+        "sha256": "0d433546daacf083843b1c8185bba4ab3653ddeb370360d34864206a4accb075"
+      },
+      "transcript": {
+        "path": "book3/audio-us/24－A Skeleton in the Cupboard.lrc",
+        "sizeBytes": 2456,
+        "sha256": "85e47592f134331a4369e91d6c5807360b21aefec35870e768ba7f4ee2ed0afc"
+      }
+    },
+    {
+      "lessonId": "NCE3-L025",
+      "book": 3,
+      "number": 25,
+      "title": "The Cutty Sark",
+      "audio": {
+        "path": "book3/audio-us/25－The Cutty Sark.mp3",
+        "sizeBytes": 3119671,
+        "sha256": "03819b0f57c6bb243b5c57d41b3a2688570d87b3f8aac37a65c2a1bec30ad905"
+      },
+      "transcript": {
+        "path": "book3/audio-us/25－The Cutty Sark.lrc",
+        "sizeBytes": 2508,
+        "sha256": "d5fddfdd89820f80640d180378f4b404352d937dd9591c10114399e87ebba8bf"
+      }
+    },
+    {
+      "lessonId": "NCE3-L026",
+      "book": 3,
+      "number": 26,
+      "title": "Wanted a Large Biscuit Tin",
+      "audio": {
+        "path": "book3/audio-us/26－Wanted a Large Biscuit Tin.mp3",
+        "sizeBytes": 3271403,
+        "sha256": "90570479b1de9cb5f483194643489073ed94edacdb235b3ea9f19974a38e43ff"
+      },
+      "transcript": {
+        "path": "book3/audio-us/26－Wanted a Large Biscuit Tin.lrc",
+        "sizeBytes": 2538,
+        "sha256": "1508db3f7b1fcee1d4c581f8b613ba5b44461d889ef9283a100d504d03a330c2"
+      }
+    },
+    {
+      "lessonId": "NCE3-L027",
+      "book": 3,
+      "number": 27,
+      "title": "Nothing to Sell and Nothing to Buy",
+      "audio": {
+        "path": "book3/audio-us/27－Nothing to Sell and Nothing to Buy.mp3",
+        "sizeBytes": 2971734,
+        "sha256": "feadfab530f38e2691423f053ac4889971eeaa52d0593b35e5c79bf6bcb68fe9"
+      },
+      "transcript": {
+        "path": "book3/audio-us/27－Nothing to Sell and Nothing to Buy.lrc",
+        "sizeBytes": 2435,
+        "sha256": "4d7f1616bff90cdccb8c8ae98c44daba2c693b96069ae194d3356fb13006a67d"
+      }
+    },
+    {
+      "lessonId": "NCE3-L028",
+      "book": 3,
+      "number": 28,
+      "title": "Five Pounds Too Dear",
+      "audio": {
+        "path": "book3/audio-us/28－Five Pounds Too Dear.mp3",
+        "sizeBytes": 3185715,
+        "sha256": "6cb66f958c10c7199a533da8c50d32e20027ddc7e85d5f2e0e19939eec40e7e6"
+      },
+      "transcript": {
+        "path": "book3/audio-us/28－Five Pounds Too Dear.lrc",
+        "sizeBytes": 2455,
+        "sha256": "153bdeb644c24ee232bdfe850dfdd2d79af7f2474e501f02c710418822a8f9d3"
+      }
+    },
+    {
+      "lessonId": "NCE3-L029",
+      "book": 3,
+      "number": 29,
+      "title": "Funny or Not",
+      "audio": {
+        "path": "book3/audio-us/29－Funny or Not.mp3",
+        "sizeBytes": 3137224,
+        "sha256": "7d52f2a72bbe2d7f461d70af4824ee5cf61986db56d3cdfccaa4cae32a054311"
+      },
+      "transcript": {
+        "path": "book3/audio-us/29－Funny or Not.lrc",
+        "sizeBytes": 2518,
+        "sha256": "bfc840201b5089ff9cdeb39c6431589c9f66b4ad7e05ae63204d6e2935b32442"
+      }
+    },
+    {
+      "lessonId": "NCE3-L030",
+      "book": 3,
+      "number": 30,
+      "title": "The Death of a Ghost",
+      "audio": {
+        "path": "book3/audio-us/30－The Death of a Ghost.mp3",
+        "sizeBytes": 2975481,
+        "sha256": "caf0672382d209eb6d6fd3dfc1359b8a9d96548b1a5564df9876241af1877907"
+      },
+      "transcript": {
+        "path": "book3/audio-us/30－The Death of a Ghost.lrc",
+        "sizeBytes": 2494,
+        "sha256": "235ad7a1497418e79afaba3080cabff8782187b74b25c4294e0e4eef19d70ef5"
+      }
+    },
+    {
+      "lessonId": "NCE3-L031",
+      "book": 3,
+      "number": 31,
+      "title": "A Lovable Eccentric",
+      "audio": {
+        "path": "book3/audio-us/31－A Lovable Eccentric.mp3",
+        "sizeBytes": 3186968,
+        "sha256": "2c4fd0832643246467aa947a98f8004da74bbcae897fd36bf1211e3e30866d98"
+      },
+      "transcript": {
+        "path": "book3/audio-us/31－A Lovable Eccentric.lrc",
+        "sizeBytes": 2537,
+        "sha256": "1b28b63f19d30465b27616eda4400c2b0db631371f85073a3c64eaf5b0c4c66b"
+      }
+    },
+    {
+      "lessonId": "NCE3-L032",
+      "book": 3,
+      "number": 32,
+      "title": "A Lost Ship",
+      "audio": {
+        "path": "book3/audio-us/32－A Lost Ship.mp3",
+        "sizeBytes": 2814976,
+        "sha256": "3c0f7c0c4d884bb7c8c2f9564ec9f8e8f5634834fe0f27658ef0a3b32988061a"
+      },
+      "transcript": {
+        "path": "book3/audio-us/32－A Lost Ship.lrc",
+        "sizeBytes": 2523,
+        "sha256": "a1a8b90f0ca0772d995d3af23973395d18a1b307d60705b3c602a5e89dcd62cd"
+      }
+    },
+    {
+      "lessonId": "NCE3-L033",
+      "book": 3,
+      "number": 33,
+      "title": "A Day to Remember",
+      "audio": {
+        "path": "book3/audio-us/33－A Day to Remember.mp3",
+        "sizeBytes": 3135975,
+        "sha256": "ba1ff319bb44c1ee4af36eeede0d40f459c713e4da283d86b2d8a7961e485462"
+      },
+      "transcript": {
+        "path": "book3/audio-us/33－A Day to Remember.lrc",
+        "sizeBytes": 2528,
+        "sha256": "49f6dfa53b0082569699b5afcc1b8a09c250a7d73fedae58d5f45144cb65b2f9"
+      }
+    },
+    {
+      "lessonId": "NCE3-L034",
+      "book": 3,
+      "number": 34,
+      "title": "A Happy Discovery",
+      "audio": {
+        "path": "book3/audio-us/34－A Happy Discovery.mp3",
+        "sizeBytes": 3270140,
+        "sha256": "88fceb0d46df12ab5c67a5ee21744584a016159d77fdbab15beaa8cc1490e96b"
+      },
+      "transcript": {
+        "path": "book3/audio-us/34－A Happy Discovery.lrc",
+        "sizeBytes": 2517,
+        "sha256": "15838b4175e96dd9115bbeb4e43097252ae7407d55a0b77e9a23039dd4cf6719"
+      }
+    },
+    {
+      "lessonId": "NCE3-L035",
+      "book": 3,
+      "number": 35,
+      "title": "Justice was Done",
+      "audio": {
+        "path": "book3/audio-us/35－Justice was Done.mp3",
+        "sizeBytes": 3228343,
+        "sha256": "8aaf8791f7bec3fcbfa7a23839b3f86dfbe77243a5d4815256f580462c174b38"
+      },
+      "transcript": {
+        "path": "book3/audio-us/35－Justice was Done.lrc",
+        "sizeBytes": 2596,
+        "sha256": "fdb470083fcc8a98adbf9dc5bdfa7d6fb122f0e5e237576485c23b83a4f9ddcf"
+      }
+    },
+    {
+      "lessonId": "NCE3-L036",
+      "book": 3,
+      "number": 36,
+      "title": "A Chance in a Million",
+      "audio": {
+        "path": "book3/audio-us/36－A Chance in a Million.mp3",
+        "sizeBytes": 3236707,
+        "sha256": "6b465f12b30124bd7204b896945bb7c9bc3bab2dd291184e1ace0ffc2fee1c7f"
+      },
+      "transcript": {
+        "path": "book3/audio-us/36－A Chance in a Million.lrc",
+        "sizeBytes": 2675,
+        "sha256": "3cd6a89abb8c6ad7700957fad3c75ec277e0cf74888300f296192b1e1e50db24"
+      }
+    },
+    {
+      "lessonId": "NCE3-L037",
+      "book": 3,
+      "number": 37,
+      "title": "The Westhaven Express",
+      "audio": {
+        "path": "book3/audio-us/37－The Westhaven Express.mp3",
+        "sizeBytes": 3108811,
+        "sha256": "a4b1f6ea1513d3349e7db852d489f3b37c2ee242b2c7f381af50ba84281c12b0"
+      },
+      "transcript": {
+        "path": "book3/audio-us/37－The Westhaven Express.lrc",
+        "sizeBytes": 2522,
+        "sha256": "ff40e456a19526af26852e3b030ef8c52206e72f589319573de48190d66c6a6c"
+      }
+    },
+    {
+      "lessonId": "NCE3-L038",
+      "book": 3,
+      "number": 38,
+      "title": "The First Calendar",
+      "audio": {
+        "path": "book3/audio-us/38－The First Calendar.mp3",
+        "sizeBytes": 3235450,
+        "sha256": "31a78e3bf78f9df31234f41ce32acc4d74b5624fce85eb3740fd9280026bac4a"
+      },
+      "transcript": {
+        "path": "book3/audio-us/38－The First Calendar.lrc",
+        "sizeBytes": 2466,
+        "sha256": "0a636660cbbdbacdfbc61eee3572a9f833694102a8ed19d3e0273480939da007"
+      }
+    },
+    {
+      "lessonId": "NCE3-L039",
+      "book": 3,
+      "number": 39,
+      "title": "Nothing to Worry About",
+      "audio": {
+        "path": "book3/audio-us/39－Nothing to Worry About.mp3",
+        "sizeBytes": 3269727,
+        "sha256": "b6e401a7756c1b0939d3d1e59020c699c9344ef949b86f999e015975704422b6"
+      },
+      "transcript": {
+        "path": "book3/audio-us/39－Nothing to Worry About.lrc",
+        "sizeBytes": 2475,
+        "sha256": "faffa470abe0eac5ba0bd82d0f7b82e49ef58ba3d14c8a6db86cd3963f3a2071"
+      }
+    },
+    {
+      "lessonId": "NCE3-L040",
+      "book": 3,
+      "number": 40,
+      "title": "Who's Who",
+      "audio": {
+        "path": "book3/audio-us/40－Who's Who.mp3",
+        "sizeBytes": 3102948,
+        "sha256": "be5354c9728c6643eb9716c5852c60dc1b5b8361f9897465568bd9250e9c0009"
+      },
+      "transcript": {
+        "path": "book3/audio-us/40－Who's Who.lrc",
+        "sizeBytes": 2576,
+        "sha256": "45eccc99bd35f5bc93569efbae81aabb758c60b0eca924eae2cabba704b1b15a"
+      }
+    },
+    {
+      "lessonId": "NCE3-L041",
+      "book": 3,
+      "number": 41,
+      "title": "Illusions of Pastoral Peace",
+      "audio": {
+        "path": "book3/audio-us/41－Illusions of Pastoral Peace.mp3",
+        "sizeBytes": 4516504,
+        "sha256": "71a797bf20ca7a03d2296c79690ada773bb07907e5be68980e2baead0e409cb0"
+      },
+      "transcript": {
+        "path": "book3/audio-us/41－Illusions of Pastoral Peace.lrc",
+        "sizeBytes": 3581,
+        "sha256": "c0e690bd8a6673b9446c79cc8447b0fc098bf68a5c87440ad0405702f545b1ba"
+      }
+    },
+    {
+      "lessonId": "NCE3-L042",
+      "book": 3,
+      "number": 42,
+      "title": "Modern Cavemen",
+      "audio": {
+        "path": "book3/audio-us/42－Modern Cavemen.mp3",
+        "sizeBytes": 4527358,
+        "sha256": "ab9494b7b296366ccf25e3432a085515d603878459cf77597f2683a5fb0e64fb"
+      },
+      "transcript": {
+        "path": "book3/audio-us/42－Modern Cavemen.lrc",
+        "sizeBytes": 3561,
+        "sha256": "61f24928e6da4cab3768760a74f82b6cd2cd2b64c78d5bbb8349c04fd80b3bdc"
+      }
+    },
+    {
+      "lessonId": "NCE3-L043",
+      "book": 3,
+      "number": 43,
+      "title": "Fully Insured",
+      "audio": {
+        "path": "book3/audio-us/43－Fully Insured.mp3",
+        "sizeBytes": 4359755,
+        "sha256": "a86825f66edcae28eff99b7f219bb5f09d4fd6909f6387dfa576f44f9a8b5973"
+      },
+      "transcript": {
+        "path": "book3/audio-us/43－Fully Insured.lrc",
+        "sizeBytes": 3323,
+        "sha256": "e829bb8c3c0ec8d3599b2b306e198a4fa71021ba2dc205735e585aedc9a45f6e"
+      }
+    },
+    {
+      "lessonId": "NCE3-L044",
+      "book": 3,
+      "number": 44,
+      "title": "Speed and Comfort",
+      "audio": {
+        "path": "book3/audio-us/44－Speed and Comfort.mp3",
+        "sizeBytes": 4339697,
+        "sha256": "e0af8979c107d849d592f9f121a7ee2723e2a04bdaff931fde8b7f3305399c7c"
+      },
+      "transcript": {
+        "path": "book3/audio-us/44－Speed and Comfort.lrc",
+        "sizeBytes": 3552,
+        "sha256": "9d7835ced99b8745c92febe84a3749419e19f856374af374e3b1040192e9d9c3"
+      }
+    },
+    {
+      "lessonId": "NCE3-L045",
+      "book": 3,
+      "number": 45,
+      "title": "The Power of the Press",
+      "audio": {
+        "path": "book3/audio-us/45－The Power of the Press.mp3",
+        "sizeBytes": 3940133,
+        "sha256": "165f2dcbcc8d76035f17e1f209321967904f54a10dceb79f5353233d19c83e31"
+      },
+      "transcript": {
+        "path": "book3/audio-us/45－The Power of the Press.lrc",
+        "sizeBytes": 3034,
+        "sha256": "322eb70f35f801cadd04e48985fb2005416d9765627d36bb35fe8fa037f0badb"
+      }
+    },
+    {
+      "lessonId": "NCE3-L046",
+      "book": 3,
+      "number": 46,
+      "title": "Do It Yourself",
+      "audio": {
+        "path": "book3/audio-us/46－Do It Yourself.mp3",
+        "sizeBytes": 4444602,
+        "sha256": "b8cc439d777528378d5a367c9c18efe3d2a6dc0b7d2e0ce920b24681222bdbd1"
+      },
+      "transcript": {
+        "path": "book3/audio-us/46－Do It Yourself.lrc",
+        "sizeBytes": 3681,
+        "sha256": "18b5f32bcc8a7dbcf0d65a7813928257b209d2b6cb0ae5aed998c57322d8cc27"
+      }
+    },
+    {
+      "lessonId": "NCE3-L047",
+      "book": 3,
+      "number": 47,
+      "title": "Too High a Price",
+      "audio": {
+        "path": "book3/audio-us/47－Too High a Price.mp3",
+        "sizeBytes": 4477624,
+        "sha256": "70337afed6a826d043e5bade5043304588cddf65ab13edce094469f8a7cb51ef"
+      },
+      "transcript": {
+        "path": "book3/audio-us/47－Too High a Price.lrc",
+        "sizeBytes": 3576,
+        "sha256": "3aad1711028ed29432b79f32dd57af4e9f13fb68edcde87642d705556d3ccaca"
+      }
+    },
+    {
+      "lessonId": "NCE3-L048",
+      "book": 3,
+      "number": 48,
+      "title": "The Silent Village",
+      "audio": {
+        "path": "book3/audio-us/48－The Silent Village.mp3",
+        "sizeBytes": 4376478,
+        "sha256": "33f8c12433610d3c04c9409797a5eab55edde852ba93644f347d6b375e477b67"
+      },
+      "transcript": {
+        "path": "book3/audio-us/48－The Silent Village.lrc",
+        "sizeBytes": 3587,
+        "sha256": "3df0c00460560e720d7d12f9ea023fd0d1d9abed9e1bdb6699dc86321094c1df"
+      }
+    },
+    {
+      "lessonId": "NCE3-L049",
+      "book": 3,
+      "number": 49,
+      "title": "The Ideal Servant",
+      "audio": {
+        "path": "book3/audio-us/49－The Ideal Servant.mp3",
+        "sizeBytes": 4458815,
+        "sha256": "ed7985cfc98b22ad708fb68c2ce90119302b302842908d36b1d596d1280872c7"
+      },
+      "transcript": {
+        "path": "book3/audio-us/49－The Ideal Servant.lrc",
+        "sizeBytes": 3716,
+        "sha256": "3fe53c3fd6ebd2c3c434458849a50d371a0f94a61ca5e1573f9ba673567cb242"
+      }
+    },
+    {
+      "lessonId": "NCE3-L050",
+      "book": 3,
+      "number": 50,
+      "title": "New Year Resolutions",
+      "audio": {
+        "path": "book3/audio-us/50－New Year Resolutions.mp3",
+        "sizeBytes": 4372301,
+        "sha256": "c253c2f8fed493793e961016e693c2e4f3c267d06e371e8efb569d1965bacd49"
+      },
+      "transcript": {
+        "path": "book3/audio-us/50－New Year Resolutions.lrc",
+        "sizeBytes": 3606,
+        "sha256": "8a68551603f8101b35b79fcaff8473dd0ee7d7d556a569035296e694ef278979"
+      }
+    },
+    {
+      "lessonId": "NCE3-L051",
+      "book": 3,
+      "number": 51,
+      "title": "Predicting the Future",
+      "audio": {
+        "path": "book3/audio-us/51－Predicting the Future.mp3",
+        "sizeBytes": 4364361,
+        "sha256": "cf24acd7c017d84dee34efda64529978668e5e1ca0d9e6eb5e7aa98d50b7e1e7"
+      },
+      "transcript": {
+        "path": "book3/audio-us/51－Predicting the Future.lrc",
+        "sizeBytes": 3431,
+        "sha256": "0a3e57b979d4f58daee4556c8636642d31302c100dc27a784a889b67d80db2fc"
+      }
+    },
+    {
+      "lessonId": "NCE3-L052",
+      "book": 3,
+      "number": 52,
+      "title": "Mud is Mud",
+      "audio": {
+        "path": "book3/audio-us/52－Mud is Mud.mp3",
+        "sizeBytes": 4222244,
+        "sha256": "ec73b21f7cee56b10d546cf69f62f9f447853749a4202f81aa95b2d9d538c541"
+      },
+      "transcript": {
+        "path": "book3/audio-us/52－Mud is Mud.lrc",
+        "sizeBytes": 3537,
+        "sha256": "237d72240db24ef5a6be3f310fcbb14cc844aaab34fd23c9912bcfcdc2fba355"
+      }
+    },
+    {
+      "lessonId": "NCE3-L053",
+      "book": 3,
+      "number": 53,
+      "title": "In the Public Interest",
+      "audio": {
+        "path": "book3/audio-us/53－In the Public Interest.mp3",
+        "sizeBytes": 4152038,
+        "sha256": "ac7a9681575cb8700454da437734a6fa385e822361ab678ccad017d0c0fd3fbf"
+      },
+      "transcript": {
+        "path": "book3/audio-us/53－In the Public Interest.lrc",
+        "sizeBytes": 3464,
+        "sha256": "28b78cc0441742f471db0cd5fd31b5b1d0395299446bbb8974870c266ec39aa4"
+      }
+    },
+    {
+      "lessonId": "NCE3-L054",
+      "book": 3,
+      "number": 54,
+      "title": "Instinct or Cleverness",
+      "audio": {
+        "path": "book3/audio-us/54－Instinct or Cleverness.mp3",
+        "sizeBytes": 4337613,
+        "sha256": "b2b00edf7b88044bd1bcdb1aaf9bba2e893d35ce57877c1f43d4e7d2f8076336"
+      },
+      "transcript": {
+        "path": "book3/audio-us/54－Instinct or Cleverness.lrc",
+        "sizeBytes": 3568,
+        "sha256": "b3f390f67cfa18f179720508d0d9aa762b144220c78ab2991850b6db289a4a15"
+      }
+    },
+    {
+      "lessonId": "NCE3-L055",
+      "book": 3,
+      "number": 55,
+      "title": "From the Earth Greetings",
+      "audio": {
+        "path": "book3/audio-us/55－From the Earth Greetings.mp3",
+        "sizeBytes": 4110245,
+        "sha256": "7d98cfaa318f888effb3402121bcdf25d1a077f8306bbe220e6bc17622777912"
+      },
+      "transcript": {
+        "path": "book3/audio-us/55－From the Earth Greetings.lrc",
+        "sizeBytes": 3490,
+        "sha256": "58e6b967af208a442d51e397d759db41f797ffa70161fe8e04f098f6f2ac8308"
+      }
+    },
+    {
+      "lessonId": "NCE3-L056",
+      "book": 3,
+      "number": 56,
+      "title": "Our Neighbour, the River",
+      "audio": {
+        "path": "book3/audio-us/56－Our Neighbour, the River.mp3",
+        "sizeBytes": 3787580,
+        "sha256": "5c2faa200e6fe44262c19831b9d5508da46c582c74ef6fe1c6b30688f2a4dd24"
+      },
+      "transcript": {
+        "path": "book3/audio-us/56－Our Neighbour, the River.lrc",
+        "sizeBytes": 3321,
+        "sha256": "37fa10e1c87977abf986ed3145685fb98aa9c5002d032d511b4d6e216d683629"
+      }
+    },
+    {
+      "lessonId": "NCE3-L057",
+      "book": 3,
+      "number": 57,
+      "title": "Back in the Old Country",
+      "audio": {
+        "path": "book3/audio-us/57－Back in the Old Country.mp3",
+        "sizeBytes": 3879948,
+        "sha256": "ebe448538ba14859316c10002d88049e9383847fa095e4e93eccf43b3be62e65"
+      },
+      "transcript": {
+        "path": "book3/audio-us/57－Back in the Old Country.lrc",
+        "sizeBytes": 3401,
+        "sha256": "a2656a42d5cb848a3b68dfbaca18795c84316279098858cbfb082f617548b452"
+      }
+    },
+    {
+      "lessonId": "NCE3-L058",
+      "book": 3,
+      "number": 58,
+      "title": "A Spot of Bother",
+      "audio": {
+        "path": "book3/audio-us/58－A Spot of Bother.mp3",
+        "sizeBytes": 3949740,
+        "sha256": "9c5ea9e8a88656ea28ff3a7632ac529a9597f7ff18735ed9cb606e64145869f1"
+      },
+      "transcript": {
+        "path": "book3/audio-us/58－A Spot of Bother.lrc",
+        "sizeBytes": 3365,
+        "sha256": "1418d4eef8da7a6233b8e55981d5c4aecfd3f613635a8055db35e80c59733681"
+      }
+    },
+    {
+      "lessonId": "NCE3-L059",
+      "book": 3,
+      "number": 59,
+      "title": "Collecting",
+      "audio": {
+        "path": "book3/audio-us/59－Collecting.mp3",
+        "sizeBytes": 4195076,
+        "sha256": "5cd755684ab1c89b266068c764a734baf44c920a1f680da762b3118f5d24f706"
+      },
+      "transcript": {
+        "path": "book3/audio-us/59－Collecting.lrc",
+        "sizeBytes": 3578,
+        "sha256": "e64cb3f61872decebdc61fd12da201cdf58582832de01d5017989779f4c141b5"
+      }
+    },
+    {
+      "lessonId": "NCE3-L060",
+      "book": 3,
+      "number": 60,
+      "title": "Too Early and Too Late",
+      "audio": {
+        "path": "book3/audio-us/60－Too Early and Too Late.mp3",
+        "sizeBytes": 4655679,
+        "sha256": "5b70801cb05e64e2b6871fab7af2c2a8308dfcd29e9b77c20907539e45f95684"
+      },
+      "transcript": {
+        "path": "book3/audio-us/60－Too Early and Too Late.lrc",
+        "sizeBytes": 3833,
+        "sha256": "ab3a5d60c947e6265a3e52b253c27fa0993b10643f1a6410bf2e93a5496cdfd3"
+      }
+    },
+    {
+      "lessonId": "NCE4-L001",
+      "book": 4,
+      "number": 1,
+      "title": "Finding Fossil Man",
+      "audio": {
+        "path": "book4/audio-us/01－Finding Fossil Man.mp3",
+        "sizeBytes": 2373621,
+        "sha256": "d5cae55e16a2c4aa046d0b68381d9e249b1c41ebe12414f48122e73cf94ee90e"
+      },
+      "transcript": {
+        "path": "book4/audio-us/01－Finding Fossil Man.lrc",
+        "sizeBytes": 1682,
+        "sha256": "770c9f2234e18e382905f286a45778101f5bcdf51b39d54c87f77c70d5c337cd"
+      }
+    },
+    {
+      "lessonId": "NCE4-L002",
+      "book": 4,
+      "number": 2,
+      "title": "Spare That Spider",
+      "audio": {
+        "path": "book4/audio-us/02－Spare That Spider.mp3",
+        "sizeBytes": 2471841,
+        "sha256": "143127b5001145ddb3e8057abd53aee15f51aeb5743e8182eee6e12eb6017dee"
+      },
+      "transcript": {
+        "path": "book4/audio-us/02－Spare That Spider.lrc",
+        "sizeBytes": 1921,
+        "sha256": "eed87ba15cd7e6a17926643abbb83e49f80efae3e90126067237e6d2b9670c87"
+      }
+    },
+    {
+      "lessonId": "NCE4-L003",
+      "book": 4,
+      "number": 3,
+      "title": "Matterhorn Man",
+      "audio": {
+        "path": "book4/audio-us/03－Matterhorn Man.mp3",
+        "sizeBytes": 2784471,
+        "sha256": "ed6735269aad6284465e203d747dfeb3d9a8ee3a2cf585788b728625e3512c71"
+      },
+      "transcript": {
+        "path": "book4/audio-us/03－Matterhorn Man.lrc",
+        "sizeBytes": 2057,
+        "sha256": "3ab33ced6517b30fb9f780c4cd608767e12f6da5b9ce59cde80e373a4d865460"
+      }
+    },
+    {
+      "lessonId": "NCE4-L004",
+      "book": 4,
+      "number": 4,
+      "title": "Seeing Hands",
+      "audio": {
+        "path": "book4/audio-us/04－Seeing Hands.mp3",
+        "sizeBytes": 2402454,
+        "sha256": "bed5584914c6293f50c5b422590a27e4ddf057436ffdcb73a8c17493e8c11f6e"
+      },
+      "transcript": {
+        "path": "book4/audio-us/04－Seeing Hands.lrc",
+        "sizeBytes": 2003,
+        "sha256": "354961a551aff9d35578174bdd17d05025df12a24e4d6c418266032abd5af61c"
+      }
+    },
+    {
+      "lessonId": "NCE4-L005",
+      "book": 4,
+      "number": 5,
+      "title": "Youth",
+      "audio": {
+        "path": "book4/audio-us/05－Youth.mp3",
+        "sizeBytes": 2781119,
+        "sha256": "38cc6e3abbc5b3e85077096249fa17dc88b8e4d33a287b238ecfe03b37817b24"
+      },
+      "transcript": {
+        "path": "book4/audio-us/05－Youth.lrc",
+        "sizeBytes": 2036,
+        "sha256": "5ab8d1b0fb7703e30e56e32a1d7e21a716e6e17cb3db8935c7ae9ded1a83429d"
+      }
+    },
+    {
+      "lessonId": "NCE4-L006",
+      "book": 4,
+      "number": 6,
+      "title": "The Sporting Spirit",
+      "audio": {
+        "path": "book4/audio-us/06－The Sporting Spirit.mp3",
+        "sizeBytes": 2160463,
+        "sha256": "d6eac1236f661b2b6bf452c6e3d93e25d6c9c54881684374eca94b0c9cc10d96"
+      },
+      "transcript": {
+        "path": "book4/audio-us/06－The Sporting Spirit.lrc",
+        "sizeBytes": 1762,
+        "sha256": "9c76ba341bc56da5dd65b505730dec924cd20e932b642a6e927a334b26e60c12"
+      }
+    },
+    {
+      "lessonId": "NCE4-L007",
+      "book": 4,
+      "number": 7,
+      "title": "Bats",
+      "audio": {
+        "path": "book4/audio-us/07－Bats.mp3",
+        "sizeBytes": 2718006,
+        "sha256": "2df700680f5435acab36f238ec1739cd81ee16d7e06aee71161dda7a17b02e58"
+      },
+      "transcript": {
+        "path": "book4/audio-us/07－Bats.lrc",
+        "sizeBytes": 1850,
+        "sha256": "508146c7c3a86c8132ad33db3a3589328d8b0920d89c5466ffc74316c50cdd75"
+      }
+    },
+    {
+      "lessonId": "NCE4-L008",
+      "book": 4,
+      "number": 8,
+      "title": "Trading Standards",
+      "audio": {
+        "path": "book4/audio-us/08－Trading Standards.mp3",
+        "sizeBytes": 2494828,
+        "sha256": "d46a96a0179b0019096626ecfe0321c860576353fcbfe722ed45bc932aafad35"
+      },
+      "transcript": {
+        "path": "book4/audio-us/08－Trading Standards.lrc",
+        "sizeBytes": 1980,
+        "sha256": "66e5ecea7528afacdb14edca8f8b513f27da438ed1bc09a5faecc4e798682b57"
+      }
+    },
+    {
+      "lessonId": "NCE4-L009",
+      "book": 4,
+      "number": 9,
+      "title": "Royal Espionage",
+      "audio": {
+        "path": "book4/audio-us/09－Royal Espionage.mp3",
+        "sizeBytes": 2827940,
+        "sha256": "0a6ec88ae688352b60f069d9d97b6061b1715c4be0af6ec43a493144f1af89ca"
+      },
+      "transcript": {
+        "path": "book4/audio-us/09－Royal Espionage.lrc",
+        "sizeBytes": 2041,
+        "sha256": "c2c795a73dfab0bdc9620e57acb77e1d6eb369ee7cbb5689847f2f52b93ccb25"
+      }
+    },
+    {
+      "lessonId": "NCE4-L010",
+      "book": 4,
+      "number": 10,
+      "title": "Silicon Valley",
+      "audio": {
+        "path": "book4/audio-us/10－Silicon Valley.mp3",
+        "sizeBytes": 2711329,
+        "sha256": "5cfa58f919940443aea33b1afb23cdd7ea452f6c9daa2f48e2ed1769983c9e84"
+      },
+      "transcript": {
+        "path": "book4/audio-us/10－Silicon Valley.lrc",
+        "sizeBytes": 2082,
+        "sha256": "6fedd7d483273e865fa04c8116ee5cdfe56ab440ca3f3975a2c553b2e6298218"
+      }
+    },
+    {
+      "lessonId": "NCE4-L011",
+      "book": 4,
+      "number": 11,
+      "title": "How to Grow Old",
+      "audio": {
+        "path": "book4/audio-us/11－How to Grow Old.mp3",
+        "sizeBytes": 2782383,
+        "sha256": "037fcdf2aa889cbf342c6f9bfd3644ecbb05f2536ad3a90128114f26b5f95736"
+      },
+      "transcript": {
+        "path": "book4/audio-us/11－How to Grow Old.lrc",
+        "sizeBytes": 2045,
+        "sha256": "9beb2fa7badb3d0b85d50316e7fe43976b1b18342d6eaeb986426fe6f0acdba9"
+      }
+    },
+    {
+      "lessonId": "NCE4-L012",
+      "book": 4,
+      "number": 12,
+      "title": "Banks and Their Customers",
+      "audio": {
+        "path": "book4/audio-us/12－Banks and Their Customers.mp3",
+        "sizeBytes": 2305084,
+        "sha256": "4897fff7c5c5fe75ec1e53e4f109e5e9d8c1c52e507d22a926b2e9f3ecf1d400"
+      },
+      "transcript": {
+        "path": "book4/audio-us/12－Banks and Their Customers.lrc",
+        "sizeBytes": 1930,
+        "sha256": "8a78a918ae7cec34c476000099452227fa8c5111c7b96460cc13e808bc5355a8"
+      }
+    },
+    {
+      "lessonId": "NCE4-L013",
+      "book": 4,
+      "number": 13,
+      "title": "The Search for Oil",
+      "audio": {
+        "path": "book4/audio-us/13－The Search for Oil.mp3",
+        "sizeBytes": 2522416,
+        "sha256": "f5322b75d01f858a0b88092cc606a8ea73a1344ad4885bdd57af7642098e6ae5"
+      },
+      "transcript": {
+        "path": "book4/audio-us/13－The Search for Oil.lrc",
+        "sizeBytes": 1803,
+        "sha256": "016fcab3ea3c8f6472fc421704c61fcc3af4cb79286f0e116901093f33c69030"
+      }
+    },
+    {
+      "lessonId": "NCE4-L014",
+      "book": 4,
+      "number": 14,
+      "title": "The Butterfly Effect",
+      "audio": {
+        "path": "book4/audio-us/14－The Butterfly Effect.mp3",
+        "sizeBytes": 2600994,
+        "sha256": "a323564d8ef41a8b7cad42aa54fe6eaab6951ccec4c206c957cf5e28ed74b1bc"
+      },
+      "transcript": {
+        "path": "book4/audio-us/14－The Butterfly Effect.lrc",
+        "sizeBytes": 2119,
+        "sha256": "d8c27f147df65029f8f3a540661f56017e480cce27aa17596a32923fd70d73e2"
+      }
+    },
+    {
+      "lessonId": "NCE4-L015",
+      "book": 4,
+      "number": 15,
+      "title": "Secrecy in Industry",
+      "audio": {
+        "path": "book4/audio-us/15－Secrecy in Industry.mp3",
+        "sizeBytes": 2567974,
+        "sha256": "ac0e1093fcd662cc4b79d9eb193d00de1585bd8a2b72884769a17e564143fb73"
+      },
+      "transcript": {
+        "path": "book4/audio-us/15－Secrecy in Industry.lrc",
+        "sizeBytes": 1962,
+        "sha256": "7e6f1530d7c71192628ce0671882e8adb88ac9508f5844d54acecbd5e3fb8dfe"
+      }
+    },
+    {
+      "lessonId": "NCE4-L016",
+      "book": 4,
+      "number": 16,
+      "title": "The Modern City",
+      "audio": {
+        "path": "book4/audio-us/16－The Modern City.mp3",
+        "sizeBytes": 2303402,
+        "sha256": "e312c4337e5cf451a552f341d050026a6aafaacf0d57f578d202a8a1d03fcd0d"
+      },
+      "transcript": {
+        "path": "book4/audio-us/16－The Modern City.lrc",
+        "sizeBytes": 1842,
+        "sha256": "f270dfb1516f69e023a44d8c5ac5cd1c116f37c9678a523d8061a18db0822036"
+      }
+    },
+    {
+      "lessonId": "NCE4-L017",
+      "book": 4,
+      "number": 17,
+      "title": "A Man-made Disease",
+      "audio": {
+        "path": "book4/audio-us/17－A Man-made Disease.mp3",
+        "sizeBytes": 3140577,
+        "sha256": "5db4b8989e20308cdcb3fcca2d40fc98b59147ef4e2e4997315257849e27b1a1"
+      },
+      "transcript": {
+        "path": "book4/audio-us/17－A Man-made Disease.lrc",
+        "sizeBytes": 2403,
+        "sha256": "980f90141270cc42b500a8219cf2b05445ac2eb58d57a06672b417af18e9f721"
+      }
+    },
+    {
+      "lessonId": "NCE4-L018",
+      "book": 4,
+      "number": 18,
+      "title": "Porpoises",
+      "audio": {
+        "path": "book4/audio-us/18－Porpoises.mp3",
+        "sizeBytes": 3072859,
+        "sha256": "5d1dcb5406045ae2f9c65111ffbb369ca41375da4491ba2a17af56dc2d084ed7"
+      },
+      "transcript": {
+        "path": "book4/audio-us/18－Porpoises.lrc",
+        "sizeBytes": 2569,
+        "sha256": "5def5f07b716a577267b27437b99c336ead5ab80af58693b4854815371c59f05"
+      }
+    },
+    {
+      "lessonId": "NCE4-L019",
+      "book": 4,
+      "number": 19,
+      "title": "The Stuff of Dreams",
+      "audio": {
+        "path": "book4/audio-us/19－The Stuff of Dreams.mp3",
+        "sizeBytes": 3395534,
+        "sha256": "116a017f12d00c399a3b1e27aa03807e790683afc86b7581c5f150758203ab5c"
+      },
+      "transcript": {
+        "path": "book4/audio-us/19－The Stuff of Dreams.lrc",
+        "sizeBytes": 2639,
+        "sha256": "a86a9c64cefc54ee6915a8eee75bb85fe95737aefa0ce341c4d1e3c8218bf644"
+      }
+    },
+    {
+      "lessonId": "NCE4-L020",
+      "book": 4,
+      "number": 20,
+      "title": "Snake Poison",
+      "audio": {
+        "path": "book4/audio-us/20－Snake Poison.mp3",
+        "sizeBytes": 3133048,
+        "sha256": "af61cc6f921b5e44512471c6042d1f02ba2a7acd14f9e23457747ad50a11d47f"
+      },
+      "transcript": {
+        "path": "book4/audio-us/20－Snake Poison.lrc",
+        "sizeBytes": 2535,
+        "sha256": "15f09a91c9abc97a38e73f8c87dda2c1b71b882fa486c3e6f2e2c0495dafaf66"
+      }
+    },
+    {
+      "lessonId": "NCE4-L021",
+      "book": 4,
+      "number": 21,
+      "title": "William S. Hart and the Early Western Film",
+      "audio": {
+        "path": "book4/audio-us/21－William S. Hart and the Early Western Film.mp3",
+        "sizeBytes": 3390961,
+        "sha256": "f093be273b3727fcd0242806a3d16788e45babe35c1af5ffb05fcc2cbee0d8b1"
+      },
+      "transcript": {
+        "path": "book4/audio-us/21－William S. Hart and the Early Western Film.lrc",
+        "sizeBytes": 2477,
+        "sha256": "632e1ad1505ec8bffdac880aaebb1fc2be6e7dc7a393a044dcf60479504ba02f"
+      }
+    },
+    {
+      "lessonId": "NCE4-L022",
+      "book": 4,
+      "number": 22,
+      "title": "Knowledge and Progress",
+      "audio": {
+        "path": "book4/audio-us/22－Knowledge and Progress.mp3",
+        "sizeBytes": 2896075,
+        "sha256": "24449c4dd7aa57dd3588945093731948384e0f8d281b8f10336df6a6e4610faf"
+      },
+      "transcript": {
+        "path": "book4/audio-us/22－Knowledge and Progress.lrc",
+        "sizeBytes": 2435,
+        "sha256": "1a802301afd9a42db064c7d37c2a0bb46fbc0230e342221ce5c9fec25094b5ad"
+      }
+    },
+    {
+      "lessonId": "NCE4-L023",
+      "book": 4,
+      "number": 23,
+      "title": "Bird Flight",
+      "audio": {
+        "path": "book4/audio-us/23－Bird Flight.mp3",
+        "sizeBytes": 3046948,
+        "sha256": "c0da365e24ce6d04e57b82ce81eb4273e57d4e5a8c26e4d477525f70fce70965"
+      },
+      "transcript": {
+        "path": "book4/audio-us/23－Bird Flight.lrc",
+        "sizeBytes": 2430,
+        "sha256": "df7cfe2178472631baa0a1cca037a796e37ff50b27591ab44b2a565ecaa7abd7"
+      }
+    },
+    {
+      "lessonId": "NCE4-L024",
+      "book": 4,
+      "number": 24,
+      "title": "Beauty",
+      "audio": {
+        "path": "book4/audio-us/24－Beauty.mp3",
+        "sizeBytes": 2801601,
+        "sha256": "c928909863d30ed40d76c20193cbfd1512f06913a5163f53432be856a02a2fa0"
+      },
+      "transcript": {
+        "path": "book4/audio-us/24－Beauty.lrc",
+        "sizeBytes": 2264,
+        "sha256": "1c429203741f0bbbcfd85b2b0ac7cd059fc728d5b0a03d067e2c03053f112ba1"
+      }
+    },
+    {
+      "lessonId": "NCE4-L025",
+      "book": 4,
+      "number": 25,
+      "title": "Non-Auditory Effects of Noise",
+      "audio": {
+        "path": "book4/audio-us/25－Non-Auditory Effects of Noise.mp3",
+        "sizeBytes": 3963968,
+        "sha256": "50dd4b6f36a0947cc12f6facf125c8bf507f0f56afcb100adadaee84279e91a1"
+      },
+      "transcript": {
+        "path": "book4/audio-us/25－Non-Auditory Effects of Noise.lrc",
+        "sizeBytes": 3137,
+        "sha256": "22909f04a3d234bd9f6f4ac6acc4667d33b97904e146c47af8c0801835631162"
+      }
+    },
+    {
+      "lessonId": "NCE4-L026",
+      "book": 4,
+      "number": 26,
+      "title": "The Past Life of the Earth",
+      "audio": {
+        "path": "book4/audio-us/26－The Past Life of the Earth.mp3",
+        "sizeBytes": 3519674,
+        "sha256": "f8f21c7c42ee4e1a4bf9024af4a3c2c1e5944b7ecb7ffa83a9d6975d5012d1ce"
+      },
+      "transcript": {
+        "path": "book4/audio-us/26－The Past Life of the Earth.lrc",
+        "sizeBytes": 3032,
+        "sha256": "9fb46293751004e62c064c8411183091ad86542bf3846b54ae8cf5b3f1c34b75"
+      }
+    },
+    {
+      "lessonId": "NCE4-L027",
+      "book": 4,
+      "number": 27,
+      "title": "The vasa",
+      "audio": {
+        "path": "book4/audio-us/27－The vasa.mp3",
+        "sizeBytes": 4218904,
+        "sha256": "4fe7e1f7935654c905c3ebad67067f32f90ee5ab1fbaabd5d3e26920b146f26f"
+      },
+      "transcript": {
+        "path": "book4/audio-us/27－The vasa.lrc",
+        "sizeBytes": 3032,
+        "sha256": "8fb7a145e1d66394c657ed2f0e213eeeac24e5602f51bf540aa98a0e0586e268"
+      }
+    },
+    {
+      "lessonId": "NCE4-L028",
+      "book": 4,
+      "number": 28,
+      "title": "Patients and Doctors",
+      "audio": {
+        "path": "book4/audio-us/28－Patients and Doctors.mp3",
+        "sizeBytes": 3212050,
+        "sha256": "6464e63ba8d0dc35e97e9b34f7a1f6eeca39bc43d5a613bade9d8d61957c7ca6"
+      },
+      "transcript": {
+        "path": "book4/audio-us/28－Patients and Doctors.lrc",
+        "sizeBytes": 2926,
+        "sha256": "c267d90f1324d28819c964cdee7af443395374b08caf8e3b3cd69fca23417c87"
+      }
+    },
+    {
+      "lessonId": "NCE4-L029",
+      "book": 4,
+      "number": 29,
+      "title": "The Hovercraft",
+      "audio": {
+        "path": "book4/audio-us/29－The Hovercraft.mp3",
+        "sizeBytes": 3493749,
+        "sha256": "206597bb707f1197d71a593c5da994ceed9c970382f599e9ea1a432aa6d30968"
+      },
+      "transcript": {
+        "path": "book4/audio-us/29－The Hovercraft.lrc",
+        "sizeBytes": 2466,
+        "sha256": "41539b4957f1065025ea4cf152700d36deb5a52585b565e9e2e202433760158a"
+      }
+    },
+    {
+      "lessonId": "NCE4-L030",
+      "book": 4,
+      "number": 30,
+      "title": "Exploring the Sea-Floor",
+      "audio": {
+        "path": "book4/audio-us/30－Exploring the Sea-Floor.mp3",
+        "sizeBytes": 3645477,
+        "sha256": "6b296df6f6686b7f6ee95158815b6f73cd0101ceeb52d499482582faca16ce1e"
+      },
+      "transcript": {
+        "path": "book4/audio-us/30－Exploring the Sea-Floor.lrc",
+        "sizeBytes": 2996,
+        "sha256": "398db1ac072a6a92054c371712ae1e1ed1cc8218d8604a8c98853fd0409a185b"
+      }
+    },
+    {
+      "lessonId": "NCE4-L031",
+      "book": 4,
+      "number": 31,
+      "title": "The Sculptor Speaks",
+      "audio": {
+        "path": "book4/audio-us/31－The Sculptor Speaks.mp3",
+        "sizeBytes": 3584033,
+        "sha256": "d1115c2fda908cdc47b547407f3001abf0b577736c205033bb0eb54340a773d3"
+      },
+      "transcript": {
+        "path": "book4/audio-us/31－The Sculptor Speaks.lrc",
+        "sizeBytes": 2518,
+        "sha256": "556bbfe6a71297c2b136e3bbe3f01b2360f077fbc6a905311d190644a9e2f42c"
+      }
+    },
+    {
+      "lessonId": "NCE4-L032",
+      "book": 4,
+      "number": 32,
+      "title": "Galileo Reborn",
+      "audio": {
+        "path": "book4/audio-us/32－Galileo Reborn.mp3",
+        "sizeBytes": 3648812,
+        "sha256": "a1f4983c9519a634f0c09a02a7d085d5003e6304e068ee5030e896293e866968"
+      },
+      "transcript": {
+        "path": "book4/audio-us/32－Galileo Reborn.lrc",
+        "sizeBytes": 2978,
+        "sha256": "b4959b5671d8c1a94f91ea1b65052be2555711e019c83ff71a6aca6769ebb948"
+      }
+    },
+    {
+      "lessonId": "NCE4-L033",
+      "book": 4,
+      "number": 33,
+      "title": "Education",
+      "audio": {
+        "path": "book4/audio-us/33－Education.mp3",
+        "sizeBytes": 4121519,
+        "sha256": "47c47b77087276614f50116d18260585c67b38d89227afd463ba16635faa078b"
+      },
+      "transcript": {
+        "path": "book4/audio-us/33－Education.lrc",
+        "sizeBytes": 2959,
+        "sha256": "87dee6551d2e1da93cc829e8918595939bf91bd7f6c6b34289b7440d906fbd32"
+      }
+    },
+    {
+      "lessonId": "NCE4-L034",
+      "book": 4,
+      "number": 34,
+      "title": "Adolescence",
+      "audio": {
+        "path": "book4/audio-us/34－Adolescence.mp3",
+        "sizeBytes": 3375463,
+        "sha256": "8fe522fcb441ca625cb4b5874faeb6422a862333e478a474db19b6972246171d"
+      },
+      "transcript": {
+        "path": "book4/audio-us/34－Adolescence.lrc",
+        "sizeBytes": 2784,
+        "sha256": "933f6c4ba38d640b1488486cb6d8718b6310a811770a65786bf4cdb0e6dd4ebf"
+      }
+    },
+    {
+      "lessonId": "NCE4-L035",
+      "book": 4,
+      "number": 35,
+      "title": "Space Odyssey",
+      "audio": {
+        "path": "book4/audio-us/35－Space Odyssey.mp3",
+        "sizeBytes": 3595730,
+        "sha256": "6da8358b5292deeb4207af7304380ff9b279e73ab84034887543805f5840bc2a"
+      },
+      "transcript": {
+        "path": "book4/audio-us/35－Space Odyssey.lrc",
+        "sizeBytes": 2455,
+        "sha256": "09871ad7ed25c2e9d1dc1a73f99a63b39cb8a57b73092e35ce2489d53f78c4ce"
+      }
+    },
+    {
+      "lessonId": "NCE4-L036",
+      "book": 4,
+      "number": 36,
+      "title": "The Cost of Government",
+      "audio": {
+        "path": "book4/audio-us/36－The Cost of Government.mp3",
+        "sizeBytes": 3556033,
+        "sha256": "50517341dd5318a9c1546b1ce9f4b56d1195742cd0b84c43b1aca1be879cac4d"
+      },
+      "transcript": {
+        "path": "book4/audio-us/36－The Cost of Government.lrc",
+        "sizeBytes": 2922,
+        "sha256": "2fc6068757025bb5ea1a9e6d1ddc97bf41a2160697bb0535c3ffef56deb810c2"
+      }
+    },
+    {
+      "lessonId": "NCE4-L037",
+      "book": 4,
+      "number": 37,
+      "title": "The Process of Ageing",
+      "audio": {
+        "path": "book4/audio-us/37－The Process of Ageing.mp3",
+        "sizeBytes": 4640218,
+        "sha256": "a55742901f813320ed215873571b754ea33d19038544a9ebfd8c4190a40586c6"
+      },
+      "transcript": {
+        "path": "book4/audio-us/37－The Process of Ageing.lrc",
+        "sizeBytes": 3442,
+        "sha256": "c7885c80b244a9d2d340b516bc2aa067746e2fb397f5cbfb87528d648028d195"
+      }
+    },
+    {
+      "lessonId": "NCE4-L038",
+      "book": 4,
+      "number": 38,
+      "title": "Water and the Traveller",
+      "audio": {
+        "path": "book4/audio-us/38－Water and the Traveller.mp3",
+        "sizeBytes": 3169004,
+        "sha256": "a70ea4f9813051dc0467c1fa340e5143590ebcc59ac8d90b1c38263abfcfd610"
+      },
+      "transcript": {
+        "path": "book4/audio-us/38－Water and the Traveller.lrc",
+        "sizeBytes": 2644,
+        "sha256": "17a2da36c4db91ca6156741e290b5113f152279a5e93f9b213cf2a0d3fa35e74"
+      }
+    },
+    {
+      "lessonId": "NCE4-L039",
+      "book": 4,
+      "number": 39,
+      "title": "What Every Writer Wants",
+      "audio": {
+        "path": "book4/audio-us/39－What Every Writer Wants.mp3",
+        "sizeBytes": 3998653,
+        "sha256": "b3d56209f54c069a64eeecdb494a5a48af8e1b03531e8b65a33ff37ad743d227"
+      },
+      "transcript": {
+        "path": "book4/audio-us/39－What Every Writer Wants.lrc",
+        "sizeBytes": 3039,
+        "sha256": "5f9e2c8f1b391c30feede8c1b15b282fe9d959ea3a2061c760cc187e2230db9f"
+      }
+    },
+    {
+      "lessonId": "NCE4-L040",
+      "book": 4,
+      "number": 40,
+      "title": "Waves",
+      "audio": {
+        "path": "book4/audio-us/40－Waves.mp3",
+        "sizeBytes": 2998876,
+        "sha256": "912e1a4c292c9c57b4705934ee654dc227351f3afacc4c889a72b967d59c407d"
+      },
+      "transcript": {
+        "path": "book4/audio-us/40－Waves.lrc",
+        "sizeBytes": 2354,
+        "sha256": "a673b640d2691db87fd9b0be0a8b863afa48cf3242309a2a99ef84dc387ec9b7"
+      }
+    },
+    {
+      "lessonId": "NCE4-L041",
+      "book": 4,
+      "number": 41,
+      "title": "Training Elephants",
+      "audio": {
+        "path": "book4/audio-us/41－Training Elephants.mp3",
+        "sizeBytes": 4908545,
+        "sha256": "a95c51f59c7706d3c7fd42f4599a8d8fec3f544c58b5de383eee9fda0ca40c15"
+      },
+      "transcript": {
+        "path": "book4/audio-us/41－Training Elephants.lrc",
+        "sizeBytes": 3928,
+        "sha256": "d6c7115192c0796e83f7400a8989ee9f88c197cc2b06d5c669b6b26a25f9c124"
+      }
+    },
+    {
+      "lessonId": "NCE4-L042",
+      "book": 4,
+      "number": 42,
+      "title": "Recording an Earthquake",
+      "audio": {
+        "path": "book4/audio-us/42－Recording an Earthquake.mp3",
+        "sizeBytes": 4895593,
+        "sha256": "a740b71400c118c3f27c1c346d0302523134787154b3daaa3872bd563105ce0a"
+      },
+      "transcript": {
+        "path": "book4/audio-us/42－Recording an Earthquake.lrc",
+        "sizeBytes": 4397,
+        "sha256": "88684b472b13f20137a4a1a7d2ddd176c4a276d419012f6c4f8d1c7a73283cbf"
+      }
+    },
+    {
+      "lessonId": "NCE4-L043",
+      "book": 4,
+      "number": 43,
+      "title": "Are There Strangers in Space",
+      "audio": {
+        "path": "book4/audio-us/43－Are There Strangers in Space.mp3",
+        "sizeBytes": 5676765,
+        "sha256": "2b9c1ea5f71d05a8bb3ee0c2fa1a52ee8a5a942ce5918678926de3f26dca2033"
+      },
+      "transcript": {
+        "path": "book4/audio-us/43－Are There Strangers in Space.lrc",
+        "sizeBytes": 4371,
+        "sha256": "f2c050fdcc49b5a563378bc15ccf3b73f0555c90f105fa8f826908b8671cb650"
+      }
+    },
+    {
+      "lessonId": "NCE4-L044",
+      "book": 4,
+      "number": 44,
+      "title": "Patterns of Culture",
+      "audio": {
+        "path": "book4/audio-us/44－Patterns of Culture.mp3",
+        "sizeBytes": 5122123,
+        "sha256": "52ee32f953278083af44ff3867944794f1202ce17ccf7f83d137d03a95cb8843"
+      },
+      "transcript": {
+        "path": "book4/audio-us/44－Patterns of Culture.lrc",
+        "sizeBytes": 4499,
+        "sha256": "b15238593198d57519e2b2b0a85bb95cff6fc4a87953eb170d4fe4499e551fd5"
+      }
+    },
+    {
+      "lessonId": "NCE4-L045",
+      "book": 4,
+      "number": 45,
+      "title": "Of Men and Galaxies",
+      "audio": {
+        "path": "book4/audio-us/45－Of Men and Galaxies.mp3",
+        "sizeBytes": 4975419,
+        "sha256": "f28672fa2be3c1d3a3414966a980d11542dbf397fd0eef18daf6b890e2d9b387"
+      },
+      "transcript": {
+        "path": "book4/audio-us/45－Of Men and Galaxies.lrc",
+        "sizeBytes": 3974,
+        "sha256": "a2c01b950894fb53846e81213c62fe898626b3e12a11c04b7f6475257e7979b6"
+      }
+    },
+    {
+      "lessonId": "NCE4-L046",
+      "book": 4,
+      "number": 46,
+      "title": "Hobbies",
+      "audio": {
+        "path": "book4/audio-us/46－Hobbies.mp3",
+        "sizeBytes": 4790669,
+        "sha256": "f89c2545aaecc4ac6802392d745a958aca958759baa8bddf0db61b00b01d8187"
+      },
+      "transcript": {
+        "path": "book4/audio-us/46－Hobbies.lrc",
+        "sizeBytes": 4079,
+        "sha256": "c392dc9a407cd20504bfbee72b9d4977e24317ccaa787ce93d220f9261ad10a9"
+      }
+    },
+    {
+      "lessonId": "NCE4-L047",
+      "book": 4,
+      "number": 47,
+      "title": "The Great Escape",
+      "audio": {
+        "path": "book4/audio-us/47－The Great Escape.mp3",
+        "sizeBytes": 5890329,
+        "sha256": "6a2e9a26daa1d156cc85df526782147612eae81080dd554ee8683d05cd42af0e"
+      },
+      "transcript": {
+        "path": "book4/audio-us/47－The Great Escape.lrc",
+        "sizeBytes": 4553,
+        "sha256": "d00d87c8f4cf6b81346e0a2162569073aa59e31996952a1a35212ab898d9d649"
+      }
+    },
+    {
+      "lessonId": "NCE4-L048",
+      "book": 4,
+      "number": 48,
+      "title": "Planning a Share Portfolio",
+      "audio": {
+        "path": "book4/audio-us/48－Planning a Share Portfolio.mp3",
+        "sizeBytes": 3392197,
+        "sha256": "f5c428e16891de8fddd28634064550d8fc8b3535201af315ff4599e0494bad25"
+      },
+      "transcript": {
+        "path": "book4/audio-us/48－Planning a Share Portfolio.lrc",
+        "sizeBytes": 2827,
+        "sha256": "9caa95472a4df0a07978beccad481f99260ee24c66bb69f1a322b97f8fe0248f"
+      }
+    }
+  ],
+  "excludedFiles": [
+    {
+      "path": "book2/textbook.pdf",
+      "sizeBytes": 19876069,
+      "sha256": "8e19ce05144e35257f551bb8e2c8a26920bb7790affb7105441a0b011731e201"
+    },
+    {
+      "path": "book3/textbook.pdf",
+      "sizeBytes": 14174363,
+      "sha256": "9c3a876dbd813261b164356b97bcc6ca8b1c2653109e9b4f3e2cb3a198f90d97"
+    },
+    {
+      "path": "book4/textbook.pdf",
+      "sizeBytes": 16184157,
+      "sha256": "d7250bbdb39130c202a32520c49d0c0d9ad1e115fd1e14300e07c30f9719c804"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 A local-first English practice app built to the supplied **Complete Specification v1.1**. React + TypeScript + Vite. Listen, recall and rewrite in a quiet editor; ask for Hint or Review yourself.
 
-The app ships **no textbook text or recordings**. Import MP3/LRC you are entitled to use, confirm body lines, then practice. Audio, text, drafts and learning records are saved in browser IndexedDB. JSON backup includes private imported text but excludes audio. Different devices do not synchronize.
+Books 2–4 provide **204 playable lessons** from the MP3/LRC files already in this repository. Open a lesson and press Play: audio and synchronized subtitles load from this site without selecting files. The first five lessons retain curated chunks and prompts; the others provide listening, transcript review and the same quiet writing workflow. Drafts and learning records stay in browser IndexedDB. JSON backups include subtitle text and history but exclude audio. Devices do not synchronize.
 
 **AI Tutor is not configured.** Real deterministic fidelity comparison, limited labeled local rules, and an explicit manual ChatGPT workflow are available. No simulated AI, general language score or pronunciation score.
 
@@ -25,14 +25,14 @@ E2E generates project-original MP3 at runtime. Install FFmpeg with `libmp3lame` 
 
 ## Start learning
 
-1. Open a lesson and Import & sources; choose your own MP3 and LRC. Label the audio accent yourself.
+1. Choose Book 2, 3 or 4, open a lesson and press Play. No Import step is required. Local files remain an optional override under Optional local files & sources.
 2. In source/body review, inspect the lines, choose Lesson body and Confirm. Questions are kept separate.
 3. Accept chunks you want to learn. Select a confirmed sentence or a custom group; full lesson uses all confirmed body lines.
 4. Start dictation or memory recall (subtitles hide), or choose guided rewriting. Type uninterrupted and save locally.
 5. Click Hint for graduated local guidance. Click Review for reference differences and supported rules. Different wording does not imply incorrect English.
 6. Revise in your own words, Recheck, save selected issues, then Finish with your own skill rating.
-7. Export learning JSON in Settings. Keep backups private; re-import audio when restoring to a different browser.
+7. Export learning JSON in Settings. Keep backups private. Repository audio remains available after restoring; local replacement audio must be selected again.
 
 ## Textbook materials
 
-`projects/New-Concept-English/` holds New Concept English (Books 2–4) PDFs, audio and LRC files, collected from [tangx/New-Concept-English](https://github.com/tangx/New-Concept-English). They are kept here **for the owner's personal study only**. Copyright belongs to the original publishers and authors; no rights are claimed or granted. They are not part of the app and not used by the build. If you are a rights holder and want them removed, please open an issue.
+`projects/New-Concept-English/` holds New Concept English (Books 2–4) PDFs, audio and LRC files, collected from [tangx/New-Concept-English](https://github.com/tangx/New-Concept-English). They are kept here **for the owner's personal study only**. Copyright belongs to the original publishers and authors; no rights are claimed or granted. Following the owner’s explicit deployment request, the build publishes the 204 MP3/LRC pairs under `media/`; PDFs remain excluded. The exact paths, sizes and SHA-256 hashes are in `content/source-manifest/hosted.json`. This deployment instruction does not establish a publisher redistribution license. If you are a rights holder and want them removed, please open an issue.

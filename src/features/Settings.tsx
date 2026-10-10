@@ -55,7 +55,7 @@ export function Settings({
       if (file.size > 10_000_000) throw new Error("Backup exceeds 10 MB.");
       setRestore(await readBackup(await file.text()));
       setMessage(
-        "Checksum and schema verified. Restore will replace current records; stored audio will be cleared to avoid incorrect file pairings; re-import it after restoring. Export first if you need the current records.",
+        "Checksum and schema verified. Restore will replace current records; stored audio will be cleared to avoid incorrect file pairings; repository audio remains available; choose any local replacement again. Export first if you need the current records.",
       );
     } catch (e) {
       setMessage(String(e));
@@ -131,7 +131,7 @@ export function Settings({
                     onStorageRecover();
                     setRestore(undefined);
                     setMessage(
-                      "Restored and persisted. Re-import audio on each lesson.",
+                      "Restored and persisted. Repository audio is available; local replacements may need choosing again.",
                     );
                   })
                   .catch((e) => setMessage(String(e)));
@@ -167,9 +167,10 @@ export function Settings({
           Manual ChatGPT sharing is your choice.
         </p>
         <p>
-          The app does not fetch textbook audio, PDF or LRC automatically.
-          Source paths are references. Imported text is rendered as plain text,
-          never instructions or executable HTML.
+          Repository MP3/LRC resources load automatically from this site. PDFs
+          are not deployed. Drafts and learning history stay in this browser.
+          Subtitle text is rendered as plain text, never instructions or
+          executable HTML.
         </p>
         <p>
           Source repository:{" "}
