@@ -32,3 +32,7 @@ E2E generates project-original MP3 at runtime. Install FFmpeg with `libmp3lame` 
 5. Click Hint for graduated local guidance. Click Review for reference differences and supported rules. Different wording does not imply incorrect English.
 6. Revise in your own words, Recheck, save selected issues, then Finish with your own skill rating.
 7. Export learning JSON in Settings. Keep backups private; re-import audio when restoring to a different browser.
+
+## Textbook materials
+
+`projects/New-Concept-English/` holds New Concept English (Books 2–4) PDFs, audio and LRC files, collected from [tangx/New-Concept-English](https://github.com/tangx/New-Concept-English). They are kept here **for the owner's personal study only**. Copyright belongs to the original publishers and authors; no rights are claimed or granted. They are not part of the app and not used by the build. If you are a rights holder and want them removed, please open an issue.
