@@ -1,0 +1,151 @@
+[
+  {
+    "id": "NCE2-L001-writing",
+    "lessonId": "NCE2-L001",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000002",
+      "CH000003",
+      "CH000004",
+      "CH000005"
+    ],
+    "mode": "writing",
+    "prompt": "Tell a friend about an interruption at a public place. Set the scene, explain what happened, and describe your response. Try two selected chunks.",
+    "rubric": "Preserve your intended meaning; check past tense, clear sequence, and natural chunk use.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L001-speaking",
+    "lessonId": "NCE2-L001",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000002",
+      "CH000003",
+      "CH000004",
+      "CH000005"
+    ],
+    "mode": "speaking",
+    "prompt": "Tell a 60-second story about an interruption. What did you notice? How did you respond? Use two selected chunks without reading.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L002-writing",
+    "lessonId": "NCE2-L002",
+    "targetChunkIds": [
+      "CH000006",
+      "CH000007",
+      "CH000008",
+      "CH000009",
+      "CH000010"
+    ],
+    "mode": "writing",
+    "prompt": "Write about a morning that did not go as planned. Contrast your usual routine with what happened, using clear time expressions.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L002-speaking",
+    "lessonId": "NCE2-L002",
+    "targetChunkIds": [
+      "CH000006",
+      "CH000007",
+      "CH000008",
+      "CH000009",
+      "CH000010"
+    ],
+    "mode": "speaking",
+    "prompt": "Speak for 60 seconds without reading. Write about a morning that did not go as planned. Contrast your usual routine with what happened, using clear time expressions. Then reflect on clarity and chunk use.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L003-writing",
+    "lessonId": "NCE2-L003",
+    "targetChunkIds": [
+      "CH000011",
+      "CH000012",
+      "CH000013",
+      "CH000014",
+      "CH000015"
+    ],
+    "mode": "writing",
+    "prompt": "Describe a small task you intended to complete on a trip. Explain a distraction and the decision you made.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L003-speaking",
+    "lessonId": "NCE2-L003",
+    "targetChunkIds": [
+      "CH000011",
+      "CH000012",
+      "CH000013",
+      "CH000014",
+      "CH000015"
+    ],
+    "mode": "speaking",
+    "prompt": "Speak for 60 seconds without reading. Describe a small task you intended to complete on a trip. Explain a distraction and the decision you made. Then reflect on clarity and chunk use.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L004-writing",
+    "lessonId": "NCE2-L004",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000016",
+      "CH000017",
+      "CH000018",
+      "CH000019"
+    ],
+    "mode": "writing",
+    "prompt": "Write a short message about a friend living in another city. Explain what they have experienced and what they are doing now.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L004-speaking",
+    "lessonId": "NCE2-L004",
+    "targetChunkIds": [
+      "CH000001",
+      "CH000016",
+      "CH000017",
+      "CH000018",
+      "CH000019"
+    ],
+    "mode": "speaking",
+    "prompt": "Speak for 60 seconds without reading. Write a short message about a friend living in another city. Explain what they have experienced and what they are doing now. Then reflect on clarity and chunk use.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L005-writing",
+    "lessonId": "NCE2-L005",
+    "targetChunkIds": [
+      "CH000020",
+      "CH000021",
+      "CH000022",
+      "CH000023",
+      "CH000024"
+    ],
+    "mode": "writing",
+    "prompt": "Explain a practical way your family sends urgent messages. Compare it with another method and describe when it is useful.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  },
+  {
+    "id": "NCE2-L005-speaking",
+    "lessonId": "NCE2-L005",
+    "targetChunkIds": [
+      "CH000020",
+      "CH000021",
+      "CH000022",
+      "CH000023",
+      "CH000024"
+    ],
+    "mode": "speaking",
+    "prompt": "Speak for 60 seconds without reading. Explain a practical way your family sends urgent messages. Compare it with another method and describe when it is useful. Then reflect on clarity and chunk use.",
+    "rubric": "Check intended meaning, sequence and natural use of selected chunks.",
+    "authoredBy": "project"
+  }
+]

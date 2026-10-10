@@ -1,0 +1,2 @@
+# Markdown's two-space line breaks are intentional in the authoritative spec.
+*.md whitespace=-blank-at-eol

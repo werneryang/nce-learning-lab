@@ -1,0 +1,232 @@
+import { useEffect, useState } from "react";
+import type { State } from "../shared/schema";
+import { emptyState } from "../shared/schema";
+import {
+  exportBackup,
+  readBackup,
+  clearPrivateData,
+  storageInfo,
+  replaceStateAndClearMedia,
+} from "../storage/db";
+import { manifest } from "../shared/content";
+export function Settings({
+  state,
+  update,
+  flush,
+  onStorageRecover,
+}: {
+  state: State;
+  update: (fn: (s: State) => State) => void;
+  flush: () => Promise<boolean>;
+  onStorageRecover: () => void;
+}) {
+  const [message, setMessage] = useState("");
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const [restore, setRestore] = useState<State>();
+  const [usage, setUsage] = useState<{ usage?: number; quota?: number }>({});
+  useEffect(() => {
+    void storageInfo()
+      .then(setUsage)
+      .catch(() => {});
+  }, []);
+  async function backup() {
+    try {
+      await flush();
+      const backup = await exportBackup(state);
+      const url = URL.createObjectURL(
+        new Blob([JSON.stringify(backup, null, 2)], {
+          type: "application/json",
+        }),
+      );
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `nce-learning-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      setMessage(
+        "Backup downloaded. It includes imported text and private history, but excludes all audio. Keep it private.",
+      );
+    } catch (e) {
+      setMessage(String(e));
+    }
+  }
+  async function read(file: File) {
+    try {
+      if (file.size > 10_000_000) throw new Error("Backup exceeds 10 MB.");
+      setRestore(await readBackup(await file.text()));
+      setMessage(
+        "Checksum and schema verified. Restore will replace current records; stored audio will be cleared to avoid incorrect file pairings; re-import it after restoring. Export first if you need the current records.",
+      );
+    } catch (e) {
+      setMessage(String(e));
+    }
+  }
+  return (
+    <section className="panel">
+      <span className="eyebrow">YOUR DATA, YOUR DEVICE</span>
+      <h2>Settings & backup</h2>
+      <p className="muted">
+        IndexedDB stores your learning data and imported media in this browser.
+        Clearing browser data can remove it. Mac and iPhone do not synchronize.
+      </p>
+      <p className="small">
+        Storage:{" "}
+        {usage.usage === undefined
+          ? "estimate unavailable"
+          : `${(usage.usage / 1e6).toFixed(1)} MB used`}{" "}
+        {usage.quota !== undefined && `of ${(usage.quota / 1e6).toFixed(0)} MB`}
+        . Private browsing and eviction can shorten retention.
+      </p>
+      <div className="button-row">
+        <button className="primary" onClick={() => void backup()}>
+          Export learning JSON
+        </button>
+        <label className="file-button">
+          Import backup
+          <input
+            aria-label="Import backup"
+            type="file"
+            accept=".json,application/json"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) void read(f);
+              e.target.value = "";
+            }}
+          />
+        </label>
+        <button
+          onClick={() => {
+            void navigator.storage
+              ?.persist?.()
+              .then((ok) =>
+                setMessage(
+                  ok
+                    ? "Persistent storage granted. Still keep independent backups."
+                    : "Browser did not grant persistence; keep regular backups.",
+                ),
+              );
+          }}
+        >
+          Request persistent storage
+        </button>
+      </div>
+      <p className="small">
+        JSON contains drafts, confirmed transcript text, sources, chunks,
+        mistakes, attempts, tutor history and preferences. MP3 and speaking
+        recordings are excluded. Restore replaces records after validation; it
+        does not silently merge conflicting IDs.
+      </p>
+      {restore && (
+        <div className="notice">
+          <p>
+            {restore.sessions.length} sessions · {restore.chunks.length} chunks
+            · {restore.mistakes.length} mistakes
+          </p>
+          <div className="button-row">
+            <button
+              onClick={() => {
+                void replaceStateAndClearMedia(restore)
+                  .then(() => {
+                    update(() => restore);
+                    onStorageRecover();
+                    setRestore(undefined);
+                    setMessage(
+                      "Restored and persisted. Re-import audio on each lesson.",
+                    );
+                  })
+                  .catch((e) => setMessage(String(e)));
+              }}
+            >
+              Replace records with verified backup
+            </button>
+            <button onClick={() => setRestore(undefined)}>
+              Cancel restore
+            </button>
+          </div>
+        </div>
+      )}
+      <label className="check">
+        <input
+          type="checkbox"
+          checked={state.settings.chinese}
+          onChange={(e) =>
+            update((s) => ({
+              ...s,
+              settings: { ...s.settings, chinese: e.target.checked },
+            }))
+          }
+        />{" "}
+        Show Chinese explanations for chunks
+      </label>
+      <details>
+        <summary>AI, privacy & copyright</summary>
+        <p>
+          <strong>AI Tutor not configured.</strong> No backend, API credentials,
+          model billing or cloud account is configured. Local rule feedback is
+          limited; semantic equivalence and naturalness remain unassessed.
+          Manual ChatGPT sharing is your choice.
+        </p>
+        <p>
+          The app does not fetch textbook audio, PDF or LRC automatically.
+          Source paths are references. Imported text is rendered as plain text,
+          never instructions or executable HTML.
+        </p>
+        <p>
+          Source repository:{" "}
+          <a
+            href="https://github.com/tangx/New-Concept-English"
+            target="_blank"
+            rel="noreferrer"
+          >
+            tangx/New-Concept-English
+          </a>
+          . Fixed commit: <code>{manifest.repoRef}</code>. Paths verified;
+          rights remain unverified. No textbook or recordings are distributed
+          here.
+        </p>
+        <p>
+          Only code, catalog metadata and original educational notes are public.
+          Public server requests can still contain ordinary hosting access
+          metadata; learning content is kept on your device.
+        </p>
+      </details>
+      <div className="danger-zone">
+        <h3>Delete private data</h3>
+        <p>
+          Removes all drafts, imported text, audio, recordings and learning
+          history in this browser. Export a backup first if needed.
+        </p>
+        <button onClick={() => setConfirmDelete(true)}>
+          Delete all local data
+        </button>
+        {confirmDelete && (
+          <div className="notice">
+            <p>This deletion cannot be undone without your backup.</p>
+            <button
+              onClick={() => {
+                void clearPrivateData()
+                  .then(() => {
+                    update(() => emptyState());
+                    onStorageRecover();
+                    setConfirmDelete(false);
+                    setMessage(
+                      "All private browser records and media deleted.",
+                    );
+                  })
+                  .catch((e) => setMessage(String(e)));
+              }}
+            >
+              Confirm delete all
+            </button>
+            <button onClick={() => setConfirmDelete(false)}>Cancel</button>
+          </div>
+        )}
+      </div>
+      {message && (
+        <p className="notice" role="status">
+          {message}
+        </p>
+      )}
+    </section>
+  );
+}

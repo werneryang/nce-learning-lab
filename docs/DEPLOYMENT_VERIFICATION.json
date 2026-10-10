@@ -1,0 +1,22 @@
+{
+  "url": "https://werneryang.github.io/nce-learning-lab/",
+  "status": 200,
+  "html_matches_build": true,
+  "functional_commit": "cfcda92166d888028590de9499e3dc56950bdb92",
+  "assets": [
+    {
+      "path": "/nce-learning-lab/assets/index-Byzsbalk.js",
+      "status": 200,
+      "bytes": 429371,
+      "sha256": "3dff71200530a98106fc99b2d51df05c9689b4a5d1132fb8400a76aad5fc804a",
+      "matches_build": true
+    },
+    {
+      "path": "/nce-learning-lab/assets/index-CofSKooh.css",
+      "status": 200,
+      "bytes": 16340,
+      "sha256": "edba12a772aa183a3ee7a9e115b4961bf817602c9f181a7754b5fd65ac53cd8f",
+      "matches_build": true
+    }
+  ]
+}

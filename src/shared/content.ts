@@ -1,0 +1,23 @@
+import rawLessons from "../../content/lessons/nce2/catalog.json";
+import rawChunks from "../../content/chunks/candidates.json";
+import rawExamples from "../../content/chunks/examples.json";
+import rawLinks from "../../content/lesson-chunk-links/links.json";
+import rawExercises from "../../content/exercises/exercises.json";
+import sourceManifest from "../../content/source-manifest/nce2.json";
+import {
+  LessonSchema,
+  ChunkSchema,
+  ExampleSchema,
+  LinkSchema,
+  ExerciseSchema,
+  SourceSchema,
+} from "./schema";
+export const lessons = rawLessons.map((x) => LessonSchema.parse(x));
+export const candidates = rawChunks.map((x) => ChunkSchema.parse(x));
+export const examples = rawExamples.map((x) => ExampleSchema.parse(x));
+export const links = rawLinks.map((x) => LinkSchema.parse(x));
+export const exercises = rawExercises.map((x) => ExerciseSchema.parse(x));
+export const manifest = sourceManifest;
+export const sources = sourceManifest.entries.flatMap((x) =>
+  x.sources.map((s) => SourceSchema.parse(s)),
+);

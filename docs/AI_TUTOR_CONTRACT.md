@@ -1,0 +1,11 @@
+# Tutor contract and availability
+
+The deployed app uses `LocalTutor`, explicitly labeled **not_configured**. Its deterministic original-fidelity comparator is real, but its English rule set is intentionally limited to supported patterns (initially “about to + base verb”). It cannot establish semantic equivalence, general grammar correctness, naturalness or pronunciation. It does not manufacture acceptable-variation judgments. Rewriting has no word-match score. Manual ChatGPT uses an explicit copied prompt and optional user-authorized reference inclusion; saved feedback is labeled manual_chatgpt.
+
+`TutorAdapter` and `BackendTutor` in `src/features/tutor.ts` define the optional integration. There is no live backend configuration UI, no provider key and no live AI service in this release. Future enablement requires user-selected provider, authorized billing/deployment, tested access control and a first-use consent screen. Never enable merely because a URL exists.
+
+Proposed endpoints: HTTPS POST `/api/tutor/hint`, `/api/tutor/review`, `/api/tutor/explain`; recheck uses review. Request: sessionId, draftVersion, mode, scope, draft, authorized selected reference, level, targetChunkIds. No audio or unrelated history. Cookie/session authentication is server controlled; response must match the Zod TutorFeedback schema. Imported reference and learner text are untrusted data, never instruction authority. Render all responses as text. Errors: 400 malformed/schema failure, 401/403 authentication/consent, 413 size cap, 429 rate/cost cap, 502 provider error, 503 unavailable. Frontend abort support and version association must remain.
+
+Required server controls before activation: allowlisted origin/CORS, CSRF defense when using cookies, authenticated user, request size cap, per-user rate and budget caps, no raw draft/reference logging, documented retention and deletion, provider credentials exclusively server-side, validated structured output. These controls are specified, **not deployed**.
+
+Versioned tutor policy: supportive adult English tutor; silent during editing; focused graduated hints without full answer; mode-aware review; distinguish errors/acceptable variations/style; preserve correct wording; plain English and optional Chinese support; never invent reference/audio; full reference only on explicit Reveal.

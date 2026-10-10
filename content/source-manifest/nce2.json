@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "sourceRepo": "tangx/New-Concept-English",
+  "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+  "treeTruncated": false,
+  "verifiedAt": "2026-10-09",
+  "counts": {
+    "mp3": 96,
+    "lrc": 96
+  },
+  "licenseFilesFound": [],
+  "rightsStatus": "unverified",
+  "entries": [
+    {
+      "lessonId": "NCE2-L001",
+      "status": "verified",
+      "verificationScope": "Exact path and Git blob metadata; audio decode and redistribution rights are not verified.",
+      "sources": [
+        {
+          "id": "NCE2-L001-mp3-us",
+          "lessonId": "NCE2-L001",
+          "kind": "audio",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/01－A Private Conversation.mp3",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/01%EF%BC%8DA%20Private%20Conversation.mp3",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "147432ae53e04d9f3878fe0858fdba5bb6bb5d23",
+          "sizeBytes": 1485365
+        },
+        {
+          "id": "NCE2-L001-lrc-us",
+          "lessonId": "NCE2-L001",
+          "kind": "timed_transcript",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/01－A Private Conversation.lrc",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/01%EF%BC%8DA%20Private%20Conversation.lrc",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "16b1f72befd6cc02c7ab75b8327eb65cdb9b7dd9",
+          "sizeBytes": 923
+        }
+      ]
+    },
+    {
+      "lessonId": "NCE2-L002",
+      "status": "verified",
+      "verificationScope": "Exact path and Git blob metadata; audio decode and redistribution rights are not verified.",
+      "sources": [
+        {
+          "id": "NCE2-L002-mp3-us",
+          "lessonId": "NCE2-L002",
+          "kind": "audio",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/02－Breakfast or Lunch.mp3",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/02%EF%BC%8DBreakfast%20or%20Lunch.mp3",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "1b2f65498dc27434b8e5ef8ee7c54c9465e78a4d",
+          "sizeBytes": 1530083
+        },
+        {
+          "id": "NCE2-L002-lrc-us",
+          "lessonId": "NCE2-L002",
+          "kind": "timed_transcript",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/02－Breakfast or Lunch.lrc",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/02%EF%BC%8DBreakfast%20or%20Lunch.lrc",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "a20e7d57c19e75053a63f6d3d7cf6b3e8f443ced",
+          "sizeBytes": 919
+        }
+      ]
+    },
+    {
+      "lessonId": "NCE2-L003",
+      "status": "verified",
+      "verificationScope": "Exact path and Git blob metadata; audio decode and redistribution rights are not verified.",
+      "sources": [
+        {
+          "id": "NCE2-L003-mp3-us",
+          "lessonId": "NCE2-L003",
+          "kind": "audio",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/03－Please Send Me a Card.mp3",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/03%EF%BC%8DPlease%20Send%20Me%20a%20Card.mp3",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "7bdbada4c4ffe19eeb0a76b03acc6b7fe5a74dd1",
+          "sizeBytes": 1447330
+        },
+        {
+          "id": "NCE2-L003-lrc-us",
+          "lessonId": "NCE2-L003",
+          "kind": "timed_transcript",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/03－Please Send Me a Card.lrc",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/03%EF%BC%8DPlease%20Send%20Me%20a%20Card.lrc",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "6e8029dfc282a327ae7ddbfdbdbb560c70051001",
+          "sizeBytes": 847
+        }
+      ]
+    },
+    {
+      "lessonId": "NCE2-L004",
+      "status": "verified",
+      "verificationScope": "Exact path and Git blob metadata; audio decode and redistribution rights are not verified.",
+      "sources": [
+        {
+          "id": "NCE2-L004-mp3-us",
+          "lessonId": "NCE2-L004",
+          "kind": "audio",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/04－An Exciting Trip.mp3",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/04%EF%BC%8DAn%20Exciting%20Trip.mp3",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "c0e4c27edfa523bb65cdfcfbdcdf7553a316f882",
+          "sizeBytes": 1288082
+        },
+        {
+          "id": "NCE2-L004-lrc-us",
+          "lessonId": "NCE2-L004",
+          "kind": "timed_transcript",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/04－An Exciting Trip.lrc",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/04%EF%BC%8DAn%20Exciting%20Trip.lrc",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "8d36f2974e4768e1881f2dc001629454fb87b60f",
+          "sizeBytes": 820
+        }
+      ]
+    },
+    {
+      "lessonId": "NCE2-L005",
+      "status": "verified",
+      "verificationScope": "Exact path and Git blob metadata; audio decode and redistribution rights are not verified.",
+      "sources": [
+        {
+          "id": "NCE2-L005-mp3-us",
+          "lessonId": "NCE2-L005",
+          "kind": "audio",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/05－No Wrong Numbers.mp3",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/05%EF%BC%8DNo%20Wrong%20Numbers.mp3",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "3eb4da3fa7897298669dc7cde5f5ba22bc03ef58",
+          "sizeBytes": 1424337
+        },
+        {
+          "id": "NCE2-L005-lrc-us",
+          "lessonId": "NCE2-L005",
+          "kind": "timed_transcript",
+          "originRepo": "tangx/New-Concept-English",
+          "repoRef": "635746ac5f696b193311bc1a7e8ffac3b252eb75",
+          "relativePath": "新概念英语第2册美音（MP3+LRC）/NCE2-美音-(MP3+LRC)/05－No Wrong Numbers.lrc",
+          "originalUrl": "https://github.com/tangx/New-Concept-English/blob/635746ac5f696b193311bc1a7e8ffac3b252eb75/%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC2%E5%86%8C%E7%BE%8E%E9%9F%B3%EF%BC%88MP3%2BLRC%EF%BC%89/NCE2-%E7%BE%8E%E9%9F%B3-%28MP3%2BLRC%29/05%EF%BC%8DNo%20Wrong%20Numbers.lrc",
+          "accent": "us",
+          "accessMode": "user_local_import",
+          "rightsStatus": "unverified",
+          "verifiedAt": "2026-10-09",
+          "gitBlobSha": "fb193515c095808c36d6fd281c9d777573ec996c",
+          "sizeBytes": 858
+        }
+      ]
+    }
+  ]
+}
