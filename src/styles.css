@@ -757,6 +757,31 @@ main {
   width: 100%;
   font-size: 0.8rem;
 }
+.practice-body-review {
+  margin: 15px 0;
+  padding: 14px;
+  border-radius: 9px;
+}
+.practice-body-lines {
+  max-height: 310px;
+  overflow: auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.practice-body-lines .check {
+  align-items: flex-start;
+  font-size: 0.85rem;
+  padding: 3px 0;
+}
+.practice-body-lines input {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.practice-body-lines small {
+  display: block;
+  color: #71806c;
+  margin-top: 4px;
+}
 .chunk-targets {
   margin-bottom: 17px;
   padding: 5px 12px;

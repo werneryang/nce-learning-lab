@@ -174,6 +174,35 @@ export function Player({
       };
     });
   }
+  function readAudioDuration() {
+    const element = audio.current;
+    const d = element?.duration;
+    // Some media engines report no usable duration until a later durationchange.
+    // Never replace a previously verified duration with a transient 0/NaN/Infinity.
+    if (
+      !element ||
+      !url ||
+      element.currentSrc !== new URL(url, location.href).href ||
+      element.readyState < 1 ||
+      !Number.isFinite(d) ||
+      !d ||
+      d <= 0
+    )
+      return;
+    setDuration(d);
+    setMediaState((current) =>
+      current === "empty" || current === "loading" ? "ready" : current,
+    );
+    if (data?.audioDuration !== d) patch((im) => ({ ...im, audioDuration: d }));
+  }
+  useEffect(() => {
+    if (!url || duration > 0 || mediaState === "failed") return;
+    // Reconcile real media state when an engine omits or delivers readiness events early.
+    // This checks local DOM metadata only; it never plays audio or requests tutor help.
+    readAudioDuration();
+    const timer = setInterval(readAudioDuration, 200);
+    return () => clearInterval(timer);
+  }, [url, duration, mediaState, data?.audioDuration]);
   async function importLrc(file: File) {
     setImporting(true);
     setError("");
@@ -515,14 +544,14 @@ export function Player({
         controls={!!url && (!memoryLocked || allowReplay)}
         ref={audio}
         src={url || undefined}
+        data-media-state={mediaState}
+        data-known-duration={duration}
+        data-memory-locked={memoryLocked && !allowReplay}
         preload="metadata"
-        onLoadedMetadata={() => {
-          const d = audio.current?.duration || 0;
-          setDuration(d);
-          setMediaState("ready");
-          if (data?.audioDuration !== d)
-            patch((im) => ({ ...im, audioDuration: d }));
-        }}
+        onLoadedMetadata={readAudioDuration}
+        onDurationChange={readAudioDuration}
+        onLoadedData={readAudioDuration}
+        onCanPlay={readAudioDuration}
         onTimeUpdate={tick}
         onPlay={() => setMediaState("playing")}
         onPause={() => setMediaState("paused")}
