@@ -6,7 +6,7 @@ GitHub Pages is configured for Actions. `.github/workflows/ci-pages.yml` runs li
 
 No private files, credentials, API keys or environment files belong in deployment assets. Pages provides static hosting only; there is no secure AI service, cloud synchronization or automatic offline application cache. The browser can continue editing local data while open and disconnected, but a fresh offline navigation is not promised.
 
-See ACCEPTANCE_REPORT.md for the actual source commit, workflow, online checks and any deployment limitation; configuration alone is not proof of publication.
+See HOSTED_RESOURCES_REPORT.md for the current source commit, workflow and online checks. ACCEPTANCE_REPORT.md is the original Phase 0–2 historical report; configuration alone is not proof of publication.
 
 ## Repository audio/subtitle assets
 

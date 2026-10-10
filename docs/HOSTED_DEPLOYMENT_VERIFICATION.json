@@ -1,0 +1,44 @@
+{
+  "url": "https://werneryang.github.io/nce-learning-lab/",
+  "functionalCommit": "52bbce74b2f4e87aed716c09b49c48e5f7539aae",
+  "ciRun": "https://github.com/werneryang/nce-learning-lab/actions/runs/38010835477",
+  "htmlMatchesBuild": true,
+  "builtAssets": [
+    {
+      "path": "/nce-learning-lab/assets/index-CrYTP75i.js",
+      "sha256": "7e716431b7ed00957f45704c863d10b43ec8858f9ee6e12a428bb0c86eff7d7b",
+      "matches": true
+    },
+    {
+      "path": "/nce-learning-lab/assets/index-CofSKooh.css",
+      "sha256": "edba12a772aa183a3ee7a9e115b4961bf817602c9f181a7754b5fd65ac53cd8f",
+      "matches": true
+    }
+  ],
+  "resourceCount": 408,
+  "passed": 408,
+  "failures": [],
+  "samples": [
+    {
+      "lessonId": "NCE2-L001",
+      "subtitleHashMatches": true,
+      "audioRangeStatus": 206,
+      "audioBytesRead": 1024,
+      "contentRange": "bytes 0-1023/1485365"
+    },
+    {
+      "lessonId": "NCE3-L001",
+      "subtitleHashMatches": true,
+      "audioRangeStatus": 206,
+      "audioBytesRead": 1024,
+      "contentRange": "bytes 0-1023/2307577"
+    },
+    {
+      "lessonId": "NCE4-L001",
+      "subtitleHashMatches": true,
+      "audioRangeStatus": 206,
+      "audioBytesRead": 1024,
+      "contentRange": "bytes 0-1023/2373621"
+    }
+  ]
+}
