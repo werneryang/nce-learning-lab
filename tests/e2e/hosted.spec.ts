@@ -1,4 +1,99 @@
 import { test, expect } from "@playwright/test";
+test.afterEach(async ({ page }, info) => {
+  if (info.status === info.expectedStatus) return;
+  const audio = await page.locator("audio").evaluateAll((elements) =>
+    elements.map((element) => {
+      const el = element as HTMLAudioElement;
+      return {
+        duration: String(el.duration),
+        readyState: el.readyState,
+        networkState: el.networkState,
+        errorCode: el.error?.code,
+        currentTime: el.currentTime,
+        source: el.currentSrc,
+      };
+    }),
+  );
+  console.error(
+    "Media failure diagnostics",
+    JSON.stringify({
+      audio,
+      notices: await page.locator(".notice").allTextContents(),
+    }),
+  );
+});
+
+test("Late duration changes recover real audio and invalid metadata does not corrupt feedback", async ({
+  page,
+}) => {
+  // Model the media engine's event order while still decoding a real repository MP3.
+  await page.addInitScript(() => {
+    const descriptor = Object.getOwnPropertyDescriptor(
+      HTMLMediaElement.prototype,
+      "duration",
+    )!;
+    const realDuration = descriptor.get!;
+    Object.defineProperty(HTMLMediaElement.prototype, "duration", {
+      ...descriptor,
+      get() {
+        return (window as unknown as { useRealDuration?: boolean })
+          .useRealDuration
+          ? realDuration.call(this)
+          : Number.NaN;
+      },
+    });
+  });
+  await page.goto("#lesson/NCE2-L001");
+  await expect(page.getByTestId("transcript-row")).toHaveCount(18);
+  await expect
+    .poll(() =>
+      page
+        .locator("audio")
+        .evaluate((el) => (el as HTMLAudioElement).readyState),
+    )
+    .toBeGreaterThanOrEqual(1);
+  const play = page.getByRole("button", { name: "Play", exact: true });
+  await expect(play).toBeDisabled();
+  await page.locator("audio").evaluate((el) => {
+    (window as unknown as { useRealDuration: boolean }).useRealDuration = true;
+    el.dispatchEvent(new Event("durationchange"));
+  });
+  await expect(play).toBeEnabled();
+  await play.click();
+  await expect
+    .poll(() =>
+      page
+        .locator("audio")
+        .evaluate((el) => (el as HTMLAudioElement).currentTime),
+    )
+    .toBeGreaterThan(0.2);
+  await page.getByRole("button", { name: "Pause", exact: true }).click();
+  await page.locator("audio").evaluate((el) => {
+    (window as unknown as { useRealDuration: boolean }).useRealDuration = false;
+    el.dispatchEvent(new Event("loadedmetadata"));
+  });
+  await expect(play).toBeEnabled();
+  const practice = page.getByRole("region", { name: "Writing practice" });
+  await practice
+    .getByLabel("Range", { exact: true })
+    .selectOption("full_lesson");
+  await practice
+    .getByRole("button", { name: "Start practice", exact: true })
+    .click();
+  await practice
+    .getByRole("button", { name: "Confirm & start practice", exact: true })
+    .click();
+  await practice
+    .getByLabel("Your draft")
+    .fill("Last week I went to the theatre.");
+  await practice.getByRole("button", { name: "Hint", exact: true }).click();
+  await expect(practice.getByText("Hint L1 ·")).toBeVisible();
+  await practice.getByRole("button", { name: "Review", exact: true }).click();
+  await expect(
+    practice.getByText("Original fidelity", { exact: true }),
+  ).toBeVisible();
+});
+
 test("Fresh full-lesson practice confirms loaded body here and completes the writing loop", async ({
   page,
 }) => {

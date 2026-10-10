@@ -174,6 +174,25 @@ export function Player({
       };
     });
   }
+  function readAudioDuration() {
+    const element = audio.current;
+    const d = element?.duration;
+    // Some media engines report no usable duration until a later durationchange.
+    // Never replace a previously verified duration with a transient 0/NaN/Infinity.
+    if (
+      !element ||
+      element.readyState < 1 ||
+      !Number.isFinite(d) ||
+      !d ||
+      d <= 0
+    )
+      return;
+    setDuration(d);
+    setMediaState((current) =>
+      current === "empty" || current === "loading" ? "ready" : current,
+    );
+    if (data?.audioDuration !== d) patch((im) => ({ ...im, audioDuration: d }));
+  }
   async function importLrc(file: File) {
     setImporting(true);
     setError("");
@@ -516,13 +535,8 @@ export function Player({
         ref={audio}
         src={url || undefined}
         preload="metadata"
-        onLoadedMetadata={() => {
-          const d = audio.current?.duration || 0;
-          setDuration(d);
-          setMediaState("ready");
-          if (data?.audioDuration !== d)
-            patch((im) => ({ ...im, audioDuration: d }));
-        }}
+        onLoadedMetadata={readAudioDuration}
+        onDurationChange={readAudioDuration}
         onTimeUpdate={tick}
         onPlay={() => setMediaState("playing")}
         onPause={() => setMediaState("paused")}
