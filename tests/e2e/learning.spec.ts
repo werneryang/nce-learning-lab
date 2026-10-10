@@ -114,6 +114,23 @@ test("T02: actual MP3 decode, play, sync, seek, speed and loop", async ({
   expect(pos).toBeGreaterThanOrEqual(1);
   expect(pos).toBeLessThan(4.2);
   await page.getByRole("button", { name: "Stop loop", exact: true }).click();
+  const audioLoops = () =>
+    page
+      .locator("audio")
+      .first()
+      .evaluate((el) => (el as HTMLAudioElement).loop);
+  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
+  expect(await audioLoops()).toBe(true);
+  await page.getByRole("button", { name: "Loop line", exact: true }).click();
+  expect(await audioLoops()).toBe(false);
+  await page.getByRole("button", { name: "Loop lesson", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Loop line", exact: true }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Stop lesson loop", exact: true })
+    .click();
+  expect(await audioLoops()).toBe(false);
   await page.getByRole("button", { name: "Pause", exact: true }).click();
   await page
     .locator(".transcript-row")
