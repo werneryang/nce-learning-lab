@@ -432,6 +432,7 @@ export default function App() {
                   update={update}
                   selected={selected}
                   onMode={modeChanged}
+                  onSelect={setSelected}
                   save={flush}
                   saveStatus={status}
                   canListen={audioAvailable}

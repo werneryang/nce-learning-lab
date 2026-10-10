@@ -7,7 +7,14 @@ import {
   ArrowRight,
   Copy,
 } from "lucide-react";
-import type { State, Session, Mode, Turn, Rating } from "../shared/schema";
+import type {
+  State,
+  Session,
+  Mode,
+  Turn,
+  Rating,
+  Segment,
+} from "../shared/schema";
 import { uid, now } from "../shared/schema";
 import { confirmedBody } from "./lrc";
 import { compareText, tokens } from "./diff";
@@ -27,6 +34,7 @@ type Props = {
   stateRef: { current: State };
   update: (fn: (s: State) => State) => void;
   selected: string[];
+  onSelect: (ids: string[]) => void;
   onMode: (mode: Mode | undefined) => void;
   save: () => Promise<boolean>;
   saveStatus: string;
@@ -38,6 +46,7 @@ export function Practice({
   stateRef,
   update,
   selected,
+  onSelect,
   onMode,
   save,
   saveStatus,
@@ -55,6 +64,8 @@ export function Practice({
   const [manualFeedback, setManualFeedback] = useState("");
   const [deleteSessionId, setDeleteSessionId] = useState("");
   const [targetIds, setTargetIds] = useState<string[]>([]);
+  const [bodyReviewOpen, setBodyReviewOpen] = useState(false);
+  const [reviewIds, setReviewIds] = useState<string[]>([]);
   const abort = useRef<AbortController | undefined>(undefined);
   const editor = useRef<HTMLTextAreaElement>(null);
   const session = state.sessions.find((s) => s.id === activeId);
@@ -85,6 +96,8 @@ export function Practice({
     setMessage("");
     setShowAnswer(false);
     setCopyPrompt("");
+    setBodyReviewOpen(false);
+    setReviewIds([]);
   }, [lessonId, stateRef]);
   useEffect(() => {
     onMode(session?.mode);
@@ -93,25 +106,42 @@ export function Practice({
   const writingExercise = exercises.find(
     (x) => x.lessonId === lessonId && x.mode === "writing",
   );
-  function start() {
+  function openBodyReview() {
+    setReviewIds(
+      (selected.length
+        ? segments.filter((s) => selected.includes(s.id))
+        : body.length
+          ? body
+          : segments.filter(
+              (s) => s.role === "unreviewed" || s.role === "lesson_body",
+            )
+      ).map((s) => s.id),
+    );
+    setBodyReviewOpen(true);
+    setMessage("");
+  }
+  function start(readyBody: Segment[] = body, selection = selected) {
     if (mode === "listening_dictation" && !canListen) {
       setMessage(
-        "Import a playable MP3 before listening dictation, or use memory recall / rewriting.",
+        "Audio is not ready. Check the player and retry audio if needed, or choose memory recall / rewriting.",
       );
       return;
     }
+    const readyChosen = readyBody.filter((s) => selection.includes(s.id));
     const useBody =
       scope === "full_lesson"
-        ? body
+        ? readyBody
         : scope === "sentence"
-          ? chosen.length
-            ? chosen.slice(0, 1)
-            : body.slice(0, 1)
-          : chosen;
+          ? readyChosen.length
+            ? readyChosen.slice(0, 1)
+            : readyBody.slice(0, 1)
+          : readyChosen;
     if (mode !== "guided_rewriting" && !useBody.length) {
-      setMessage(
-        "Import LRC, confirm lesson-body lines, and select a range. For a paragraph, select your own group of lines.",
-      );
+      if (segments.length) openBodyReview();
+      else
+        setMessage(
+          "Subtitles are not ready. Check the player and retry subtitles if needed, or choose guided rewriting.",
+        );
       return;
     }
     if (session) void save();
@@ -142,8 +172,25 @@ export function Practice({
     setActiveId(next.id);
     setMessage("");
     setShowAnswer(false);
+    setBodyReviewOpen(false);
     if (!matchMedia("(max-width: 760px)").matches)
       requestAnimationFrame(() => editor.current?.focus());
+  }
+  function confirmAndStart() {
+    // Confirmation is an explicit user action; loading subtitles never confirms them.
+    const reviewed = segments.map((s): Segment =>
+      reviewIds.includes(s.id)
+        ? { ...s, role: "lesson_body", reviewStatus: "confirmed" }
+        : s,
+    );
+    update((s) => ({
+      ...s,
+      imports: s.imports.map((im) =>
+        im.lessonId === lessonId ? { ...im, segments: reviewed } : im,
+      ),
+    }));
+    onSelect(reviewIds);
+    start(confirmedBody(reviewed), reviewIds);
   }
   function edit(value: string) {
     if (!session) return;
@@ -176,7 +223,7 @@ export function Practice({
       (!reference || sessionBody.length !== current.selectedSegmentIds.length)
     ) {
       setMessage(
-        "No confirmed reference is available. Re-import and confirm the original lines or start guided rewriting.",
+        "The confirmed reference for this draft is unavailable. Check source & body review in the player to restore the original lines, or start a new practice.",
       );
       return;
     }
@@ -418,6 +465,7 @@ export function Practice({
         <label>
           Practice mode
           <select
+            aria-label="Practice mode"
             value={mode}
             onChange={(e) => setMode(e.target.value as Mode)}
           >
@@ -431,6 +479,7 @@ export function Practice({
         <label>
           Range
           <select
+            aria-label="Range"
             value={scope}
             onChange={(e) => setScope(e.target.value as Session["scope"])}
           >
@@ -441,9 +490,70 @@ export function Practice({
         </label>
       </div>
       <p className="small">
-        {body.length} confirmed body lines · {chosen.length} selected.
-        Paragraphs use your selection, not assumed textbook structure.
+        {body.length} confirmed body lines · {chosen.length} selected.{" "}
+        Paragraphs use the lines you select.
       </p>
+      {mode !== "guided_rewriting" && segments.length > 0 && (
+        <button className="text-button" onClick={openBodyReview}>
+          Review body & choose lines
+        </button>
+      )}
+      {bodyReviewOpen && mode !== "guided_rewriting" && (
+        <fieldset className="practice-body-review">
+          <legend>Confirm lesson body</legend>
+          <p className="small">
+            Check the lines that belong to the lesson body. Suggested choices
+            are not confirmed until you click below. Questions and introductions
+            may need different choices.
+          </p>
+          <p className="small">
+            {scope === "full_lesson"
+              ? "Full lesson uses these lines plus any previously confirmed body lines."
+              : scope === "sentence"
+                ? "Sentence practice uses the first checked line."
+                : "Paragraph practice uses your checked group of lines."}
+          </p>
+          <div className="practice-body-lines">
+            {segments.map((line, i) => (
+              <label className="check" key={line.id}>
+                <input
+                  type="checkbox"
+                  aria-label={`Practice body line ${i + 1}`}
+                  checked={reviewIds.includes(line.id)}
+                  onChange={(e) =>
+                    setReviewIds((ids) =>
+                      e.target.checked
+                        ? [...ids, line.id]
+                        : ids.filter((id) => id !== line.id),
+                    )
+                  }
+                />
+                <span>
+                  {line.text}
+                  {line.role === "intro_question" && (
+                    <small>
+                      Question · check only if it belongs to the body
+                    </small>
+                  )}
+                  {line.reviewStatus === "confirmed" && (
+                    <small>Previously confirmed body line</small>
+                  )}
+                </span>
+              </label>
+            ))}
+          </div>
+          <div className="button-row">
+            <button
+              className="primary"
+              disabled={reviewIds.length === 0}
+              onClick={confirmAndStart}
+            >
+              Confirm & start practice
+            </button>
+            <button onClick={() => setBodyReviewOpen(false)}>Cancel</button>
+          </div>
+        </fieldset>
+      )}
       {availableChunks.length > 0 && (
         <fieldset className="chunk-targets">
           <legend>Target chunks for a new session</legend>
@@ -465,10 +575,12 @@ export function Practice({
           ))}
         </fieldset>
       )}
-      <button className="primary" onClick={start}>
-        {session ? "Start new practice" : "Start practice"}
-        <ArrowRight size={16} />
-      </button>
+      {(!bodyReviewOpen || mode === "guided_rewriting") && (
+        <button className="primary" onClick={() => start()}>
+          {session ? "Start new practice" : "Start practice"}
+          <ArrowRight size={16} />
+        </button>
+      )}
       {message && (
         <p className="notice" role="status">
           {message}
@@ -687,8 +799,8 @@ export function Practice({
             {showAnswer && (
               <div className="reference-text">
                 <p className="small">
-                  Your privately imported, confirmed reference. Compare it with
-                  your own wording; it is not a judgment of equivalent English.
+                  Your confirmed reference. Compare it with your own wording; it
+                  is not a judgment of equivalent English.
                 </p>
                 <pre>{reference}</pre>
               </div>
@@ -866,8 +978,9 @@ export function Practice({
         </>
       ) : (
         <div className="empty-state">
-          Confirm a line on the left, then start a quiet writing session. Guided
-          rewriting also works without a transcript.
+          Choose your mode and range, then start. If the lesson body needs
+          confirmation, you can review it here before writing. Guided rewriting
+          also works without a transcript.
         </div>
       )}
     </section>
