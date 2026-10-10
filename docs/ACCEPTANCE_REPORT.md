@@ -1,5 +1,7 @@
 # NCE Learning Lab — 实际验收报告
 
+> 本报告记录最初 Phase 0–2 交付版本。用户随后已将第二至第四册教材加入 main，并要求部署仓库音频和字幕；当前资源范围及新增验证见 HOSTED_RESOURCES_REPORT.md，以下“未部署教材”等描述只适用于当时版本。
+
 验收日期：2026-10-09（America/New_York）。依据：用户提供的 Complete Specification v1.1，按 Phase 0 → Phase 1 → Phase 2 实施。本报告区分技术验证、用户实际教材验收及尚未启用的服务。
 
 | §16 交付字段          | 实际结果                                                                                     |

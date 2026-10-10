@@ -44,6 +44,8 @@ export default function App() {
   const [page, setPage] = useState(
     () => location.hash.slice(1).split("/")[0] || "today",
   );
+  const [bookFilter, setBookFilter] = useState("2");
+  const [lessonSearch, setLessonSearch] = useState("");
   const [lessonId, setLessonId] = useState(lessons[0].id);
   const [selected, setSelected] = useState<string[]>([]);
   const [practiceMode, setPracticeMode] = useState<Mode>();
@@ -216,7 +218,7 @@ export default function App() {
                 <section className="hero-card">
                   <div>
                     <span className="eyebrow">
-                      CONTINUE YOUR JOURNEY · BOOK 02
+                      CONTINUE YOUR JOURNEY · BOOK {lesson.book}
                     </span>
                     <h2>{lesson.title}</h2>
                     <p>{lesson.summary}</p>
@@ -312,46 +314,81 @@ export default function App() {
           {page === "lessons" && (
             <>
               <div className="page-heading">
-                <span className="eyebrow">BOOK 02 · PRACTICE & PROGRESS</span>
+                <span className="eyebrow">
+                  BOOKS 02–04 · PRACTICE & PROGRESS
+                </span>
                 <h1>
-                  Five lessons.
+                  204 lessons.
                   <br />
                   <em>One growing voice.</em>
                 </h1>
-                <p>Your own audio, thoughtful practice, original notes.</p>
+                <p>
+                  Repository audio and synchronized subtitles. No file import
+                  needed.
+                </p>
+              </div>
+              <div className="button-row">
+                <label>
+                  Book{" "}
+                  <select
+                    aria-label="Book"
+                    value={bookFilter}
+                    onChange={(e) => setBookFilter(e.target.value)}
+                  >
+                    <option value="2">Book 2 · 96 lessons</option>
+                    <option value="3">Book 3 · 60 lessons</option>
+                    <option value="4">Book 4 · 48 lessons</option>
+                  </select>
+                </label>
+                <input
+                  aria-label="Search lessons"
+                  placeholder="Search lesson titles…"
+                  value={lessonSearch}
+                  onChange={(e) => setLessonSearch(e.target.value)}
+                />
               </div>
               <div className="lesson-grid">
-                {lessons.map((l) => (
-                  <button
-                    className="lesson-card"
-                    key={l.id}
-                    onClick={() => openLesson(l.id)}
-                  >
-                    <span className="lesson-number">
-                      {String(l.number).padStart(2, "0")}
-                    </span>
-                    <span className="eyebrow">LESSON {l.number}</span>
-                    <h2>{l.title}</h2>
-                    <p>{l.summary}</p>
-                    <div className="lesson-card-footer">
-                      <span>
-                        {state.imports.some(
-                          (im) => im.lessonId === l.id && im.segments.length,
-                        )
-                          ? "Transcript imported"
-                          : "Bring your MP3 + LRC"}
+                {lessons
+                  .filter(
+                    (l) =>
+                      String(l.book) === bookFilter &&
+                      l.title
+                        .toLowerCase()
+                        .includes(lessonSearch.toLowerCase()),
+                  )
+                  .map((l) => (
+                    <button
+                      className="lesson-card"
+                      key={l.id}
+                      onClick={() => openLesson(l.id)}
+                    >
+                      <span className="lesson-number">
+                        {String(l.number).padStart(2, "0")}
                       </span>
-                      <ArrowUpRight size={20} />
-                    </div>
-                  </button>
-                ))}
+                      <span className="eyebrow">LESSON {l.number}</span>
+                      <h2>{l.title}</h2>
+                      <p>{l.summary}</p>
+                      <div className="lesson-card-footer">
+                        <span>
+                          {state.imports.some(
+                            (im) => im.lessonId === l.id && im.segments.length,
+                          )
+                            ? "Subtitles ready"
+                            : "Play repository audio"}
+                        </span>
+                        <ArrowUpRight size={20} />
+                      </div>
+                    </button>
+                  ))}
               </div>
             </>
           )}
           {page === "lesson" && (
             <>
               <div className="breadcrumb">
-                <a href="#lessons">Book 02</a>
+                <a href="#lessons">
+                  Book {String(lesson.book).padStart(2, "0")}
+                </a>
                 <span>/</span>Lesson {lesson.number}
               </div>
               <div className="lesson-heading">
@@ -370,7 +407,7 @@ export default function App() {
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
-                      Lesson {l.number} · {l.title}
+                      Book {l.book} · Lesson {l.number} · {l.title}
                     </option>
                   ))}
                 </select>
@@ -439,7 +476,7 @@ export default function App() {
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
-                      Lesson {l.number} · {l.title}
+                      Book {l.book} · Lesson {l.number} · {l.title}
                     </option>
                   ))}
                 </select>

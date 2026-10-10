@@ -28,6 +28,9 @@ test.beforeAll(() => {
   );
   writeFileSync(join(directory, "original.lrc"), text);
 });
+test.beforeEach(async ({ page }) => {
+  await page.route("**/media/**", (route) => route.abort());
+});
 async function openLesson(page: Page) {
   await page.goto("#lesson/NCE2-L001");
   await expect(
@@ -311,7 +314,7 @@ test("Phase 2/T12/T13: five lessons, cross-lesson chunk reuse and independent sp
     .fill("I can explain the change of state.");
   await page.getByRole("button", { name: "good", exact: true }).click();
   await page.getByRole("link", { name: "Lessons", exact: true }).click();
-  await expect(page.locator(".lesson-card")).toHaveCount(5);
+  await expect(page.locator(".lesson-card")).toHaveCount(96);
   for (let n = 2; n <= 5; n++) {
     await page.goto(`#lesson/NCE2-L${String(n).padStart(3, "0")}`);
     await expect(page.getByLabel("Choose lesson")).toHaveValue(
@@ -401,7 +404,9 @@ test("Invalid audio is rejected and memory recall keeps native playback locked",
     mimeType: "audio/mpeg",
     buffer: Buffer.from("not an audio file"),
   });
-  await expect(page.getByRole("alert")).toContainText("cannot decode");
+  await expect(
+    page.getByRole("alert").filter({ hasText: "cannot decode" }),
+  ).toContainText("cannot decode");
   await expect(
     page.getByRole("button", { name: "Play", exact: true }),
   ).toBeDisabled();

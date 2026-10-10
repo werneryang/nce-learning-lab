@@ -22,6 +22,7 @@ export const SourceSchema = z.object({
     "external_reference",
     "user_local_import",
     "licensed_hosted",
+    "user_repository_hosted",
   ]),
   rightsStatus: z.enum(["unverified", "permitted", "restricted"]),
   verifiedAt: z.string().optional(),
