@@ -1086,21 +1086,28 @@ audio[controls] {
   .sidebar-footer {
     display: none;
   }
+  /* All seven sections stay visible: two rows of four columns, no hidden scroll. */
   .sidebar nav {
-    flex-direction: row;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4px;
     margin-top: 16px;
     padding-bottom: 11px;
   }
   .sidebar nav a {
+    justify-content: center;
     white-space: nowrap;
-    padding: 9px 11px;
+    min-height: 40px;
+    padding: 8px 4px;
     font-size: 0.77rem;
-    gap: 6px;
+    gap: 5px;
+  }
+  .sidebar nav a .nav-count {
+    margin-left: 0;
   }
   .sidebar nav a svg {
     width: 15px;
+    flex-shrink: 0;
   }
   .content-shell {
     margin-left: 0;
@@ -1271,4 +1278,10 @@ audio[controls] {
 }
 .device-name input {
   width: min(100%, 260px);
+}
+@media (max-width: 359px) {
+  /* Smallest phones: labels alone, so all four fit per row. */
+  .sidebar nav a svg {
+    display: none;
+  }
 }
