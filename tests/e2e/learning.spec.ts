@@ -267,7 +267,9 @@ test("T04/T05/T06/T11/T14: quiet writing → hints → review → revision → m
   await expect(
     page.getByText("All private browser records and media deleted."),
   ).toBeVisible();
-  await page.getByLabel("Import backup", { exact: true }).setInputFiles(path);
+  await page
+    .getByLabel("Replace with backup", { exact: true })
+    .setInputFiles(path);
   await page
     .getByRole("button", { name: "Replace records with verified backup" })
     .click();

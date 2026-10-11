@@ -1265,3 +1265,10 @@ audio[controls] {
     scroll-behavior: auto !important;
   }
 }
+.device-name {
+  margin-top: 12px;
+  font-weight: 550;
+}
+.device-name input {
+  width: min(100%, 260px);
+}
