@@ -98,7 +98,25 @@ test("T02: actual MP3 decode, play, sync, seek, speed and loop", async ({
     "I was about to leave",
     { timeout: 7000 },
   );
-  await page.getByLabel("Playback speed").selectOption("1.25");
+  const speed = page.getByLabel("Playback speed");
+  await expect(speed.locator("option")).toHaveText([
+    "0.5×",
+    "0.75×",
+    "1×",
+    "1.25×",
+    "1.5×",
+    "2×",
+  ]);
+  for (const rate of ["0.5", "2"]) {
+    await speed.selectOption(rate);
+    expect(
+      await page
+        .locator("audio")
+        .first()
+        .evaluate((el) => (el as HTMLAudioElement).playbackRate),
+    ).toBe(Number(rate));
+  }
+  await speed.selectOption("1.25");
   expect(
     await page
       .locator("audio")

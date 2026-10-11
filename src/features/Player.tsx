@@ -648,9 +648,11 @@ export function Player({
               audio.current.playbackRate = Number(e.target.value);
           }}
         >
-          <option value="0.75">0.75×</option>
-          <option value="1">1×</option>
-          <option value="1.25">1.25×</option>
+          {["0.5", "0.75", "1", "1.25", "1.5", "2"].map((rate) => (
+            <option key={rate} value={rate}>
+              {rate}×
+            </option>
+          ))}
         </select>
       </div>
       <input
