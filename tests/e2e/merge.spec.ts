@@ -74,6 +74,10 @@ test("Backups from two devices merge without overwriting each other", async ({
   ).toBeVisible();
   await mac.getByRole("button", { name: "Cancel merge" }).click();
   await mac.reload();
+  // Navigate only once the reloaded app has loaded its data and is listening for URL changes.
+  await expect(mac.locator(".local-status")).toHaveText("Saved locally", {
+    timeout: 15000,
+  });
   await expect(await savedChunks(mac)).toHaveCount(2);
   await mac.goto("#settings");
   await expect(mac.getByLabel("Device name")).toHaveValue("my-mac");
