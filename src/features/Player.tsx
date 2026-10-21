@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import {
   Play,
   Pause,
-  SkipBack,
-  SkipForward,
+  RotateCcw,
+  RotateCw,
   Repeat,
   Eye,
   EyeOff,
@@ -615,11 +615,13 @@ export function Player({
       <div className="play-controls">
         <button
           className="icon-button"
-          aria-label="Back 5 seconds"
+          aria-label="Back 10 seconds"
+          title="Back 10 seconds"
           disabled={audioDisabled}
-          onClick={() => seek(time - 5)}
+          onClick={() => seek((audio.current?.currentTime ?? time) - 10)}
         >
-          <SkipBack size={18} />
+          <RotateCcw size={22} />
+          <span className="skip-label">10</span>
         </button>
         <button
           className="play-button"
@@ -631,11 +633,13 @@ export function Player({
         </button>
         <button
           className="icon-button"
-          aria-label="Forward 5 seconds"
+          aria-label="Forward 10 seconds"
+          title="Forward 10 seconds"
           disabled={audioDisabled}
-          onClick={() => seek(time + 5)}
+          onClick={() => seek((audio.current?.currentTime ?? time) + 10)}
         >
-          <SkipForward size={18} />
+          <RotateCw size={22} />
+          <span className="skip-label">10</span>
         </button>
         <span className="time-readout">
           {stamp(time)} / {stamp(duration)}

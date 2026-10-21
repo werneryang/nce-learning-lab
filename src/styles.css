@@ -610,6 +610,17 @@ main {
   width: 41px;
   background: transparent;
   border: 0;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.skip-label {
+  position: absolute;
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
 }
 .time-readout {
   font-size: 0.77rem;
