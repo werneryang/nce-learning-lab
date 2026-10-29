@@ -14,7 +14,7 @@ export function parseLrc(
     throw new Error("Text encoding is damaged. Please save the LRC as UTF-8.");
   const metadata: Record<string, string> = {};
   const warnings: string[] = [];
-  const segments: Segment[] = [];
+  const segments: (Segment & { startMs: number })[] = [];
   let previous = -1;
   const lines = input.replace(/^\uFEFF/, "").split(/\r?\n/);
   lines.forEach((line, lineIndex) => {
@@ -91,12 +91,15 @@ export function parseLrc(
   return { segments, metadata, warnings };
 }
 export function activeSegment(segments: Segment[], timeMs: number) {
-  return segments.filter((s) => s.startMs <= timeMs).at(-1);
+  return segments
+    .filter((s) => s.startMs !== undefined && s.startMs <= timeMs)
+    .at(-1);
 }
 export function loopBounds(
   segment: Segment,
   duration: number,
 ): [number, number] | undefined {
+  if (segment.startMs === undefined) return undefined;
   const start = segment.startMs / 1000;
   const end =
     Math.min(

@@ -1,0 +1,302 @@
+{
+  "lesson": {
+    "id": "VOA-7945653",
+    "series": "VOA",
+    "title": "Saying ‘No’ at Work Can Be Good for Your Health",
+    "summary": "Health & Lifestyle · listening and reading",
+    "originalUrl": "https://learningenglish.voanews.com/a/saying-no-at-work-can-be-good-for-your-health/7945653.html",
+    "publishedAt": "2025-02-17T22:00:00+00:00",
+    "vocabulary": [
+      "hustle – n. to move or work rapidly and tirelessly",
+      "pay the price – idiom to experience the bad result of something you have done",
+      "stressed – adj. effected by a physical, chemical, or emotional factor that causes bodily or mental tension and may be a factor in disease causation",
+      "manager – n. a person who manages especially a business or household affairs",
+      "engagement – n. the state of being meshed into a working arrangement in which one part drives another",
+      "psychotherapist – n. person who treats mental or emotional disorders by psychological means",
+      "email signature – n. a block of text or image that appears at the end of an email message"
+    ],
+    "attribution": "Cathy Bussewitz reported this story for The Associated Press from New York City. Anna Matteo adapted it for VOA Learning English.",
+    "pairingStatus": "page_linked_unreviewed"
+  },
+  "lessonId": "VOA-7945653",
+  "sources": [
+    {
+      "id": "VOA-7945653-text",
+      "lessonId": "VOA-7945653",
+      "kind": "transcript",
+      "originalUrl": "https://learningenglish.voanews.com/a/saying-no-at-work-can-be-good-for-your-health/7945653.html",
+      "accessMode": "user_repository_hosted",
+      "rightsStatus": "unverified"
+    },
+    {
+      "id": "VOA-7945653-audio",
+      "lessonId": "VOA-7945653",
+      "kind": "audio",
+      "originalUrl": "https://voa-audio.voanews.eu/vle/2025/01/27/cd565e91-78b7-48b8-9278-7710eaeadad4.mp3",
+      "accessMode": "user_repository_hosted",
+      "rightsStatus": "unverified",
+      "sha256": "492c60cf6f63da608988deb3745882c26b3df0c2cc563de89776120387b48690"
+    }
+  ],
+  "segments": [
+    {
+      "id": "VOA-7945653-text-1",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "From VOA Learning English, this is the Health & Lifestyle report.",
+      "sourceLine": 1,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-2",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "People might find it hard to set work limits or say “no” before taking on too many responsibilities. But experts say it is important for workers to learn to set such limits, or boundaries.",
+      "sourceLine": 2,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-3",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "These limits can be important in helping workers protect their physical and mental health. And as with any new skill, setting boundaries gets easier with practice.",
+      "sourceLine": 3,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-4",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Justin Stewart is a 36-year-old who works as a news show production assistant. He told The Associated Press that in the past, he had problems setting clear limits in his work life.",
+      "sourceLine": 4,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-5",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Stewart explained that when starting his career, he held several jobs. In addition to his full-time position, he also rented cars at the airport and did sales at a store. He said his life was so busy that he said he would sometimes sleep in his car between jobs. After a time, he had to be hospitalized for extreme tiredness and an infection.",
+      "sourceLine": 5,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-6",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Stewart said that over time, his busy work life finally caught up with him. “While people around me praised my hustle, I eventually paid the price.” He added, “The doctor looked at me and said, ‘I don’t know what lifestyle you’re living, but you’re too young to be this stressed. You’re going to have to quit something.’”",
+      "sourceLine": 6,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-7",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "As a result, Stewart began trying to set boundaries. He gave up his side jobs after deciding he could live without the extra money. If people from the news show contacted him to work after-hours, he told them he was not available and suggested other people who might be able to help.",
+      "sourceLine": 7,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-8",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "However, experts say making such changes can be difficult. Many people already have a hard time turning down work requests –from both co-workers and managers. For example, it might make some people feel good to be needed or to please others. But as with any new skill, setting boundaries can get easier over time.",
+      "sourceLine": 8,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-9",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Here are some suggestions from employment experts and workers for effectively setting meaningful work limits.",
+      "sourceLine": 9,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-10",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Take control of your time",
+      "sourceLine": 10,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-11",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "If your goal is to do less, adding things to your daily plans may seem like a bad idea. But it can actually provide more control over your time.",
+      "sourceLine": 11,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-12",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Bobby Dutton is the founder of event production company GBM6.",
+      "sourceLine": 12,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-13",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Every Monday at 2 p.m., he plans the task he is most likely to delay finishing. And to keep from becoming too busy, he even sets his daily activities, like walking his dog and eating lunch.",
+      "sourceLine": 13,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-14",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Practice “no” responses",
+      "sourceLine": 14,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-15",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "If workers have a hard time saying no, they can write down what to say beforehand. And it can also help to say it out loud.",
+      "sourceLine": 15,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-16",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Cara Houser is a workplace engagement coach. She says workers do not always have to explain themselves when turning down a request. They can simply explain they are not available, thank the person for asking, and suggest when they might be available.",
+      "sourceLine": 16,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-17",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Amber Krasinski grew up in a working-class environment where saying \"no\" to a manager could mean losing pay. As the founder of marketing company IvyHill Strategies, Krasinski worries that she will lose business if she turns down a project.",
+      "sourceLine": 17,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-18",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "So, she often says “not yet” when one more project is too much. “That phrase has helped me through a lot of situations,” she said.",
+      "sourceLine": 18,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-19",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Know yourself",
+      "sourceLine": 19,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-20",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "When asked for help, workers may want to agree immediately. However, when faced with a new work request, it can be better to take time before answering. Use the time to consider such things as workload, energy level, and interest.",
+      "sourceLine": 20,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-21",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Israa Nasir is a psychotherapist in New York. She suggests that workers pay attention to the activities and interactions that leave them feeling tired or stressed. Those kinds of events can be put on a “No List” to be dealt with later.",
+      "sourceLine": 21,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-22",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Technology can help",
+      "sourceLine": 22,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-23",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Experts say that just because mobile devices can keep people connected to work all the time, they do not have to interfere with a person’s non-working life.",
+      "sourceLine": 23,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-24",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "For example, Nasir said she found herself checking email far too often on weekends. So, during weekends, she moved the Gmail app from her iPhone’s homepage to the second page. This extra step helped her avoid checking her email.",
+      "sourceLine": 24,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-25",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "Experts also suggest using an email signature as another tool to manage expectations. This tool can include more than just your name and contact information. You can also use it to let others know your working hours or upcoming vacation plans.",
+      "sourceLine": 25,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-26",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "And that’s the Health & Lifestyle report.",
+      "sourceLine": 26,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-27",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "I’m Anna Matteo.",
+      "sourceLine": 27,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7945653-text-28",
+      "lessonId": "VOA-7945653",
+      "sourceId": "VOA-7945653-text",
+      "text": "And I’m Andrew Smith.",
+      "sourceLine": 28,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    }
+  ],
+  "metadata": {
+    "audioSha256": "492c60cf6f63da608988deb3745882c26b3df0c2cc563de89776120387b48690"
+  },
+  "warnings": [
+    "Article-linked audio. Content pairing has not been reviewed; no timing alignment."
+  ],
+  "audioAccent": "unknown"
+}

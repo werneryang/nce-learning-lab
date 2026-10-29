@@ -1,3 +1,4 @@
+import { voaAssets } from "./voa-assets.mjs";
 import { execFileSync } from "node:child_process";
 import { readFile, readdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -8,6 +9,11 @@ const manifest = JSON.parse(
   await readFile("content/source-manifest/hosted.json", "utf8"),
 );
 const approved = new Map();
+const voa = await voaAssets();
+for (const a of voa) {
+  approved.set(`resources/${a.path}`, a);
+  approved.set(`dist/media/${a.path}`, a);
+}
 for (const entry of manifest.entries)
   for (const a of [entry.audio, entry.transcript]) {
     if (
@@ -59,9 +65,12 @@ for (const entry of manifest.entries)
   for (const a of [entry.audio, entry.transcript])
     if (!built.includes(`dist/media/${a.path}`))
       issues.push(`Deployment resource missing: ${a.path}`);
+for (const a of voa)
+  if (!built.includes(`dist/media/${a.path}`))
+    issues.push(`VOA resource missing: ${a.path}`);
 if (built.some((p) => p.endsWith(".pdf")))
   issues.push("PDF unexpectedly deployed");
 if (issues.length) throw new Error(issues.join("\n"));
 console.log(
-  `PASS: ${tracked.length} tracked files, ${built.length} built files; 408 exact repository MP3/LRC assets verified; no PDF deployment or unexpected media/credential/transcript patterns. Scoped scan only.`,
+  `PASS: ${tracked.length} tracked files, ${built.length} built files; 408 exact NCE assets and ${voa.length} VOA assets verified; no PDF deployment or unexpected media/credential/transcript patterns. Scoped scan only.`,
 );

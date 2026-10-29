@@ -1296,3 +1296,10 @@ audio[controls] {
     display: none;
   }
 }
+
+.untimed-text {
+  flex: 1;
+  margin: 0;
+  padding: 8px 4px;
+  font-size: 0.87rem;
+}

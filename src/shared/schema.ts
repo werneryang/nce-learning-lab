@@ -12,7 +12,13 @@ export const RatingSchema = z.enum(["again", "hard", "good", "easy"]);
 export const SourceSchema = z.object({
   id,
   lessonId: id,
-  kind: z.enum(["reference_pdf", "audio", "timed_transcript", "original_note"]),
+  kind: z.enum([
+    "reference_pdf",
+    "audio",
+    "timed_transcript",
+    "transcript",
+    "original_note",
+  ]),
   originRepo: z.string().optional(),
   repoRef: z.string().optional(),
   relativePath: z.string().optional(),
@@ -45,7 +51,7 @@ export const SegmentSchema = z.object({
   id,
   lessonId: id,
   sourceId: id,
-  startMs: z.number().nonnegative(),
+  startMs: z.number().nonnegative().optional(),
   endMs: z.number().nonnegative().optional(),
   text,
   role: z.enum(["intro_question", "lesson_body", "other", "unreviewed"]),
@@ -222,7 +228,24 @@ export const MistakeSchema = z.object({
   createdAt: iso,
   resolved: z.boolean().default(false),
 });
+export const ExternalLessonSchema = z.object({
+  id: z.string().regex(/^VOA-\d+$/),
+  series: z.literal("VOA"),
+  title: z.string().min(1).max(500),
+  summary: z.string().max(2000),
+  originalUrl: z.url().refine((s) => {
+    const u = new URL(s);
+    return (
+      u.protocol === "https:" && u.hostname === "learningenglish.voanews.com"
+    );
+  }),
+  publishedAt: z.string().max(80),
+  vocabulary: z.array(z.string().max(2000)).max(200),
+  attribution: z.string().max(4000),
+  pairingStatus: z.literal("page_linked_unreviewed"),
+});
 export const ImportSchema = z.object({
+  lesson: ExternalLessonSchema.optional(),
   lessonId: id,
   sources: z.array(SourceSchema),
   segments: z.array(SegmentSchema),
@@ -305,6 +328,14 @@ export const StateSchema = z
       if (x.practiceSessionId && !sessions.has(x.practiceSessionId))
         ctx.addIssue({ code: "custom", message: "Unknown attempt session" });
     for (const im of s.imports) {
+      if (
+        (im.lesson && im.lesson.id !== im.lessonId) ||
+        (im.lessonId.startsWith("VOA-") && !im.lesson)
+      )
+        ctx.addIssue({
+          code: "custom",
+          message: "Invalid external lesson identity",
+        });
       const sources = new Set(im.sources.map((x) => x.id));
       unique(
         im.segments.map((x) => x.id),
@@ -319,14 +350,16 @@ export const StateSchema = z
         if (
           !sources.has(seg.sourceId) ||
           seg.lessonId !== im.lessonId ||
-          seg.startMs < previous ||
-          (seg.endMs !== undefined && seg.endMs < seg.startMs)
+          (seg.startMs !== undefined && seg.startMs < previous) ||
+          (seg.startMs === undefined && !im.lesson) ||
+          (seg.endMs !== undefined &&
+            (seg.startMs === undefined || seg.endMs < seg.startMs))
         )
           ctx.addIssue({
             code: "custom",
             message: "Invalid transcript provenance or timing",
           });
-        previous = seg.startMs;
+        if (seg.startMs !== undefined) previous = seg.startMs;
       }
     }
   });

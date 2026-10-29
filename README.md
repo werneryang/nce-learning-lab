@@ -2,7 +2,7 @@
 
 A local-first English practice app built to the supplied **Complete Specification v1.1**. React + TypeScript + Vite. Listen, recall and rewrite in a quiet editor; ask for Hint or Review yourself.
 
-Books 2–4 provide **204 playable lessons** from the MP3/LRC files already in this repository. Open a lesson and press Play: audio and synchronized subtitles load from this site without selecting files. The first five lessons retain curated chunks and prompts; the others provide listening, transcript review and the same quiet writing workflow. Drafts and learning records stay in browser IndexedDB. JSON backups include subtitle text and history but exclude audio. Devices do not synchronize.
+Books 2–4 provide **204 playable NCE lessons** from the MP3/LRC files already in this repository. Open a lesson and press Play: audio and synchronized subtitles load from this site without selecting files. The first five lessons retain curated chunks and prompts; the others provide listening, transcript review and the same quiet writing workflow. Drafts and learning records stay in browser IndexedDB. JSON backups include subtitle text and history but exclude audio. Devices do not synchronize.
 
 **AI Tutor is not configured.** Real deterministic fidelity comparison, limited labeled local rules, and an explicit manual ChatGPT workflow are available. No simulated AI, general language score or pronunciation score.
 
@@ -36,3 +36,9 @@ E2E generates project-original MP3 at runtime. Install FFmpeg with `libmp3lame` 
 ## Textbook materials
 
 `projects/New-Concept-English/` holds New Concept English (Books 2–4) PDFs, audio and LRC files, collected from [tangx/New-Concept-English](https://github.com/tangx/New-Concept-English). They are kept here **for the owner's personal study only**. Copyright belongs to the original publishers and authors; no rights are claimed or granted. Following the owner’s explicit deployment request, the build publishes the 204 MP3/LRC pairs under `media/`; PDFs remain excluded. The exact paths, sizes and SHA-256 hashes are in `content/source-manifest/hosted.json`. This deployment instruction does not establish a publisher redistribution license. If you are a rights holder and want them removed, please open an issue.
+
+## VOA Health & Lifestyle
+
+Ten VOA articles are available directly on the website alongside the unchanged 204 NCE lessons. On Lessons, select **VOA · Health & Lifestyle**, open an article and press Play. MP3s, reading text, vocabulary and source metadata are stored in `resources/voa/` and published through a hash-verified manifest. No local file selection is needed. VOA text has no synchronized timestamps; audio/text matching remains unreviewed and source credits are retained.
+
+Local collection is used for validation, with optional private imports still available. See [VOA resources](docs/VOA_IMPORTER.md) for publication, collection, backup and validation details. Learning records remain private in browser storage.

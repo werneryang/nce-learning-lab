@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { Chunk, State } from "../shared/schema";
 import { uid, now } from "../shared/schema";
-import { candidates, links, examples, lessons } from "../shared/content";
+import { candidates, links, examples, allLessons } from "../shared/content";
 import { acceptChunk, mergeChunks, chunkKey } from "./chunks";
 type Props = {
   state: State;
@@ -10,6 +10,7 @@ type Props = {
   selected?: string[];
 };
 export function Library({ state, update, lessonId, selected = [] }: Props) {
+  const lessons = allLessons(state);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [editing, setEditing] = useState<Chunk>();

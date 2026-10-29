@@ -66,7 +66,7 @@ export async function digest(value: string | ArrayBuffer) {
 export async function exportBackup(state: State) {
   const data = StateSchema.parse(state);
   return {
-    schemaVersion: 1,
+    schemaVersion: data.imports.some((im) => im.lesson) ? 2 : 1,
     exportedAt: new Date().toISOString(),
     mediaIncluded: false,
     data,
@@ -76,7 +76,7 @@ export async function exportBackup(state: State) {
 export async function readBackup(input: string): Promise<State> {
   if (input.length > 10_000_000) throw new Error("Backup exceeds 10 MB.");
   const value = JSON.parse(input);
-  if (value.schemaVersion !== 1 || value.mediaIncluded !== false)
+  if (![1, 2].includes(value.schemaVersion) || value.mediaIncluded !== false)
     throw new Error("Unsupported backup version or media format.");
   if ((await digest(JSON.stringify(value.data))) !== value.checksum)
     throw new Error("Checksum mismatch. Backup was changed or damaged.");
@@ -98,4 +98,36 @@ export function replaceStateAndClearMedia(state: State) {
     });
   writeQueue = write;
   return write;
+}
+
+// One transaction, no overwrites, and a namespace that can never target NCE media.
+export async function saveMissingVoaMedia(
+  entries: { key: string; blob: Blob }[],
+) {
+  const values = await Promise.all(
+    entries.map(async ({ key, blob }) => {
+      if (!/^VOA-\d+:audio$/.test(key))
+        throw new Error("Invalid VOA media key");
+      return {
+        key,
+        value: { bytes: await blob.arrayBuffer(), type: "audio/mpeg" },
+      };
+    }),
+  );
+  const database = await db();
+  const tx = database.transaction("media", "readwrite");
+  try {
+    for (const { key, value } of values)
+      if ((await tx.store.get(key)) === undefined)
+        await tx.store.add(value, key);
+    await tx.done;
+  } catch (error) {
+    try {
+      tx.abort();
+    } catch {
+      /* Transaction may already be aborted. */
+    }
+    await tx.done.catch(() => {});
+    throw error;
+  }
 }

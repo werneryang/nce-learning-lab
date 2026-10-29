@@ -1,0 +1,172 @@
+{
+  "lesson": {
+    "id": "VOA-7972396",
+    "series": "VOA",
+    "title": "WHO Launches New Cancer Drug Plan for Children",
+    "summary": "Health & Lifestyle · listening and reading",
+    "originalUrl": "https://learningenglish.voanews.com/a/who-launches-new-cancer-drug-plan-for-children-/7972396.html",
+    "publishedAt": "2025-02-17T21:55:00+00:00",
+    "vocabulary": [
+      "uninterrupted – adj. not stopped or blocked",
+      "assured – adj. sure that something is true; guaranteed",
+      "access – n. the ability to use or see something"
+    ],
+    "attribution": "Robin Millard reported on this story for Agence France-Presse. John Russell adapted it for VOA Learning English.",
+    "pairingStatus": "page_linked_unreviewed"
+  },
+  "lessonId": "VOA-7972396",
+  "sources": [
+    {
+      "id": "VOA-7972396-text",
+      "lessonId": "VOA-7972396",
+      "kind": "transcript",
+      "originalUrl": "https://learningenglish.voanews.com/a/who-launches-new-cancer-drug-plan-for-children-/7972396.html",
+      "accessMode": "user_repository_hosted",
+      "rightsStatus": "unverified"
+    },
+    {
+      "id": "VOA-7972396-audio",
+      "lessonId": "VOA-7972396",
+      "kind": "audio",
+      "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/12/0cade593-9ba0-4b52-dddc-08dd4a81f35f.mp3",
+      "accessMode": "user_repository_hosted",
+      "rightsStatus": "unverified",
+      "sha256": "24258e2767230c6a06319d6836db9943ab0c28c424830d37dabf024a21b8ba99"
+    }
+  ],
+  "segments": [
+    {
+      "id": "VOA-7972396-text-1",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The World Health Organization (WHO) has launched a new service, or platform, to provide free cancer medicines to thousands of children in less wealthy nations.",
+      "sourceLine": 1,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-2",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The WHO defines these as low- and middle-income countries. The first medicines were to be provided to Mongolia and Uzbekistan. The next shipments would go to Ecuador, Jordan, Nepal and Zambia, as part of the project's testing, or pilot period, the WHO said.",
+      "sourceLine": 2,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-3",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The drug treatments are expected to reach around 5,000 children with cancer this year across at least 30 hospitals in the six countries.",
+      "sourceLine": 3,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-4",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "\"Countries in the pilot phase will receive an uninterrupted supply of quality-assured childhood cancer medicines at no cost,\" the U.N. health agency said in a statement.",
+      "sourceLine": 4,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-5",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The WHO said childhood cancer survival rates in low- and middle-income countries were often below 30 percent. That compares to survival rates of around 80 percent in wealthy nations.",
+      "sourceLine": 5,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-6",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The agency’s Director-General, Tedros Adhanom Ghebreyesus, said in a statement, \"For too long, children with cancer have lacked access to life-saving medicines.\" He added that the new platform aims to bring \"health and hope to children around the world.\"",
+      "sourceLine": 6,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-7",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "El Salvador, Moldova, Senegal, Ghana, Pakistan and Sri Lanka are expected to join the program very soon. The platform hopes to reach 50 countries in the next five to seven years, providing medicines for up to 120,000 children.",
+      "sourceLine": 7,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-8",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The WHO estimates about 400,000 children worldwide develop cancer every year. Most of the children live in places with limited resources.",
+      "sourceLine": 8,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-9",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The agency says about 70 percent of children in those settings die for several reasons. These include the use of low-quality medicines, an inability to get correct treatments, or problems with the supply of treatments.",
+      "sourceLine": 9,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-10",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The plan to establish the platform was first announced in December 2021. It is a cooperative deal between the WHO and St. Jude Children's Research Hospital in Memphis, Tennessee in the United States. The U.S. non-profit treatment and research organization provided $200 million for its launch, the WHO said.",
+      "sourceLine": 10,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-11",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "The WHO called the financial commitment the largest ever made for childhood cancer medicines worldwide. It added that the cost-free service would continue beyond the pilot phase. The platform is working on developing its sustainability – or ability to continue to provide the service - over the longer term.",
+      "sourceLine": 11,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-12",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "Andre Ilbawi is with the WHO's cancer control program. He told reporters the program seeks to widen the platform and bring additional partners on board. \"This marks the beginning of a global movement to provide children with cancer the medicines that they need, regardless of where they live, or their ability to pay,\" Ilbawi said.",
+      "sourceLine": 12,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-13",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "He added that the issue of children with cancer was getting more attention in wealthier countries. \"Childhood cancer is increasingly a leading cause of death for middle- and high-income countries…so governments are increasingly paying attention,\" Ilbawi said.",
+      "sourceLine": 13,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "VOA-7972396-text-14",
+      "lessonId": "VOA-7972396",
+      "sourceId": "VOA-7972396-text",
+      "text": "I’m John Russell.",
+      "sourceLine": 14,
+      "role": "unreviewed",
+      "reviewStatus": "pending"
+    }
+  ],
+  "metadata": {
+    "audioSha256": "24258e2767230c6a06319d6836db9943ab0c28c424830d37dabf024a21b8ba99"
+  },
+  "warnings": [
+    "Article-linked audio. Content pairing has not been reviewed; no timing alignment."
+  ],
+  "audioAccent": "unknown"
+}
