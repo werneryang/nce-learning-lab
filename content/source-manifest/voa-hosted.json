@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "source": "VOA Learning English",
+  "zoneId": 955,
+  "rightsStatus": "unverified",
+  "deploymentBasis": "User explicitly requested placing the ten collected VOA articles and audio in this repository and publishing them through the website on 2026-10-29. This instruction is not a third-party redistribution license.",
+  "entries": [
+    {
+      "lessonId": "VOA-7921334",
+      "lesson": {
+        "id": "VOA-7921334",
+        "series": "VOA",
+        "title": "How Physical Therapists Can Prevent Future Health Problems",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/how-physical-therapists-can-prevent-future-health-problems/7921334.html",
+        "publishedAt": "2025-03-10T22:00:00+00:00",
+        "vocabulary": [
+          "physical therapy – n. a kind of treatment that helps how your body performs movements",
+          "postural – adj. of or relating to the position or bearing of the body",
+          "insurance – n. an agreement in which you pay a company to cover necessary medical costs",
+          "inclined – adj. likely to do something",
+          "screen – v. to find possible medical conditions by doing a test",
+          "confidence – n. the feeling or belief that someone or some group is good or able to succeed at something",
+          "coordination – n. the ability to use different parts of the body in a smooth and controlled manner",
+          "motivate – n. a to cause to behave in a certain way",
+          "milestone – n. an important development or event"
+        ],
+        "attribution": "Stephen Wade reported on this story for the Associated Press. John Russell adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7921334/VOA-7921334.mp3",
+        "sizeBytes": 3267476,
+        "sha256": "1315c89e1bdba7caf018e66bec1f47bd15805f9d0543ec575aaf6f69e7dae27f",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/01/02/3f137e5a-e66e-4026-bcd1-4d31293987e5.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7921334/lesson.json",
+        "sizeBytes": 12967,
+        "sha256": "c4d245e437c0c16ef272666f046c37d4340ecd6eeb52c214583da7f2089a2c42"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7921334/transcript.txt",
+          "sizeBytes": 4719,
+          "sha256": "5732e399513a7c44b5bf5d17eedabbb30ef0099a8f900892e71436f32acbeace"
+        },
+        {
+          "path": "voa/VOA-7921334/vocabulary.txt",
+          "sizeBytes": 670,
+          "sha256": "05430623d62cf9c1d0d337b430a89b65ea24fa77a85fe05402ab0c1c90772abc"
+        },
+        {
+          "path": "voa/VOA-7921334/metadata.json",
+          "sizeBytes": 6788,
+          "sha256": "897c5a15e5df67e43c1fa0598d0900d63bd23500aea9b1acb6587cd3c848f809"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-8001173",
+      "lesson": {
+        "id": "VOA-8001173",
+        "series": "VOA",
+        "title": "How Daylight Saving Time Affects Health",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/how-daylight-savings-time-affects-health/8001173.html",
+        "publishedAt": "2025-03-06T21:55:00+00:00",
+        "vocabulary": [
+          "circadian rhythm – n. the mental, behavioral, and physical changes a person experiences over a 24-hour period",
+          "exposure – n. the condition of being subject to some effect or influence",
+          "reverse – v. to undo, to turn about in position or direction",
+          "cycle – n. a series of events that take place regularly and return to the same starting point",
+          "hormone – n. a product of living cells that circulates in the body and produces an effect on the activity of cells",
+          "clot – v. to undergo chemical reactions that result in blood becoming a lump or mass (a clot)"
+        ],
+        "attribution": "I’m Caty Weaver. Lauran Neergaard reported on this story for the Associated Press. John Russell adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-8001173/VOA-8001173.mp3",
+        "sizeBytes": 3450715,
+        "sha256": "d3a28fe552fe6aa258bb42c135bda5ec233ff52e316acb23cfe16b8c466e4af8",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/03/06/1a6a170d-7de0-4fbb-2d5a-08dd5c897904.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-8001173/lesson.json",
+        "sizeBytes": 11220,
+        "sha256": "87fb725d04b74b01373f34961a6733c2fce969375c1f869524c2a4398773676a"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-8001173/transcript.txt",
+          "sizeBytes": 4019,
+          "sha256": "edb4a4ff1face5f1b3b9019ff135cb227b8ad8fd5bcbb08399c5c29ddc14cfad"
+        },
+        {
+          "path": "voa/VOA-8001173/vocabulary.txt",
+          "sizeBytes": 559,
+          "sha256": "2104cb2eab9c480012c359a1f6222a928278e873c2affea548c34bf370c61b66"
+        },
+        {
+          "path": "voa/VOA-8001173/metadata.json",
+          "sizeBytes": 5911,
+          "sha256": "da2875da3ec988225bb31fa2064c38d288bda0aa3f989d2caea80e3d09083bef"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7958876",
+      "lesson": {
+        "id": "VOA-7958876",
+        "series": "VOA",
+        "title": "Rise in ADHD Cases Raises Questions",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/rise-in-adhd-cases-raises-questions/7958876.html",
+        "publishedAt": "2025-03-03T22:00:00+00:00",
+        "vocabulary": [
+          "teenager -n. someone who is between 13 and 19 years old",
+          "familiar -adj. frequently seen or experienced",
+          "diagnose -v. to recognize a disease or condition in",
+          "clinic -n. a place for the treatment of people needing medical help who do not stay overnight",
+          "assessment -n. the action or an instance of making a judgment about something",
+          "psychologist -n. a person who specializes in the study of mind and behavior or in the treatment of mental, emotional, and behavioral disorders",
+          "focus -v. to cause to be concentrated",
+          "prescribe -v. to order or direct the use of something as a remedy",
+          "variable -adj. able or likely to change : variability -n.",
+          "strict -adj. completely correct : exact : precise"
+        ],
+        "attribution": "Mike Stobbe reported this story for the Associated Press from New York, New York. Anna Matteo adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7958876/VOA-7958876.mp3",
+        "sizeBytes": 3688662,
+        "sha256": "7adb7ff0f8221cd05c6385edf09e9d003e0cb09973d05edca83d0b39ede52f51",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/11/1062ebed-7224-4328-b6f0-08dd481ae9e5.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7958876/lesson.json",
+        "sizeBytes": 13830,
+        "sha256": "e8f63334991eb915987ba55708e0ed9ae58db8a8e4c46fc300d260fc2c8dfcb0"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7958876/transcript.txt",
+          "sizeBytes": 5175,
+          "sha256": "c6544f9aa38281f39b859cbd139854479ea84c2a8983b20d0c0804cc7fb42b83"
+        },
+        {
+          "path": "voa/VOA-7958876/vocabulary.txt",
+          "sizeBytes": 681,
+          "sha256": "0ed3c5a764a486d135481dde8b305b5abc259671778bd3b272ea42e47c19db6e"
+        },
+        {
+          "path": "voa/VOA-7958876/metadata.json",
+          "sizeBytes": 7248,
+          "sha256": "c7987f809c97677877f73668c19fcbb31ff854165b16619cb23af936e754a59c"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7983372",
+      "lesson": {
+        "id": "VOA-7983372",
+        "series": "VOA",
+        "title": "New Flowering Plants for Gardeners to Try",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/new-flowering-plants-for-gardeners-to-try/7983372.html",
+        "publishedAt": "2025-03-03T21:55:00+00:00",
+        "vocabulary": [
+          "gardener –n. a person who grows plants for food or beauty",
+          "enlist –v. to use in a certain way",
+          "horticulture –n. the science of growing garden plants",
+          "variety –n. a particular kind of thing that belongs to a larger group of similar things",
+          "bloom –v. to produce flowers",
+          "vibrant –adj. bright in color and healthy in appearance",
+          "breed –v. to cause a plant to reproduce in a controlled way so that the offspring have desired qualities",
+          "petal –n. the colorful, round, flat part of a flower",
+          "resilient –adj. able to recover from bad conditions or treatment",
+          "durability –n. the ability to last and to not be damaged from use",
+          "tolerate –v. to be able to withstand something",
+          "humidity –n. the amount of water gas that is in the air, usually measured as a percentage",
+          "thrive –v. to reproduce, develop and to be in good health",
+          "stem –n. the long parts of a plant that hold up flowers",
+          "uniform –adj. similar in appearance"
+        ],
+        "attribution": "The Associated Press gardening expert Jessica Damiano wrote this report. Caty Weaver adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7983372/VOA-7983372.mp3",
+        "sizeBytes": 3790933,
+        "sha256": "3e69490d9587ecf7b7a08205736e22720de972c118ca480e60c12d00520ed2bd",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/24/fda37fe2-2d74-45c2-8cd5-08dd4a843460.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7983372/lesson.json",
+        "sizeBytes": 11789,
+        "sha256": "ddd2fdf404b244fef2be001f89be39c799ba4b417dee4b5c21751d2a34194e17"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7983372/transcript.txt",
+          "sizeBytes": 4149,
+          "sha256": "598371f8ead78731e577c7bcd657feaafaa23076a6032d45b8976e26ed158900"
+        },
+        {
+          "path": "voa/VOA-7983372/vocabulary.txt",
+          "sizeBytes": 926,
+          "sha256": "bf37a4454462827e30f75ea905d0351b9f3ca84d79299e8b7de81720d82a9497"
+        },
+        {
+          "path": "voa/VOA-7983372/metadata.json",
+          "sizeBytes": 6479,
+          "sha256": "c6b5a50c9ca64cc1d3b7240b32fd929d545023c28b0263fa27224c738a183cde"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7980912",
+      "lesson": {
+        "id": "VOA-7980912",
+        "series": "VOA",
+        "title": "How to Reduce Risks of Bad Air Quality",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/how-to-reduce-risks-of-bad-air-quality/7980912.html",
+        "publishedAt": "2025-02-26T21:55:00+00:00",
+        "vocabulary": [
+          "smog - n. a kind of air pollution that can consist of smoke, gases, chemicals, etc.",
+          "factor - n. something that contributes to the production of a result",
+          "expose – v. to subject to risk from a harmful condition",
+          "asthma – n. a kind of a chronic lung disorder",
+          "standard – n. something established by authority as a rule for the measure of quality",
+          "afford – v. to be able to pay for",
+          "incense – n. a kind of material used to produce a pleasant smell when burned",
+          "filter – n. to pass a liquid or gas through a piece of equipment in order to remove solid pieces or other substances"
+        ],
+        "attribution": "Aniruddha Ghosal reported on this story for the Associated Press. John Russell adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7980912/VOA-7980912.mp3",
+        "sizeBytes": 3373183,
+        "sha256": "4e5ab3cb2738d0a8a30fe257f568adcde9ddd03abb7f96f42997e74a2f3e74a0",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/20/fe24b90e-d502-4e9d-e588-08dd4a81f35f.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7980912/lesson.json",
+        "sizeBytes": 11904,
+        "sha256": "e21581a9c3f30ef579937628ad792bbfef1211155e24d39bcd2c4b923a21bfe2"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7980912/transcript.txt",
+          "sizeBytes": 4249,
+          "sha256": "cd55b82f8b8ae4d2779b4750c9a3061af4ee05af330b8696885a2ac239ae8170"
+        },
+        {
+          "path": "voa/VOA-7980912/vocabulary.txt",
+          "sizeBytes": 581,
+          "sha256": "defb50bc536f0c605f933c376827b86105a7d3498dca65c080e309b0fddfa182"
+        },
+        {
+          "path": "voa/VOA-7980912/metadata.json",
+          "sizeBytes": 6171,
+          "sha256": "1c2733edf629129e9c2945e470f5792a7ffe2a7bca9da4571280a573e8000af8"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7983385",
+      "lesson": {
+        "id": "VOA-7983385",
+        "series": "VOA",
+        "title": "New Fruits and Vegetables for Gardeners to Try",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/new-fruits-and-vegetables-for-gardeners-to-try/7983385.html",
+        "publishedAt": "2025-02-25T21:55:00+00:00",
+        "vocabulary": [
+          "gardener –n. a person who grows plants for food or beauty",
+          "enlist –v. to use in a certain way",
+          "horticulture –n. the science of growing garden plants",
+          "variety –n. a particular kind of thing that belongs to a larger group of similar things",
+          "fungus –n. a simple form of life that does not use sunlight to make food but is less complex than an animal",
+          "classic –adj. the best or most representative example of something",
+          "texture –n. the way something feels to the touch",
+          "yield –n. the amount of fruit, vegetables, roots or seeds that can be harvested from a plant",
+          "cracking –n. linear breaks in the skin or surface of something",
+          "uniform –adj. similar in appearance",
+          "cluster –n. a bunch of things, such as fruit, that are tightly grouped together",
+          "bulb –n. a round group of cells that certain flowering plants can grow from",
+          "cavity –n. a space in something",
+          "flesh –n. the inside part of a fruit",
+          "decoration –n. a thing that is used to make a home or room more beautiful and pleasing"
+        ],
+        "attribution": "The Associated Press gardening expert Jessica Damiano wrote this report. Caty Weaver adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7983385/VOA-7983385.mp3",
+        "sizeBytes": 3549980,
+        "sha256": "790c28909cfd00b4085cbdf41d685bbbd6f3c6899dd4eb61f5b5940cecc85c5b",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/21/a344ac01-c0c2-4c34-8b0d-08dd4a843460.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7983385/lesson.json",
+        "sizeBytes": 11009,
+        "sha256": "cad49e0cf1c2257f85a3c1781808704c4d1df77eab1e48a3e1470bfb14813f73"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7983385/transcript.txt",
+          "sizeBytes": 3944,
+          "sha256": "4c3498bf80ad4d85944babcf64ab692c7e9b6f66be482bcb575a73e2ac0e65d6"
+        },
+        {
+          "path": "voa/VOA-7983385/vocabulary.txt",
+          "sizeBytes": 993,
+          "sha256": "ba12c560d8960161dfc5a08e139218dc484e66fcbe45419c87a5c9f8e66567fd"
+        },
+        {
+          "path": "voa/VOA-7983385/metadata.json",
+          "sizeBytes": 6333,
+          "sha256": "91cd4413de8810a6d7f3d84d0c8b4c03f994564213a84ca92e90fd91fc9630de"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7953508",
+      "lesson": {
+        "id": "VOA-7953508",
+        "series": "VOA",
+        "title": "Experts Provide Tips for Avoiding Computer-linked Vision Trouble",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/experts-provide-tips-for-avoiding-computer-linked-vision-trouble/7953508.html",
+        "publishedAt": "2025-02-24T22:00:00+00:00",
+        "vocabulary": [
+          "focus – v. to adjust the point of concentration of the eye",
+          "optometrist – n. a health care professional who examines and treats the eye for problems",
+          "engage – v. to give attention to something, to participate",
+          "lubricate – v. to apply something that lessens or prevents difficulty or friction",
+          "fatigue – n. tiredness or exhaustion from exertion or stress",
+          "progression – n. the action or process of developing (or progressing)"
+        ],
+        "attribution": "Cathy Bussewitz reported on this story for the Associated Press. John Russell adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7953508/VOA-7953508.mp3",
+        "sizeBytes": 3655306,
+        "sha256": "fc89d072c1dcc7bb243060cc8a2e34129031a11add0bf18f238ec90911565975",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/01/29/51324d1e-58cd-4d18-922c-cfe0a60d5b72.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7953508/lesson.json",
+        "sizeBytes": 12623,
+        "sha256": "84d59cdec806d23520f9339799236016f3a521151855251bf05b1597c5ce2183"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7953508/transcript.txt",
+          "sizeBytes": 4839,
+          "sha256": "3f456d050ddb3491d7c9054e7a2748dc54c292fab6ae6d49a4d1bf861b6bdf0b"
+        },
+        {
+          "path": "voa/VOA-7953508/vocabulary.txt",
+          "sizeBytes": 432,
+          "sha256": "5991614614d8791cc783babeb3315128dfaa829d43b8d4c114dfb59d61ea1e32"
+        },
+        {
+          "path": "voa/VOA-7953508/metadata.json",
+          "sizeBytes": 6651,
+          "sha256": "67e128ec94bfc5b5f6207bcef89726ffb290e428df36514ffd53ec4d37d3b2dc"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7972394",
+      "lesson": {
+        "id": "VOA-7972394",
+        "series": "VOA",
+        "title": "Study: Electrical Medical Device Helps Improve Muscle Strength",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/study-electrical-medical-device-helps-improve-muscle-strength-/7972394.html",
+        "publishedAt": "2025-02-20T22:00:00+00:00",
+        "vocabulary": [
+          "stimulate – v. to make (something) more active",
+          "implant – n. something placed in a person's body through a medical operation",
+          "function –n. the work that something is designed to do",
+          "paralysis –n. the condition of not being able to move muscles, especially those in the arms and legs",
+          "neuron - n. a cell that carries messages between the brain and other parts of the body and that is the basic unit of the nervous system",
+          "stroke –n. a serious medical condition caused by a loss of oxygen or blood flow to the brain when a blood vessel is blocked or bursts",
+          "surreal – adj. very strange or unusual; having the quality of a dream",
+          "degenerate – v. to change to a worse state or condition; to become worse, weaker, or less useful",
+          "benefit –n. a good result from doing something",
+          "What do you think of this story? Write to us in the Comments Section."
+        ],
+        "attribution": "Lauran Neergaard reported this story for the Associated Press. Jill Robbins adapted it for Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7972394/VOA-7972394.mp3",
+        "sizeBytes": 2651551,
+        "sha256": "93b6cde869d71ddaee2a9bd0cb939a3912107987578ccec070f874d57ad92df1",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/11/7c9943c4-e912-4cbe-f4ff-08dd4a817620.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7972394/lesson.json",
+        "sizeBytes": 9499,
+        "sha256": "26004f830d8a663fde2a87a1e44bc37acc225609a302c5bc3d116c397dca1aa8"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7972394/transcript.txt",
+          "sizeBytes": 3234,
+          "sha256": "976bcb3794741109aea5b4b16b0ea361e08cc1b32283f44c05ee1584412418f0"
+        },
+        {
+          "path": "voa/VOA-7972394/vocabulary.txt",
+          "sizeBytes": 850,
+          "sha256": "d5034dfaf045ed73417546fce8784d2bf536e6c65683095b27ab841af0983cad"
+        },
+        {
+          "path": "voa/VOA-7972394/metadata.json",
+          "sizeBytes": 5446,
+          "sha256": "b58c15daa0348f3a0318aad4b502f4f9b5bc6e99f0548571dd26d54f50ad0162"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7945653",
+      "lesson": {
+        "id": "VOA-7945653",
+        "series": "VOA",
+        "title": "Saying ‘No’ at Work Can Be Good for Your Health",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/saying-no-at-work-can-be-good-for-your-health/7945653.html",
+        "publishedAt": "2025-02-17T22:00:00+00:00",
+        "vocabulary": [
+          "hustle – n. to move or work rapidly and tirelessly",
+          "pay the price – idiom to experience the bad result of something you have done",
+          "stressed – adj. effected by a physical, chemical, or emotional factor that causes bodily or mental tension and may be a factor in disease causation",
+          "manager – n. a person who manages especially a business or household affairs",
+          "engagement – n. the state of being meshed into a working arrangement in which one part drives another",
+          "psychotherapist – n. person who treats mental or emotional disorders by psychological means",
+          "email signature – n. a block of text or image that appears at the end of an email message"
+        ],
+        "attribution": "Cathy Bussewitz reported this story for The Associated Press from New York City. Anna Matteo adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7945653/VOA-7945653.mp3",
+        "sizeBytes": 3594530,
+        "sha256": "492c60cf6f63da608988deb3745882c26b3df0c2cc563de89776120387b48690",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/01/27/cd565e91-78b7-48b8-9278-7710eaeadad4.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7945653/lesson.json",
+        "sizeBytes": 12874,
+        "sha256": "58a97a19f1fabfd3d0f931a34ec09a35a34bda57086f5d56bf073fbf7e1d2316"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7945653/transcript.txt",
+          "sizeBytes": 4457,
+          "sha256": "988ab809a609171508cee280f618fc5beacc6ef56667a6d7a1e6c350907c6591"
+        },
+        {
+          "path": "voa/VOA-7945653/vocabulary.txt",
+          "sizeBytes": 652,
+          "sha256": "d094d4da4cde271ffbfc908be16fc22dd6332dff9c4eba139f9be9f100e271df"
+        },
+        {
+          "path": "voa/VOA-7945653/metadata.json",
+          "sizeBytes": 6495,
+          "sha256": "9100f97dd2dc4f98e3b2b6a09658f0f12fa41a9c4724c24d267c0dddc3662b8b"
+        }
+      ]
+    },
+    {
+      "lessonId": "VOA-7972396",
+      "lesson": {
+        "id": "VOA-7972396",
+        "series": "VOA",
+        "title": "WHO Launches New Cancer Drug Plan for Children",
+        "summary": "Health & Lifestyle · listening and reading",
+        "originalUrl": "https://learningenglish.voanews.com/a/who-launches-new-cancer-drug-plan-for-children-/7972396.html",
+        "publishedAt": "2025-02-17T21:55:00+00:00",
+        "vocabulary": [
+          "uninterrupted – adj. not stopped or blocked",
+          "assured – adj. sure that something is true; guaranteed",
+          "access – n. the ability to use or see something"
+        ],
+        "attribution": "Robin Millard reported on this story for Agence France-Presse. John Russell adapted it for VOA Learning English.",
+        "pairingStatus": "page_linked_unreviewed"
+      },
+      "audio": {
+        "path": "voa/VOA-7972396/VOA-7972396.mp3",
+        "sizeBytes": 2380739,
+        "sha256": "24258e2767230c6a06319d6836db9943ab0c28c424830d37dabf024a21b8ba99",
+        "originalUrl": "https://voa-audio.voanews.eu/vle/2025/02/12/0cade593-9ba0-4b52-dddc-08dd4a81f35f.mp3"
+      },
+      "transcript": {
+        "path": "voa/VOA-7972396/lesson.json",
+        "sizeBytes": 7800,
+        "sha256": "256a6052c742c220d80df3019d848a62b0686b52b4dea516aff7de6305bea6d9"
+      },
+      "files": [
+        {
+          "path": "voa/VOA-7972396/transcript.txt",
+          "sizeBytes": 2994,
+          "sha256": "e65647fc0289708d0912d3544cd3188a34a6700ed38b5e0e007ba83cb21c5a5d"
+        },
+        {
+          "path": "voa/VOA-7972396/vocabulary.txt",
+          "sizeBytes": 153,
+          "sha256": "fba87822f60d997932e69a1fe0d7a3f7ba223ba356d0e3600e3b66e0364a9f21"
+        },
+        {
+          "path": "voa/VOA-7972396/metadata.json",
+          "sizeBytes": 4401,
+          "sha256": "5970824c8487e9d362c37277c4a6920d2e3de3218b5d78f793604dbc20c31681"
+        }
+      ]
+    }
+  ],
+  "package": {
+    "path": "voa/library.json",
+    "sizeBytes": 64366,
+    "sha256": "b07dfae8c888f7aa87607837fb642b5dedc0f1ffb481cd858d0cfc626ff4dfa2"
+  }
+}

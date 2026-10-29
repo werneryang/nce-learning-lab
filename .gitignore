@@ -13,3 +13,5 @@ private/
 *.tsbuildinfo
 
 /public/media/
+__pycache__/
+!resources/voa/VOA-*/*.mp3

@@ -79,9 +79,15 @@ export function Player({
                 warnings: loaded.warnings,
                 sources: [
                   ...(current?.sources || []).filter(
-                    (source) => source.kind !== "timed_transcript",
+                    (source) =>
+                      source.kind !== "timed_transcript" &&
+                      source.kind !== "transcript",
                   ),
-                  ...loaded.sources,
+                  ...loaded.sources.filter(
+                    (source) =>
+                      source.kind !== "audio" ||
+                      !current?.sources.some((s) => s.kind === "audio"),
+                  ),
                 ],
               },
             ],
@@ -99,6 +105,7 @@ export function Player({
       });
     return () => controller.abort();
   }, [lessonId, repository, data?.segments.length, transcriptReload, update]);
+  const untimed = segments.some((s) => s.startMs === undefined);
   const active = activeSegment(segments, time * 1000);
   const audioDisabled =
     !url ||
@@ -163,9 +170,18 @@ export function Player({
     update((s) => {
       const current = s.imports.find((x) => x.lessonId === lessonId) || {
         lessonId,
+        ...(repository && "lesson" in repository
+          ? {
+              lesson: repository.lesson,
+              metadata: { audioSha256: repository.audio.sha256 },
+            }
+          : {}),
         sources: [],
         segments: [],
-        metadata: {},
+        metadata:
+          repository && "lesson" in repository
+            ? { audioSha256: repository.audio.sha256 }
+            : {},
         warnings: [],
         audioAccent: "unknown" as const,
       };
@@ -399,7 +415,10 @@ export function Player({
     }));
   }
   const outOfBounds =
-    duration > 0 && segments.some((s) => s.startMs / 1000 >= duration);
+    duration > 0 &&
+    segments.some(
+      (s) => s.startMs !== undefined && s.startMs / 1000 >= duration,
+    );
   const lessonSources = sources.filter((s) => s.lessonId === lessonId);
   return (
     <section className="panel player-panel" aria-label="Audio and transcript">
@@ -409,7 +428,9 @@ export function Player({
         </span>
         <span className="badge">
           {!data?.audioName && repository
-            ? "US · repository source"
+            ? data?.lesson || lessonId.startsWith("VOA-")
+              ? "VOA · repository source"
+              : "US · repository source"
             : data?.audioAccent === "us"
               ? "US · user selected"
               : data?.audioAccent === "uk"
@@ -419,9 +440,23 @@ export function Player({
       </div>
       <h2>Your listening space</h2>
       <p className="muted">
-        Repository audio and subtitles load here automatically. Press Play to
-        listen.
+        {data?.lesson
+          ? "VOA article and audio. No synchronized timestamps; use the audio controls to navigate."
+          : "Repository audio and subtitles load here automatically. Press Play to listen."}
       </p>
+      {data?.lesson && (
+        <div className="notice">
+          <a href={data.lesson.originalUrl} target="_blank" rel="noreferrer">
+            VOA source article
+          </a>{" "}
+          · {data.lesson.publishedAt}
+          <p>{data.lesson.attribution}</p>
+          <p>
+            Audio linked from the article; content pairing unreviewed. Rights
+            unverified; source credits retained.
+          </p>
+        </div>
+      )}
       <details
         className="source-manager"
         open={!repository && !data?.audioName && !segments.length}
@@ -490,11 +525,11 @@ export function Player({
         <p className="small">
           Audio:{" "}
           {data?.audioName || (repository ? "repository audio" : "unavailable")}{" "}
-          · Timed lines: {segments.length}
+          · Text segments: {segments.length}
         </p>
         <div className="button-row">
           <button
-            disabled={!data?.audioName}
+            disabled={!repository || !data?.audioName}
             onClick={() => {
               void deleteMedia(`${lessonId}:audio`)
                 .then(() => {
@@ -511,7 +546,7 @@ export function Player({
             Use repository audio
           </button>
           <button
-            disabled={!segments.length}
+            disabled={!repository || !segments.length}
             onClick={() => {
               patch((im) => ({
                 ...im,
@@ -519,7 +554,8 @@ export function Player({
                 metadata: {},
                 warnings: [],
                 sources: im.sources.filter(
-                  (s) => s.kind !== "timed_transcript",
+                  (s) =>
+                    s.kind !== "timed_transcript" && s.kind !== "transcript",
                 ),
               }));
               onSelect([]);
@@ -687,7 +723,7 @@ export function Player({
           {settings.subtitleVisible ? "Hide subtitles" : "Show subtitles"}
         </button>
         <button
-          disabled={audioDisabled || !segments.length}
+          disabled={audioDisabled || !segments.length || untimed}
           aria-pressed={!!loopId}
           onClick={toggleLoop}
         >
@@ -706,7 +742,8 @@ export function Player({
       <label className="check small">
         <input
           type="checkbox"
-          checked={settings.currentLineOnly}
+          disabled={untimed}
+          checked={!untimed && settings.currentLineOnly}
           onChange={(e) =>
             update((s) => ({
               ...s,
@@ -724,7 +761,10 @@ export function Player({
       ) : settings.subtitleVisible ? (
         <div className="transcript" aria-label="Transcript">
           {segments
-            .filter((s) => !settings.currentLineOnly || s.id === active?.id)
+            .filter(
+              (s) =>
+                untimed || !settings.currentLineOnly || s.id === active?.id,
+            )
             .map((s) => (
               <div
                 className={`transcript-row ${s.id === active?.id ? "active" : ""} ${selected.includes(s.id) ? "selected" : ""}`}
@@ -745,13 +785,23 @@ export function Player({
                     }
                   />
                 </label>
-                <button
-                  disabled={audioDisabled}
-                  onClick={() => seek(s.startMs / 1000)}
-                >
-                  <span className="line-time">{stamp(s.startMs / 1000)}</span>
-                  <span>{s.text}</span>
-                </button>
+                {s.startMs === undefined ? (
+                  <p className="untimed-text">{s.text}</p>
+                ) : (
+                  <button
+                    disabled={audioDisabled}
+                    onClick={() => {
+                      if (s.startMs !== undefined) seek(s.startMs / 1000);
+                    }}
+                  >
+                    <span className="line-time">
+                      {s.startMs === undefined
+                        ? "Text"
+                        : stamp(s.startMs / 1000)}
+                    </span>
+                    <span>{s.text}</span>
+                  </button>
+                )}
                 <span className="line-role">
                   {s.reviewStatus === "confirmed"
                     ? "body"
@@ -766,6 +816,14 @@ export function Player({
         <div className="empty-state" data-testid="subtitles-hidden">
           Subtitles hidden. Keep your attention on what you hear.
         </div>
+      )}
+      {data?.lesson && settings.subtitleVisible && (
+        <details>
+          <summary>Words in this story</summary>
+          {data.lesson.vocabulary.map((v, i) => (
+            <p key={i}>{v}</p>
+          ))}
+        </details>
       )}
       {segments.length > 0 && (
         <>
@@ -799,7 +857,10 @@ export function Player({
                 <div className="review-line" key={s.id}>
                   <p>
                     <span className="small muted">
-                      Source line {s.sourceLine} · {stamp(s.startMs / 1000)}
+                      Source line {s.sourceLine} ·{" "}
+                      {s.startMs === undefined
+                        ? "Text"
+                        : stamp(s.startMs / 1000)}
                     </span>
                     <br />
                     {s.text}

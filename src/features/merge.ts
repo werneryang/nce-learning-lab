@@ -149,6 +149,14 @@ export function mergeStates(local: State, incoming: State) {
 }
 /** Prefers the transcript with more reviewed lines; ties keep this device's. */
 function pickImport(mine: LocalImport, theirs: LocalImport) {
+  // A different VOA edition must not bind incoming text to this device's audio.
+  if (
+    mine.lesson &&
+    (mine.metadata.audioSha256 !== theirs.metadata.audioSha256 ||
+      mine.segments.map((s) => s.text).join("\n") !==
+        theirs.segments.map((s) => s.text).join("\n"))
+  )
+    return mine;
   const reviewed = (im: LocalImport) =>
     im.segments.filter((s) => s.reviewStatus !== "pending").length;
   return reviewed(theirs) > reviewed(mine) ? theirs : mine;

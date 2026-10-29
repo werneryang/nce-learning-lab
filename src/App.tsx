@@ -11,9 +11,10 @@ import {
   Leaf,
 } from "lucide-react";
 import { useLearning } from "./storage/useLearning";
-import { lessons } from "./shared/content";
+import { allLessons } from "./shared/content";
 import type { Mode, Rating, Skill } from "./shared/schema";
 import { now, uid } from "./shared/schema";
+import { VoaImport } from "./VoaImport";
 import { Player } from "./features/Player";
 import { Practice } from "./features/Practice";
 import { Library } from "./features/Library";
@@ -41,6 +42,7 @@ export default function App() {
     storageError,
     setStorageError,
   } = useLearning();
+  const lessons = allLessons(state);
   const [page, setPage] = useState(
     () => location.hash.slice(1).split("/")[0] || "today",
   );
@@ -64,21 +66,22 @@ export default function App() {
     if (ready) {
       const hash = location.hash.slice(1).split("/")[1];
       const recent = hash || ref.current.recentLessonId;
-      if (recent && lessons.some((l) => l.id === recent)) setLessonId(recent);
+      if (recent && allLessons(ref.current).some((l) => l.id === recent))
+        setLessonId(recent);
     }
   }, [ready, ref]);
   useEffect(() => {
     const changed = () => {
       const [p, id] = location.hash.slice(1).split("/");
       setPage(p || "today");
-      if (lessons.some((l) => l.id === id)) {
+      if (allLessons(ref.current).some((l) => l.id === id)) {
         setLessonId(id);
         setSelected([]);
       }
     };
     window.addEventListener("hashchange", changed);
     return () => window.removeEventListener("hashchange", changed);
-  }, []);
+  }, [ref]);
   const lesson = lessons.find((l) => l.id === lessonId) || lessons[0];
   const queue = dueQueue(state.mastery);
   const queueCard = queue[0];
@@ -318,18 +321,22 @@ export default function App() {
                   BOOKS 02–04 · PRACTICE & PROGRESS
                 </span>
                 <h1>
-                  204 lessons.
+                  204 NCE lessons + 10 VOA articles.
                   <br />
                   <em>One growing voice.</em>
                 </h1>
                 <p>
-                  Repository audio and synchronized subtitles. No file import
-                  needed.
+                  NCE audio with synchronized subtitles; VOA audio with reading
+                  text. No file import needed.
                 </p>
               </div>
+              <details className="panel">
+                <summary>Optional local VOA files</summary>
+                <VoaImport state={state} update={update} flush={flush} />
+              </details>
               <div className="button-row">
                 <label>
-                  Book{" "}
+                  Collection{" "}
                   <select
                     aria-label="Book"
                     value={bookFilter}
@@ -338,6 +345,7 @@ export default function App() {
                     <option value="2">Book 2 · 96 lessons</option>
                     <option value="3">Book 3 · 60 lessons</option>
                     <option value="4">Book 4 · 48 lessons</option>
+                    <option value="VOA">VOA · Health & Lifestyle</option>
                   </select>
                 </label>
                 <input
@@ -351,7 +359,8 @@ export default function App() {
                 {lessons
                   .filter(
                     (l) =>
-                      String(l.book) === bookFilter &&
+                      (l.series === "VOA" ? "VOA" : String(l.book)) ===
+                        bookFilter &&
                       l.title
                         .toLowerCase()
                         .includes(lessonSearch.toLowerCase()),
@@ -363,18 +372,27 @@ export default function App() {
                       onClick={() => openLesson(l.id)}
                     >
                       <span className="lesson-number">
-                        {String(l.number).padStart(2, "0")}
+                        {l.series === "VOA"
+                          ? "VOA"
+                          : String(l.number).padStart(2, "0")}
                       </span>
-                      <span className="eyebrow">LESSON {l.number}</span>
+                      <span className="eyebrow">
+                        {l.series === "VOA"
+                          ? "HEALTH & LIFESTYLE"
+                          : `LESSON ${l.number}`}
+                      </span>
                       <h2>{l.title}</h2>
                       <p>{l.summary}</p>
                       <div className="lesson-card-footer">
                         <span>
-                          {state.imports.some(
-                            (im) => im.lessonId === l.id && im.segments.length,
-                          )
-                            ? "Subtitles ready"
-                            : "Play repository audio"}
+                          {l.series === "VOA"
+                            ? "Read & listen"
+                            : state.imports.some(
+                                  (im) =>
+                                    im.lessonId === l.id && im.segments.length,
+                                )
+                              ? "Subtitles ready"
+                              : "Play repository audio"}
                         </span>
                         <ArrowUpRight size={20} />
                       </div>
@@ -387,15 +405,22 @@ export default function App() {
             <>
               <div className="breadcrumb">
                 <a href="#lessons">
-                  Book {String(lesson.book).padStart(2, "0")}
+                  {lesson.series === "VOA"
+                    ? "VOA"
+                    : `Book ${String(lesson.book).padStart(2, "0")}`}
                 </a>
-                <span>/</span>Lesson {lesson.number}
+                <span>/</span>
+                {lesson.series === "VOA"
+                  ? "Health & Lifestyle"
+                  : `Lesson ${lesson.number}`}
               </div>
               <div className="lesson-heading">
                 <div>
                   <span className="eyebrow">
-                    LESSON {String(lesson.number).padStart(2, "0")} · LISTEN →
-                    WRITE → REFLECT
+                    {lesson.series === "VOA"
+                      ? "VOA"
+                      : `LESSON ${String(lesson.number).padStart(2, "0")}`}{" "}
+                    · LISTEN → WRITE → REFLECT
                   </span>
                   <h1>{lesson.title}</h1>
                   <p>{lesson.summary}</p>
@@ -407,7 +432,10 @@ export default function App() {
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
-                      Book {l.book} · Lesson {l.number} · {l.title}
+                      {l.series === "VOA"
+                        ? "VOA"
+                        : `Book ${l.book} · Lesson ${l.number}`}{" "}
+                      · {l.title}
                     </option>
                   ))}
                 </select>
@@ -477,7 +505,10 @@ export default function App() {
                 >
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
-                      Book {l.book} · Lesson {l.number} · {l.title}
+                      {l.series === "VOA"
+                        ? "VOA"
+                        : `Book ${l.book} · Lesson ${l.number}`}{" "}
+                      · {l.title}
                     </option>
                   ))}
                 </select>

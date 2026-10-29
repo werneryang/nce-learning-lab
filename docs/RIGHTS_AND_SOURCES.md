@@ -1,3 +1,9 @@
+# VOA resource deployment (2026-10-29)
+
+The owner explicitly requested committing and publishing the ten collected VOA Health & Lifestyle articles and audio so the website works without local import. `content/source-manifest/voa-hosted.json` records all 51 assets and hashes. Audio, reading text, vocabulary and metadata are published; original page HTML and third-party photographs are excluded. NCE resources are unchanged.
+
+The articles retain AP/AFP reporting and VOA adaptation credits. Rights remain unverified, and user deployment authorization does not establish a third-party redistribution license. Audio is associated with its article page and fully decoded during validation; verbatim correspondence and timing alignment remain unreviewed. Source policies: https://learningenglish.voanews.com/p/6861.html and https://learningenglish.voanews.com/p/6021.html.
+
 # Current repository resource deployment
 
 The user added Books 2–4 to `projects/New-Concept-English/` on main (`b461e8d1250da958643e3a336a09d58d7a0b8406`) and explicitly requested connecting and deploying those audio/subtitle files. The current app serves exactly 204 MP3 and 204 LRC files from its own Pages site. Three PDFs already in Git are excluded from the site. No additional third-party media is downloaded by the build. `hosted.json` records exact paths, byte counts and SHA-256; staging and scans verify every deployed file. Publisher rights remain unverified; user deployment authorization is not a publisher license.

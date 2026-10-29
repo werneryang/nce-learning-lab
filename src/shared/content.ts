@@ -1,4 +1,4 @@
-import { hosted, hostedSource } from "../features/hosted";
+import { hosted, hostedSource, voaHosted } from "../features/hosted";
 import rawLessons from "../../content/lessons/nce2/catalog.json";
 import rawChunks from "../../content/chunks/candidates.json";
 import rawExamples from "../../content/chunks/examples.json";
@@ -44,8 +44,24 @@ export const sources = [
   ...sourceManifest.entries.flatMap((x) =>
     x.sources.map((s) => SourceSchema.parse(s)),
   ),
-  ...hosted.flatMap((e) => [
+  ...[...hosted, ...voaHosted].flatMap((e) => [
     hostedSource(e, "audio"),
     hostedSource(e, "timed_transcript"),
   ]),
 ];
+
+// Hosted VOA and optional private imports share IDs without duplicating courses.
+// Neither collection mutates the NCE catalog.
+export function allLessons(state: import("./schema").State) {
+  const external = new Map(voaHosted.map((e) => [e.lessonId, e.lesson]));
+  for (const im of state.imports)
+    if (im.lesson) external.set(im.lessonId, im.lesson);
+  return [
+    ...lessons,
+    ...Array.from(external.values(), (lesson) => ({
+      ...lesson,
+      book: undefined,
+      number: undefined,
+    })),
+  ];
+}

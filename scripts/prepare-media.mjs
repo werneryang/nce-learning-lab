@@ -1,3 +1,4 @@
+import { voaAssets } from "./voa-assets.mjs";
 import {
   readFile,
   readdir,
@@ -98,7 +99,17 @@ if (process.argv.includes("--index")) {
       count++;
     }
   assert.equal(count, 408);
+  const voa = await voaAssets();
+  for (const asset of voa) {
+    const source = `resources/${asset.path}`;
+    const target = `public/media/${asset.path}`;
+    const bytes = await readFile(source);
+    assert.equal(bytes.length, asset.sizeBytes, `Size mismatch: ${source}`);
+    assert.equal(sha256(bytes), asset.sha256, `Hash mismatch: ${source}`);
+    await mkdir(target.slice(0, target.lastIndexOf("/")), { recursive: true });
+    await copyFile(source, target);
+  }
   console.log(
-    `Prepared ${count} verified repository audio/transcript assets; no PDFs or private files copied.`,
+    `Prepared ${count} verified NCE assets and ${voa.length} verified VOA assets; no PDFs or private files copied.`,
   );
 }

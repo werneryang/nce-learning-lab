@@ -71,6 +71,7 @@ export function Practice({
   const session = state.sessions.find((s) => s.id === activeId);
   const segments =
     state.imports.find((im) => im.lessonId === lessonId)?.segments || [];
+  const untimed = segments.some((s) => s.startMs === undefined);
   const body = confirmedBody(segments);
   const chosen = body.filter((s) => selected.includes(s.id));
   const sessionBody = body.filter((s) =>
@@ -232,9 +233,10 @@ export function Practice({
       reference &&
       sessionBody.some(
         (s) =>
+          s.startMs !== undefined &&
           s.startMs / 1000 >=
-          (stateRef.current.imports.find((im) => im.lessonId === lessonId)
-            ?.audioDuration ?? Infinity),
+            (stateRef.current.imports.find((im) => im.lessonId === lessonId)
+              ?.audioDuration ?? Infinity),
       )
     ) {
       setMessage(
@@ -483,7 +485,9 @@ export function Practice({
             value={scope}
             onChange={(e) => setScope(e.target.value as Session["scope"])}
           >
-            <option value="sentence">Sentence</option>
+            <option value="sentence">
+              {untimed ? "Single text segment" : "Sentence"}
+            </option>
             <option value="paragraph">Paragraph / selected lines</option>
             <option value="full_lesson">Full lesson body</option>
           </select>
@@ -510,7 +514,9 @@ export function Practice({
             {scope === "full_lesson"
               ? "Full lesson uses these lines plus any previously confirmed body lines."
               : scope === "sentence"
-                ? "Sentence practice uses the first checked line."
+                ? untimed
+                  ? "Single-segment practice uses the first checked paragraph or heading."
+                  : "Sentence practice uses the first checked line."
                 : "Paragraph practice uses your checked group of lines."}
           </p>
           <div className="practice-body-lines">

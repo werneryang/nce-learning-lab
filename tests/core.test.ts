@@ -363,7 +363,7 @@ describe("private storage and versioned backup", () => {
   it("rejects unknown schema versions", async () => {
     const b = await exportBackup(emptyState());
     await expect(
-      readBackup(JSON.stringify({ ...b, schemaVersion: 2 })),
+      readBackup(JSON.stringify({ ...b, schemaVersion: 999 })),
     ).rejects.toThrow("version");
   });
   it("schema catches duplicate mastery", () => {
