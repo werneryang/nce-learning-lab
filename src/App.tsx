@@ -83,6 +83,14 @@ export default function App() {
     return () => window.removeEventListener("hashchange", changed);
   }, [ref]);
   const lesson = lessons.find((l) => l.id === lessonId) || lessons[0];
+  const collection = lessons.filter(
+    (item) =>
+      item.series === lesson.series &&
+      (lesson.series !== "NCE" || item.book === lesson.book),
+  );
+  const collectionIndex = collection.findIndex((item) => item.id === lesson.id);
+  const previousLesson = collection[collectionIndex - 1];
+  const nextLesson = collection[collectionIndex + 1];
   const queue = dueQueue(state.mastery);
   const queueCard = queue[0];
   const queueChunk = state.chunks.find((c) => c.id === queueCard?.chunkId);
@@ -444,6 +452,9 @@ export default function App() {
                 <Player
                   key={lessonId}
                   lessonId={lessonId}
+                  previousLesson={previousLesson}
+                  nextLesson={nextLesson}
+                  onNavigate={openLesson}
                   data={state.imports.find((im) => im.lessonId === lessonId)}
                   settings={state.settings}
                   update={update}

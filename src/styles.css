@@ -1303,3 +1303,13 @@ audio[controls] {
   padding: 8px 4px;
   font-size: 0.87rem;
 }
+
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+}
+.article-navigation button {
+  min-height: 44px;
+}

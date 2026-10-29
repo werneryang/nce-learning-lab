@@ -9,6 +9,8 @@ import {
   EyeOff,
   Upload,
   Headphones,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import type { LocalImport, Segment, State } from "../shared/schema";
 import { uid, now } from "../shared/schema";
@@ -18,6 +20,9 @@ import { sources } from "../shared/content";
 import { hostedLesson, loadHostedTranscript, mediaUrl } from "./hosted";
 type Props = {
   lessonId: string;
+  previousLesson?: { id: string; title: string };
+  nextLesson?: { id: string; title: string };
+  onNavigate: (id: string) => void;
   data?: LocalImport;
   settings: State["settings"];
   update: (fn: (s: State) => State) => void;
@@ -30,6 +35,9 @@ const stamp = (seconds: number) =>
   `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
 export function Player({
   lessonId,
+  previousLesson,
+  nextLesson,
+  onNavigate,
   data,
   settings,
   update,
@@ -695,6 +703,22 @@ export function Player({
           ))}
         </select>
       </div>
+      <nav className="article-navigation" aria-label="篇目导航">
+        <button
+          disabled={!previousLesson}
+          title={previousLesson?.title || "已经是第一篇"}
+          onClick={() => previousLesson && onNavigate(previousLesson.id)}
+        >
+          <ChevronLeft size={18} aria-hidden="true" /> 上一篇
+        </button>
+        <button
+          disabled={!nextLesson}
+          title={nextLesson?.title || "已经是最后一篇"}
+          onClick={() => nextLesson && onNavigate(nextLesson.id)}
+        >
+          下一篇 <ChevronRight size={18} aria-hidden="true" />
+        </button>
+      </nav>
       <input
         className="seek"
         aria-label="Audio progress"
