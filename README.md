@@ -1,6 +1,6 @@
-# NCE Learning Lab
+# Language Learning Lab
 
-A local-first English practice app built to the supplied **Complete Specification v1.1**. React + TypeScript + Vite. Listen, recall and rewrite in a quiet editor; ask for Hint or Review yourself.
+A local-first language practice app built to the supplied **Complete Specification v1.1**. React + TypeScript + Vite. Listen, recall and rewrite in a quiet editor; ask for Hint or Review yourself.
 
 Books 2–4 provide **204 playable NCE lessons** from the MP3/LRC files already in this repository. Open a lesson and press Play: audio and synchronized subtitles load from this site without selecting files. The first five lessons retain curated chunks and prompts; the others provide listening, transcript review and the same quiet writing workflow. Drafts and learning records stay in browser IndexedDB. JSON backups include subtitle text and history but exclude audio. Devices do not synchronize.
 

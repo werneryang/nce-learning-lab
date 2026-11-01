@@ -162,7 +162,7 @@ export default function App() {
             <Leaf size={24} />
           </span>
           <span>
-            NCE<span className="brand-sub">LEARNING LAB</span>
+            Language<span className="brand-sub">LEARNING LAB</span>
           </span>
         </a>
         <p className="sidebar-note">
@@ -197,7 +197,7 @@ export default function App() {
       </aside>
       <div className="content-shell">
         <header className="topbar">
-          <span>YOUR PERSONAL ENGLISH STUDIO</span>
+          <span>YOUR PERSONAL LANGUAGE STUDIO</span>
           <span className="local-status" role="status">
             <span
               className={`status-dot ${status === "Save failed" ? "failed" : ""}`}
@@ -219,7 +219,7 @@ export default function App() {
               <div className="page-heading">
                 <span className="eyebrow">ONE SMALL STEP, EVERY DAY</span>
                 <h1>
-                  Make English
+                  Make a language
                   <br />
                   <em>part of your voice.</em>
                 </h1>
@@ -855,7 +855,7 @@ export default function App() {
           )}
         </main>
         <footer className="app-footer">
-          <span>NCE LEARNING LAB</span>
+          <span>LANGUAGE LEARNING LAB</span>
           <p>Practice deliberately. Let your voice grow.</p>
           <a
             href="https://github.com/werneryang/nce-learning-lab"
