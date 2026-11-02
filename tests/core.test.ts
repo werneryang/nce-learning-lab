@@ -461,3 +461,48 @@ it("individual session deletion clears dependent private records while preservin
   expect(result.mastery).toEqual(s.mastery);
   expect(StateSchema.safeParse(result).success).toBe(true);
 });
+
+describe("per-lesson chunks and vocabulary", () => {
+  it("every Book 2 lesson has its own chunks and study words", async () => {
+    const { links, nceVocabulary, examples } =
+      await import("../src/shared/content");
+    const book2 = lessons.filter((l) => l.series === "NCE" && l.book === 2);
+    expect(book2).toHaveLength(96);
+    for (const lesson of book2) {
+      expect(
+        links.filter((l) => l.lessonId === lesson.id).length,
+        `${lesson.id} chunks`,
+      ).toBeGreaterThanOrEqual(5);
+      expect(
+        nceVocabulary[lesson.id]?.length ?? 0,
+        `${lesson.id} vocabulary`,
+      ).toBeGreaterThanOrEqual(6);
+    }
+    const ids = new Set(candidates.map((c) => c.id));
+    const keys = candidates.map(
+      (c) => `${c.canonical.toLowerCase()}::${c.senseKey.toLowerCase()}`,
+    );
+    expect(new Set(keys).size).toBe(keys.length);
+    expect(links.every((l) => ids.has(l.chunkId))).toBe(true);
+    expect(new Set(links.map((l) => `${l.lessonId}:${l.chunkId}`)).size).toBe(
+      links.length,
+    );
+    for (const c of candidates)
+      expect(
+        examples.some((e) => e.chunkId === c.id),
+        `${c.id} example`,
+      ).toBe(true);
+  });
+  it("every hosted VOA article has its own chunks", async () => {
+    const { links } = await import("../src/shared/content");
+    const { voaHosted } = await import("../src/features/hosted");
+    expect(voaHosted).toHaveLength(10);
+    for (const e of voaHosted) {
+      expect(
+        links.filter((l) => l.lessonId === e.lessonId).length,
+        e.lessonId,
+      ).toBeGreaterThanOrEqual(5);
+      expect(e.lesson.vocabulary.length, e.lessonId).toBeGreaterThan(0);
+    }
+  });
+});

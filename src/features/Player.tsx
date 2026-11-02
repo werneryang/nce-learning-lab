@@ -16,7 +16,7 @@ import type { LocalImport, Segment, State } from "../shared/schema";
 import { uid, now } from "../shared/schema";
 import { parseLrc, activeSegment, loopBounds } from "./lrc";
 import { saveMedia, loadMedia, deleteMedia, digest } from "../storage/db";
-import { sources } from "../shared/content";
+import { sources, nceVocabulary } from "../shared/content";
 import { hostedLesson, loadHostedTranscript, mediaUrl } from "./hosted";
 type Props = {
   lessonId: string;
@@ -841,14 +841,19 @@ export function Player({
           Subtitles hidden. Keep your attention on what you hear.
         </div>
       )}
-      {data?.lesson && settings.subtitleVisible && (
-        <details>
-          <summary>Words in this story</summary>
-          {data.lesson.vocabulary.map((v, i) => (
-            <p key={i}>{v}</p>
-          ))}
-        </details>
-      )}
+      {settings.subtitleVisible &&
+        (data?.lesson || nceVocabulary[lessonId]) && (
+          <details>
+            <summary>
+              {data?.lesson ? "Words in this story" : "Words in this lesson"}
+            </summary>
+            {(data?.lesson?.vocabulary ?? nceVocabulary[lessonId])
+              .filter((v) => !v.includes("Comments Section"))
+              .map((v, i) => (
+                <p key={i}>{v}</p>
+              ))}
+          </details>
+        )}
       {segments.length > 0 && (
         <>
           <button

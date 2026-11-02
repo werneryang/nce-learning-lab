@@ -123,5 +123,2530 @@
     "lessonId": "NCE2-L005",
     "chunkId": "CH000024",
     "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L006",
+    "chunkId": "CH000025",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L006",
+    "chunkId": "CH000026",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L006",
+    "chunkId": "CH000027",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L006",
+    "chunkId": "CH000028",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L006",
+    "chunkId": "CH000029",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L007",
+    "chunkId": "CH000030",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L007",
+    "chunkId": "CH000031",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L007",
+    "chunkId": "CH000032",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L007",
+    "chunkId": "CH000033",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L007",
+    "chunkId": "CH000034",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L008",
+    "chunkId": "CH000035",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L008",
+    "chunkId": "CH000036",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L008",
+    "chunkId": "CH000037",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L008",
+    "chunkId": "CH000038",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L008",
+    "chunkId": "CH000039",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L009",
+    "chunkId": "CH000040",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L009",
+    "chunkId": "CH000041",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L009",
+    "chunkId": "CH000042",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L009",
+    "chunkId": "CH000043",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L009",
+    "chunkId": "CH000044",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L010",
+    "chunkId": "CH000045",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L010",
+    "chunkId": "CH000046",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L010",
+    "chunkId": "CH000047",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L010",
+    "chunkId": "CH000048",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L010",
+    "chunkId": "CH000049",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L011",
+    "chunkId": "CH000050",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L011",
+    "chunkId": "CH000051",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L011",
+    "chunkId": "CH000052",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L011",
+    "chunkId": "CH000053",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L011",
+    "chunkId": "CH000054",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L012",
+    "chunkId": "CH000055",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L012",
+    "chunkId": "CH000056",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L012",
+    "chunkId": "CH000057",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L012",
+    "chunkId": "CH000058",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L012",
+    "chunkId": "CH000059",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L013",
+    "chunkId": "CH000060",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L013",
+    "chunkId": "CH000061",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L013",
+    "chunkId": "CH000062",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L013",
+    "chunkId": "CH000063",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L013",
+    "chunkId": "CH000064",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L014",
+    "chunkId": "CH000065",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L014",
+    "chunkId": "CH000066",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L014",
+    "chunkId": "CH000067",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L014",
+    "chunkId": "CH000068",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L014",
+    "chunkId": "CH000069",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L015",
+    "chunkId": "CH000070",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L015",
+    "chunkId": "CH000071",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L015",
+    "chunkId": "CH000072",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L015",
+    "chunkId": "CH000073",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L015",
+    "chunkId": "CH000074",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L016",
+    "chunkId": "CH000075",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L016",
+    "chunkId": "CH000076",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L016",
+    "chunkId": "CH000002",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L016",
+    "chunkId": "CH000077",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L016",
+    "chunkId": "CH000078",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L017",
+    "chunkId": "CH000079",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L017",
+    "chunkId": "CH000080",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L017",
+    "chunkId": "CH000081",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L017",
+    "chunkId": "CH000082",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L017",
+    "chunkId": "CH000083",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L018",
+    "chunkId": "CH000084",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L018",
+    "chunkId": "CH000085",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L018",
+    "chunkId": "CH000086",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L018",
+    "chunkId": "CH000087",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L018",
+    "chunkId": "CH000088",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L019",
+    "chunkId": "CH000089",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L019",
+    "chunkId": "CH000090",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L019",
+    "chunkId": "CH000091",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L019",
+    "chunkId": "CH000092",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L019",
+    "chunkId": "CH000093",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L020",
+    "chunkId": "CH000094",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L020",
+    "chunkId": "CH000095",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L020",
+    "chunkId": "CH000096",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L020",
+    "chunkId": "CH000097",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L020",
+    "chunkId": "CH000098",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L021",
+    "chunkId": "CH000099",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L021",
+    "chunkId": "CH000100",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L021",
+    "chunkId": "CH000101",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L021",
+    "chunkId": "CH000102",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L021",
+    "chunkId": "CH000103",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L022",
+    "chunkId": "CH000104",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L022",
+    "chunkId": "CH000105",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L022",
+    "chunkId": "CH000106",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L022",
+    "chunkId": "CH000107",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L022",
+    "chunkId": "CH000108",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L023",
+    "chunkId": "CH000109",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L023",
+    "chunkId": "CH000110",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L023",
+    "chunkId": "CH000111",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L023",
+    "chunkId": "CH000112",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L023",
+    "chunkId": "CH000113",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L024",
+    "chunkId": "CH000114",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L024",
+    "chunkId": "CH000115",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L024",
+    "chunkId": "CH000116",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L024",
+    "chunkId": "CH000117",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L024",
+    "chunkId": "CH000118",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L025",
+    "chunkId": "CH000119",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L025",
+    "chunkId": "CH000120",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L025",
+    "chunkId": "CH000121",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L025",
+    "chunkId": "CH000122",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L025",
+    "chunkId": "CH000123",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L026",
+    "chunkId": "CH000124",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L026",
+    "chunkId": "CH000125",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L026",
+    "chunkId": "CH000126",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L026",
+    "chunkId": "CH000127",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L026",
+    "chunkId": "CH000128",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L027",
+    "chunkId": "CH000129",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L027",
+    "chunkId": "CH000130",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L027",
+    "chunkId": "CH000131",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L027",
+    "chunkId": "CH000132",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L027",
+    "chunkId": "CH000133",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L028",
+    "chunkId": "CH000134",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L028",
+    "chunkId": "CH000135",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L028",
+    "chunkId": "CH000136",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L028",
+    "chunkId": "CH000137",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L028",
+    "chunkId": "CH000138",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L029",
+    "chunkId": "CH000139",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L029",
+    "chunkId": "CH000140",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L029",
+    "chunkId": "CH000141",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L029",
+    "chunkId": "CH000142",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L029",
+    "chunkId": "CH000143",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L030",
+    "chunkId": "CH000144",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L030",
+    "chunkId": "CH000145",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L030",
+    "chunkId": "CH000146",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L030",
+    "chunkId": "CH000147",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L030",
+    "chunkId": "CH000148",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L031",
+    "chunkId": "CH000149",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L031",
+    "chunkId": "CH000150",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L031",
+    "chunkId": "CH000151",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L031",
+    "chunkId": "CH000152",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L031",
+    "chunkId": "CH000153",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L032",
+    "chunkId": "CH000154",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L032",
+    "chunkId": "CH000155",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L032",
+    "chunkId": "CH000156",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L032",
+    "chunkId": "CH000157",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L032",
+    "chunkId": "CH000158",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L033",
+    "chunkId": "CH000159",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L033",
+    "chunkId": "CH000160",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L033",
+    "chunkId": "CH000161",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L033",
+    "chunkId": "CH000021",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L033",
+    "chunkId": "CH000162",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L034",
+    "chunkId": "CH000163",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L034",
+    "chunkId": "CH000164",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L034",
+    "chunkId": "CH000165",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L034",
+    "chunkId": "CH000166",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L034",
+    "chunkId": "CH000167",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L035",
+    "chunkId": "CH000168",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L035",
+    "chunkId": "CH000169",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L035",
+    "chunkId": "CH000170",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L035",
+    "chunkId": "CH000171",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L035",
+    "chunkId": "CH000172",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L036",
+    "chunkId": "CH000173",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L036",
+    "chunkId": "CH000174",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L036",
+    "chunkId": "CH000175",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L036",
+    "chunkId": "CH000176",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L036",
+    "chunkId": "CH000177",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L037",
+    "chunkId": "CH000178",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L037",
+    "chunkId": "CH000179",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L037",
+    "chunkId": "CH000180",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L037",
+    "chunkId": "CH000181",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L037",
+    "chunkId": "CH000182",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L038",
+    "chunkId": "CH000183",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L038",
+    "chunkId": "CH000184",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L038",
+    "chunkId": "CH000185",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L038",
+    "chunkId": "CH000186",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L038",
+    "chunkId": "CH000187",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L039",
+    "chunkId": "CH000188",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L039",
+    "chunkId": "CH000189",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L039",
+    "chunkId": "CH000190",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L039",
+    "chunkId": "CH000191",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L039",
+    "chunkId": "CH000192",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L040",
+    "chunkId": "CH000193",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L040",
+    "chunkId": "CH000194",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L040",
+    "chunkId": "CH000195",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L040",
+    "chunkId": "CH000196",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L040",
+    "chunkId": "CH000197",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L041",
+    "chunkId": "CH000198",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L041",
+    "chunkId": "CH000199",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L041",
+    "chunkId": "CH000200",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L041",
+    "chunkId": "CH000201",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L041",
+    "chunkId": "CH000202",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L042",
+    "chunkId": "CH000203",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L042",
+    "chunkId": "CH000204",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L042",
+    "chunkId": "CH000205",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L042",
+    "chunkId": "CH000206",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L042",
+    "chunkId": "CH000207",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L043",
+    "chunkId": "CH000208",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L043",
+    "chunkId": "CH000209",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L043",
+    "chunkId": "CH000210",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L043",
+    "chunkId": "CH000211",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L043",
+    "chunkId": "CH000212",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L044",
+    "chunkId": "CH000213",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L044",
+    "chunkId": "CH000214",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L044",
+    "chunkId": "CH000215",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L044",
+    "chunkId": "CH000216",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L044",
+    "chunkId": "CH000217",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L045",
+    "chunkId": "CH000218",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L045",
+    "chunkId": "CH000219",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L045",
+    "chunkId": "CH000220",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L045",
+    "chunkId": "CH000221",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L045",
+    "chunkId": "CH000222",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L046",
+    "chunkId": "CH000223",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L046",
+    "chunkId": "CH000224",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L046",
+    "chunkId": "CH000225",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L046",
+    "chunkId": "CH000226",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L046",
+    "chunkId": "CH000227",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L047",
+    "chunkId": "CH000228",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L047",
+    "chunkId": "CH000229",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L047",
+    "chunkId": "CH000230",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L047",
+    "chunkId": "CH000231",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L047",
+    "chunkId": "CH000232",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L048",
+    "chunkId": "CH000233",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L048",
+    "chunkId": "CH000234",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L048",
+    "chunkId": "CH000235",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L048",
+    "chunkId": "CH000236",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L048",
+    "chunkId": "CH000237",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L049",
+    "chunkId": "CH000238",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L049",
+    "chunkId": "CH000239",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L049",
+    "chunkId": "CH000240",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L049",
+    "chunkId": "CH000241",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L049",
+    "chunkId": "CH000242",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L050",
+    "chunkId": "CH000243",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L050",
+    "chunkId": "CH000244",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L050",
+    "chunkId": "CH000245",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L050",
+    "chunkId": "CH000246",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L050",
+    "chunkId": "CH000247",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L051",
+    "chunkId": "CH000248",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L051",
+    "chunkId": "CH000249",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L051",
+    "chunkId": "CH000250",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L051",
+    "chunkId": "CH000251",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L051",
+    "chunkId": "CH000252",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L052",
+    "chunkId": "CH000253",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L052",
+    "chunkId": "CH000254",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L052",
+    "chunkId": "CH000255",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L052",
+    "chunkId": "CH000256",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L052",
+    "chunkId": "CH000257",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L053",
+    "chunkId": "CH000131",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L053",
+    "chunkId": "CH000258",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L053",
+    "chunkId": "CH000259",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L053",
+    "chunkId": "CH000260",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L053",
+    "chunkId": "CH000261",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L054",
+    "chunkId": "CH000262",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L054",
+    "chunkId": "CH000206",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L054",
+    "chunkId": "CH000263",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L054",
+    "chunkId": "CH000264",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L054",
+    "chunkId": "CH000265",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L055",
+    "chunkId": "CH000266",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L055",
+    "chunkId": "CH000267",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L055",
+    "chunkId": "CH000268",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L055",
+    "chunkId": "CH000269",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L055",
+    "chunkId": "CH000270",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L056",
+    "chunkId": "CH000271",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L056",
+    "chunkId": "CH000272",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L056",
+    "chunkId": "CH000273",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L056",
+    "chunkId": "CH000274",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L056",
+    "chunkId": "CH000275",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L057",
+    "chunkId": "CH000202",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L057",
+    "chunkId": "CH000276",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L057",
+    "chunkId": "CH000277",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L057",
+    "chunkId": "CH000278",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L057",
+    "chunkId": "CH000279",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L058",
+    "chunkId": "CH000280",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L058",
+    "chunkId": "CH000281",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L058",
+    "chunkId": "CH000282",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L058",
+    "chunkId": "CH000283",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L058",
+    "chunkId": "CH000284",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L059",
+    "chunkId": "CH000285",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L059",
+    "chunkId": "CH000286",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L059",
+    "chunkId": "CH000287",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L059",
+    "chunkId": "CH000288",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L059",
+    "chunkId": "CH000289",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L060",
+    "chunkId": "CH000290",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L060",
+    "chunkId": "CH000291",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L060",
+    "chunkId": "CH000292",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L060",
+    "chunkId": "CH000293",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L060",
+    "chunkId": "CH000294",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L061",
+    "chunkId": "CH000295",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L061",
+    "chunkId": "CH000296",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L061",
+    "chunkId": "CH000297",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L061",
+    "chunkId": "CH000298",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L061",
+    "chunkId": "CH000299",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L062",
+    "chunkId": "CH000300",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L062",
+    "chunkId": "CH000301",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L062",
+    "chunkId": "CH000302",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L062",
+    "chunkId": "CH000303",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L062",
+    "chunkId": "CH000304",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L063",
+    "chunkId": "CH000305",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L063",
+    "chunkId": "CH000306",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L063",
+    "chunkId": "CH000307",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L063",
+    "chunkId": "CH000066",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L063",
+    "chunkId": "CH000308",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L064",
+    "chunkId": "CH000309",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L064",
+    "chunkId": "CH000310",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L064",
+    "chunkId": "CH000311",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L064",
+    "chunkId": "CH000312",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L064",
+    "chunkId": "CH000313",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L065",
+    "chunkId": "CH000314",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L065",
+    "chunkId": "CH000315",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L065",
+    "chunkId": "CH000316",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L065",
+    "chunkId": "CH000317",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L065",
+    "chunkId": "CH000318",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L066",
+    "chunkId": "CH000319",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L066",
+    "chunkId": "CH000320",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L066",
+    "chunkId": "CH000321",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L066",
+    "chunkId": "CH000322",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L066",
+    "chunkId": "CH000323",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L067",
+    "chunkId": "CH000324",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L067",
+    "chunkId": "CH000325",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L067",
+    "chunkId": "CH000326",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L067",
+    "chunkId": "CH000327",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L067",
+    "chunkId": "CH000328",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L068",
+    "chunkId": "CH000329",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L068",
+    "chunkId": "CH000330",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L068",
+    "chunkId": "CH000331",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L068",
+    "chunkId": "CH000332",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L068",
+    "chunkId": "CH000333",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L069",
+    "chunkId": "CH000334",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L069",
+    "chunkId": "CH000335",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L069",
+    "chunkId": "CH000336",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L069",
+    "chunkId": "CH000337",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L069",
+    "chunkId": "CH000338",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L070",
+    "chunkId": "CH000339",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L070",
+    "chunkId": "CH000340",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L070",
+    "chunkId": "CH000341",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L070",
+    "chunkId": "CH000342",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L070",
+    "chunkId": "CH000343",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L071",
+    "chunkId": "CH000344",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L071",
+    "chunkId": "CH000345",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L071",
+    "chunkId": "CH000346",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L071",
+    "chunkId": "CH000347",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L071",
+    "chunkId": "CH000348",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L072",
+    "chunkId": "CH000349",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L072",
+    "chunkId": "CH000350",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L072",
+    "chunkId": "CH000351",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L072",
+    "chunkId": "CH000352",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L072",
+    "chunkId": "CH000353",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L073",
+    "chunkId": "CH000354",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L073",
+    "chunkId": "CH000355",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L073",
+    "chunkId": "CH000356",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L073",
+    "chunkId": "CH000357",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L073",
+    "chunkId": "CH000358",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L074",
+    "chunkId": "CH000359",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L074",
+    "chunkId": "CH000360",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L074",
+    "chunkId": "CH000361",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L074",
+    "chunkId": "CH000362",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L074",
+    "chunkId": "CH000363",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L075",
+    "chunkId": "CH000364",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L075",
+    "chunkId": "CH000365",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L075",
+    "chunkId": "CH000366",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L075",
+    "chunkId": "CH000367",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L075",
+    "chunkId": "CH000368",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L076",
+    "chunkId": "CH000369",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L076",
+    "chunkId": "CH000100",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L076",
+    "chunkId": "CH000370",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L076",
+    "chunkId": "CH000371",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L076",
+    "chunkId": "CH000372",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L077",
+    "chunkId": "CH000373",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L077",
+    "chunkId": "CH000374",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L077",
+    "chunkId": "CH000375",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L077",
+    "chunkId": "CH000376",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L077",
+    "chunkId": "CH000377",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L078",
+    "chunkId": "CH000378",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L078",
+    "chunkId": "CH000379",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L078",
+    "chunkId": "CH000380",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L078",
+    "chunkId": "CH000381",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L078",
+    "chunkId": "CH000382",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L079",
+    "chunkId": "CH000383",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L079",
+    "chunkId": "CH000384",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L079",
+    "chunkId": "CH000385",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L079",
+    "chunkId": "CH000386",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L079",
+    "chunkId": "CH000387",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L080",
+    "chunkId": "CH000388",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L080",
+    "chunkId": "CH000389",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L080",
+    "chunkId": "CH000390",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L080",
+    "chunkId": "CH000391",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L080",
+    "chunkId": "CH000344",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L081",
+    "chunkId": "CH000392",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L081",
+    "chunkId": "CH000393",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L081",
+    "chunkId": "CH000394",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L081",
+    "chunkId": "CH000395",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L081",
+    "chunkId": "CH000396",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L082",
+    "chunkId": "CH000397",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L082",
+    "chunkId": "CH000398",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L082",
+    "chunkId": "CH000399",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L082",
+    "chunkId": "CH000400",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L082",
+    "chunkId": "CH000401",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L083",
+    "chunkId": "CH000402",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L083",
+    "chunkId": "CH000403",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L083",
+    "chunkId": "CH000404",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L083",
+    "chunkId": "CH000405",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L083",
+    "chunkId": "CH000406",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L084",
+    "chunkId": "CH000407",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L084",
+    "chunkId": "CH000408",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L084",
+    "chunkId": "CH000409",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L084",
+    "chunkId": "CH000410",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L084",
+    "chunkId": "CH000024",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L085",
+    "chunkId": "CH000411",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L085",
+    "chunkId": "CH000412",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L085",
+    "chunkId": "CH000413",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L085",
+    "chunkId": "CH000414",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L085",
+    "chunkId": "CH000415",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L086",
+    "chunkId": "CH000416",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L086",
+    "chunkId": "CH000417",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L086",
+    "chunkId": "CH000418",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L086",
+    "chunkId": "CH000419",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L086",
+    "chunkId": "CH000420",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L087",
+    "chunkId": "CH000421",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L087",
+    "chunkId": "CH000422",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L087",
+    "chunkId": "CH000423",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L087",
+    "chunkId": "CH000424",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L087",
+    "chunkId": "CH000273",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L088",
+    "chunkId": "CH000425",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L088",
+    "chunkId": "CH000426",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L088",
+    "chunkId": "CH000427",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L088",
+    "chunkId": "CH000428",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L088",
+    "chunkId": "CH000429",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L089",
+    "chunkId": "CH000430",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L089",
+    "chunkId": "CH000431",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L089",
+    "chunkId": "CH000432",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L089",
+    "chunkId": "CH000433",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L089",
+    "chunkId": "CH000434",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L090",
+    "chunkId": "CH000435",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L090",
+    "chunkId": "CH000436",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L090",
+    "chunkId": "CH000437",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L090",
+    "chunkId": "CH000438",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L090",
+    "chunkId": "CH000439",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L091",
+    "chunkId": "CH000440",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L091",
+    "chunkId": "CH000441",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L091",
+    "chunkId": "CH000442",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L091",
+    "chunkId": "CH000443",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L091",
+    "chunkId": "CH000444",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L092",
+    "chunkId": "CH000445",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L092",
+    "chunkId": "CH000446",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L092",
+    "chunkId": "CH000447",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L092",
+    "chunkId": "CH000333",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L092",
+    "chunkId": "CH000448",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L093",
+    "chunkId": "CH000449",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L093",
+    "chunkId": "CH000450",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L093",
+    "chunkId": "CH000451",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L093",
+    "chunkId": "CH000452",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L093",
+    "chunkId": "CH000453",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L094",
+    "chunkId": "CH000454",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L094",
+    "chunkId": "CH000455",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L094",
+    "chunkId": "CH000456",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L094",
+    "chunkId": "CH000457",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L094",
+    "chunkId": "CH000458",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L095",
+    "chunkId": "CH000459",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L095",
+    "chunkId": "CH000460",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L095",
+    "chunkId": "CH000461",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L095",
+    "chunkId": "CH000462",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L095",
+    "chunkId": "CH000463",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L096",
+    "chunkId": "CH000464",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L096",
+    "chunkId": "CH000465",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L096",
+    "chunkId": "CH000466",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L096",
+    "chunkId": "CH000467",
+    "importance": 2
+  },
+  {
+    "lessonId": "NCE2-L096",
+    "chunkId": "CH000468",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7921334",
+    "chunkId": "CH000469",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7921334",
+    "chunkId": "CH000470",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7921334",
+    "chunkId": "CH000471",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7921334",
+    "chunkId": "CH000472",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7921334",
+    "chunkId": "CH000473",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7945653",
+    "chunkId": "CH000474",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7945653",
+    "chunkId": "CH000475",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7945653",
+    "chunkId": "CH000476",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7945653",
+    "chunkId": "CH000477",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7945653",
+    "chunkId": "CH000478",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7953508",
+    "chunkId": "CH000479",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7953508",
+    "chunkId": "CH000480",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7953508",
+    "chunkId": "CH000481",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7953508",
+    "chunkId": "CH000482",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7953508",
+    "chunkId": "CH000483",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7958876",
+    "chunkId": "CH000484",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7958876",
+    "chunkId": "CH000485",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7958876",
+    "chunkId": "CH000002",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7958876",
+    "chunkId": "CH000486",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7958876",
+    "chunkId": "CH000487",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972394",
+    "chunkId": "CH000488",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972394",
+    "chunkId": "CH000489",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972394",
+    "chunkId": "CH000079",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972394",
+    "chunkId": "CH000490",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972394",
+    "chunkId": "CH000491",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972396",
+    "chunkId": "CH000492",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972396",
+    "chunkId": "CH000493",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972396",
+    "chunkId": "CH000494",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972396",
+    "chunkId": "CH000495",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7972396",
+    "chunkId": "CH000496",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7980912",
+    "chunkId": "CH000497",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7980912",
+    "chunkId": "CH000498",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7980912",
+    "chunkId": "CH000499",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7980912",
+    "chunkId": "CH000500",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7980912",
+    "chunkId": "CH000501",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983372",
+    "chunkId": "CH000502",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983372",
+    "chunkId": "CH000503",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983372",
+    "chunkId": "CH000504",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983372",
+    "chunkId": "CH000505",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983372",
+    "chunkId": "CH000506",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983385",
+    "chunkId": "CH000504",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983385",
+    "chunkId": "CH000507",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983385",
+    "chunkId": "CH000508",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983385",
+    "chunkId": "CH000509",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-7983385",
+    "chunkId": "CH000510",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-8001173",
+    "chunkId": "CH000511",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-8001173",
+    "chunkId": "CH000512",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-8001173",
+    "chunkId": "CH000513",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-8001173",
+    "chunkId": "CH000514",
+    "importance": 2
+  },
+  {
+    "lessonId": "VOA-8001173",
+    "chunkId": "CH000515",
+    "importance": 2
   }
 ]
