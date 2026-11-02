@@ -463,12 +463,14 @@ it("individual session deletion clears dependent private records while preservin
 });
 
 describe("per-lesson chunks and vocabulary", () => {
-  it("every Book 2 lesson has its own chunks and study words", async () => {
+  it("every Book 2 and Book 3 lesson has its own chunks and study words", async () => {
     const { links, nceVocabulary, examples } =
       await import("../src/shared/content");
-    const book2 = lessons.filter((l) => l.series === "NCE" && l.book === 2);
-    expect(book2).toHaveLength(96);
-    for (const lesson of book2) {
+    const covered = lessons.filter(
+      (l) => l.series === "NCE" && (l.book === 2 || l.book === 3),
+    );
+    expect(covered).toHaveLength(156);
+    for (const lesson of covered) {
       expect(
         links.filter((l) => l.lessonId === lesson.id).length,
         `${lesson.id} chunks`,
