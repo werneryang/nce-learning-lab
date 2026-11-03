@@ -3,6 +3,9 @@ import type { Chunk, State } from "../shared/schema";
 import { uid, now } from "../shared/schema";
 import { candidates, links, examples, allLessons } from "../shared/content";
 import { acceptChunk, mergeChunks, chunkKey } from "./chunks";
+const exampleFor = new Map<string, string>();
+for (const x of examples)
+  if (!exampleFor.has(x.chunkId)) exampleFor.set(x.chunkId, x.text);
 type Props = {
   state: State;
   update: (fn: (s: State) => State) => void;
@@ -16,6 +19,10 @@ export function Library({ state, update, lessonId, selected = [] }: Props) {
   const [editing, setEditing] = useState<Chunk>();
   const [mergeTarget, setMergeTarget] = useState("");
   const [message, setMessage] = useState("");
+  // The whole-library view can hold hundreds of candidates; render them only
+  // once the list is opened, and a screenful at a time.
+  const [candidatesOpen, setCandidatesOpen] = useState(!!lessonId);
+  const [candidateLimit, setCandidateLimit] = useState(30);
   const proposalIds = links
     .filter((l) => !lessonId || l.lessonId === lessonId)
     .map((l) => l.chunkId);
@@ -52,7 +59,7 @@ export function Library({ state, update, lessonId, selected = [] }: Props) {
           links.find((l) => l.chunkId === c.id)?.lessonId ||
           lessons[0].id,
         selected,
-        examples.find((x) => x.chunkId === c.id)?.text,
+        exampleFor.get(c.id),
       ),
     );
     setMessage("Accepted locally. Skill mastery remains unchanged.");
@@ -123,10 +130,18 @@ export function Library({ state, update, lessonId, selected = [] }: Props) {
         </p>
       )}
       {pending.length > 0 && (
-        <details open={!!lessonId}>
+        <details
+          open={!!lessonId}
+          onToggle={(e) => setCandidatesOpen(e.currentTarget.open)}
+        >
           <summary>{pending.length} candidates to review</summary>
           <div className="chunk-grid">
-            {pending.map((c) => (
+            {(candidatesOpen
+              ? lessonId
+                ? pending
+                : pending.slice(0, candidateLimit)
+              : []
+            ).map((c) => (
               <article className="chunk-card candidate" key={c.id}>
                 <span className="eyebrow">
                   {c.category.replaceAll("_", " ")}
@@ -134,9 +149,7 @@ export function Library({ state, update, lessonId, selected = [] }: Props) {
                 <h3>{c.canonical}</h3>
                 <p>{c.definitionEn}</p>
                 {state.settings.chinese && <p>{c.explanationZh}</p>}
-                <p className="example">
-                  {examples.find((x) => x.chunkId === c.id)?.text}
-                </p>
+                <p className="example">{exampleFor.get(c.id)}</p>
                 <p className="small">
                   Sense: {c.senseKey} · {c.register}
                 </p>
@@ -163,6 +176,11 @@ export function Library({ state, update, lessonId, selected = [] }: Props) {
               </article>
             ))}
           </div>
+          {candidatesOpen && !lessonId && pending.length > candidateLimit && (
+            <button onClick={() => setCandidateLimit((n) => n + 30)}>
+              Show 30 more ({pending.length - candidateLimit} left)
+            </button>
+          )}
         </details>
       )}
       <div className="filters">

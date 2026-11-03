@@ -4,7 +4,9 @@ import rawChunks from "../../content/chunks/candidates.json";
 import rawExamples from "../../content/chunks/examples.json";
 import rawLinks from "../../content/lesson-chunk-links/links.json";
 import rawExercises from "../../content/exercises/exercises.json";
+import rawNceVocabulary from "../../content/vocabulary/nce.json";
 import sourceManifest from "../../content/source-manifest/nce2.json";
+import { z } from "zod";
 import {
   LessonSchema,
   ChunkSchema,
@@ -39,6 +41,10 @@ export const candidates = rawChunks.map((x) => ChunkSchema.parse(x));
 export const examples = rawExamples.map((x) => ExampleSchema.parse(x));
 export const links = rawLinks.map((x) => LinkSchema.parse(x));
 export const exercises = rawExercises.map((x) => ExerciseSchema.parse(x));
+// Project-authored study words for each NCE lesson, keyed by lesson ID.
+export const nceVocabulary = z
+  .record(z.string(), z.array(z.string().min(1).max(2000)))
+  .parse(rawNceVocabulary);
 export const manifest = sourceManifest;
 export const sources = [
   ...sourceManifest.entries.flatMap((x) =>
