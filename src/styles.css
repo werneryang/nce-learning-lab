@@ -1324,3 +1324,8 @@ audio[controls] {
 .vocabulary p {
   margin: 4px 0;
 }
+
+.vocab-example {
+  color: var(--muted, #5b6b62);
+  font-style: italic;
+}

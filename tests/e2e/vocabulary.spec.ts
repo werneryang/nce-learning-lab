@@ -38,3 +38,14 @@ test("study words stay visible when subtitles are hidden", async ({ page }) => {
   await page.reload();
   await expect(details.locator("summary")).toBeVisible();
 });
+
+test("each study word shows an example sentence", async ({ page }) => {
+  await page.goto("#lesson/NCE2-L050");
+  const details = page.locator("details.vocabulary");
+  await expect(
+    details.getByText("The conductor punched our tickets."),
+  ).toBeVisible();
+  await expect(details.locator(".vocab-example")).toHaveCount(6);
+  await page.goto("#lesson/VOA-7983372");
+  await expect(details.locator(".vocab-example")).toHaveCount(15);
+});

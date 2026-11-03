@@ -5,6 +5,7 @@ import rawExamples from "../../content/chunks/examples.json";
 import rawLinks from "../../content/lesson-chunk-links/links.json";
 import rawExercises from "../../content/exercises/exercises.json";
 import rawNceVocabulary from "../../content/vocabulary/nce.json";
+import rawVocabularyExamples from "../../content/vocabulary/examples.json";
 import sourceManifest from "../../content/source-manifest/nce2.json";
 import { z } from "zod";
 import {
@@ -45,6 +46,13 @@ export const exercises = rawExercises.map((x) => ExerciseSchema.parse(x));
 export const nceVocabulary = z
   .record(z.string(), z.array(z.string().min(1).max(2000)))
   .parse(rawNceVocabulary);
+// Original example sentences for study words, keyed by lesson ID then headword.
+export const vocabularyExamples = z
+  .record(z.string(), z.record(z.string(), z.string().min(1).max(300)))
+  .parse(rawVocabularyExamples);
+// "word – n. definition" -> "word"
+export const vocabularyHeadword = (entry: string) =>
+  entry.split(/\s+[–-]/)[0].trim();
 export const manifest = sourceManifest;
 export const sources = [
   ...sourceManifest.entries.flatMap((x) =>

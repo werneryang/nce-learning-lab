@@ -16,7 +16,12 @@ import type { LocalImport, Segment, State } from "../shared/schema";
 import { uid, now } from "../shared/schema";
 import { parseLrc, activeSegment, loopBounds } from "./lrc";
 import { saveMedia, loadMedia, deleteMedia, digest } from "../storage/db";
-import { sources, nceVocabulary } from "../shared/content";
+import {
+  sources,
+  nceVocabulary,
+  vocabularyExamples,
+  vocabularyHeadword,
+} from "../shared/content";
 import { hostedLesson, loadHostedTranscript, mediaUrl } from "./hosted";
 type Props = {
   lessonId: string;
@@ -788,9 +793,21 @@ export function Player({
             {data?.lesson ? "Words in this story" : "Words in this lesson"} (
             {vocabulary.length})
           </summary>
-          {vocabulary.map((v, i) => (
-            <p key={i}>{v}</p>
-          ))}
+          {vocabulary.map((v, i) => {
+            const example =
+              vocabularyExamples[lessonId]?.[vocabularyHeadword(v)];
+            return (
+              <p key={i}>
+                {v}
+                {example && (
+                  <>
+                    <br />
+                    <span className="vocab-example">e.g. {example}</span>
+                  </>
+                )}
+              </p>
+            );
+          })}
         </details>
       )}
       {!segments.length ? (

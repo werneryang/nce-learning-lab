@@ -506,3 +506,24 @@ describe("per-lesson chunks and vocabulary", () => {
     }
   });
 });
+
+describe("study-word examples", () => {
+  it("every NCE and hosted VOA study word has an example sentence", async () => {
+    const { nceVocabulary, vocabularyExamples, vocabularyHeadword } =
+      await import("../src/shared/content");
+    const { voaHosted } = await import("../src/features/hosted");
+    const lists: Record<string, string[]> = { ...nceVocabulary };
+    for (const e of voaHosted)
+      lists[e.lessonId] = e.lesson.vocabulary.filter(
+        (v) => !v.includes("Comments Section"),
+      );
+    expect(Object.keys(lists)).toHaveLength(214);
+    for (const [lessonId, words] of Object.entries(lists))
+      for (const w of words) {
+        const head = vocabularyHeadword(w);
+        const sentence = vocabularyExamples[lessonId]?.[head];
+        expect(sentence, `${lessonId} ${head}`).toBeTruthy();
+        expect(sentence!.length).toBeGreaterThan(15);
+      }
+  });
+});
