@@ -1313,3 +1313,14 @@ audio[controls] {
 .article-navigation button {
   min-height: 44px;
 }
+
+.vocabulary {
+  margin: 12px 0;
+}
+.vocabulary summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.vocabulary p {
+  margin: 4px 0;
+}
