@@ -782,7 +782,7 @@ export function Player({
         />{" "}
         Current line only
       </label>
-      {settings.subtitleVisible && vocabulary.length > 0 && (
+      {!memoryLocked && vocabulary.length > 0 && (
         <details className="vocabulary" open>
           <summary>
             {data?.lesson ? "Words in this story" : "Words in this lesson"} (
