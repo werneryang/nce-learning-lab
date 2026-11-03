@@ -23,3 +23,18 @@ for (const [id, summary, word] of [
     expect(words!.y).toBeLessThan(lines!.y);
   });
 }
+
+// Starting a dictation practice hides subtitles and saves that choice; the
+// study words must stay visible regardless.
+test("study words stay visible when subtitles are hidden", async ({ page }) => {
+  await page.goto("#lesson/NCE2-L016");
+  await page.getByRole("button", { name: "Hide subtitles" }).click();
+  await expect(page.getByTestId("subtitles-hidden")).toBeVisible();
+  const details = page.locator("details.vocabulary");
+  await expect(details.locator("summary")).toHaveText(
+    /Words in this lesson \(6\)/,
+  );
+  await expect(details.getByText("traffic").first()).toBeVisible();
+  await page.reload();
+  await expect(details.locator("summary")).toBeVisible();
+});
