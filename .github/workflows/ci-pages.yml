@@ -10,9 +10,10 @@ concurrency:
   group: nce-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  validate:
+  # Fast checks and the production build. Runs alongside the browser tests.
+  checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -25,15 +26,55 @@ jobs:
       - run: npm test
       - run: python3 -m unittest discover -s tests -p 'test_voa*.py'
       - run: npm audit
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: npx playwright install --with-deps chromium webkit
-      - run: npm run test:e2e
       - run: npm run build
       - run: npm run scan
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:
           path: dist
+  # One job per browser project so the slow end-to-end suite runs in parallel.
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: chromium
+            browser: chromium
+          - project: webkit
+            browser: webkit
+          - project: iphone-webkit
+            browser: webkit
+    name: e2e (${{ matrix.project }})
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get install -y --no-install-recommends ffmpeg
+      - id: browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ matrix.browser }}-${{ hashFiles('package-lock.json') }}
+      - if: steps.browsers.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+      - if: steps.browsers.outputs.cache-hit == 'true'
+        run: npx playwright install-deps ${{ matrix.browser }}
+      - run: npx playwright test --project=${{ matrix.project }}
+  # Single required check: keeps the original "validate" name for branch rules.
+  validate:
+    if: always()
+    needs: [checks, e2e]
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "checks: ${{ needs.checks.result }}, e2e: ${{ needs.e2e.result }}"
+          test "${{ needs.checks.result }}" = success
+          test "${{ needs.e2e.result }}" = success
   deploy:
     if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/learning-lab')
     needs: validate
