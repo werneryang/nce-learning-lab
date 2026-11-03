@@ -46,6 +46,11 @@ export function Player({
   memoryLocked,
   onAudioAvailable,
 }: Props) {
+  const vocabulary = (
+    data?.lesson?.vocabulary ??
+    nceVocabulary[lessonId] ??
+    []
+  ).filter((v) => !v.includes("Comments Section"));
   const audio = useRef<HTMLAudioElement>(null);
   const [url, setUrl] = useState("");
   const [time, setTime] = useState(0);
@@ -777,6 +782,17 @@ export function Player({
         />{" "}
         Current line only
       </label>
+      {settings.subtitleVisible && vocabulary.length > 0 && (
+        <details className="vocabulary" open>
+          <summary>
+            {data?.lesson ? "Words in this story" : "Words in this lesson"} (
+            {vocabulary.length})
+          </summary>
+          {vocabulary.map((v, i) => (
+            <p key={i}>{v}</p>
+          ))}
+        </details>
+      )}
       {!segments.length ? (
         <div className="empty-state">
           Subtitles are not available yet. Retry loading them or choose an
@@ -841,19 +857,6 @@ export function Player({
           Subtitles hidden. Keep your attention on what you hear.
         </div>
       )}
-      {settings.subtitleVisible &&
-        (data?.lesson || nceVocabulary[lessonId]) && (
-          <details>
-            <summary>
-              {data?.lesson ? "Words in this story" : "Words in this lesson"}
-            </summary>
-            {(data?.lesson?.vocabulary ?? nceVocabulary[lessonId])
-              .filter((v) => !v.includes("Comments Section"))
-              .map((v, i) => (
-                <p key={i}>{v}</p>
-              ))}
-          </details>
-        )}
       {segments.length > 0 && (
         <>
           <button
